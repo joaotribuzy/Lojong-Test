@@ -99,13 +99,10 @@
 		384E549724198A5B00C3EE88 /* Lojong-Test */ = {
 			isa = PBXGroup;
 			children = (
-				384E549824198A5B00C3EE88 /* AppDelegate.swift */,
-				384E549A24198A5B00C3EE88 /* SceneDelegate.swift */,
-				384E549C24198A5B00C3EE88 /* ViewController.swift */,
-				384E549E24198A5B00C3EE88 /* Main.storyboard */,
-				384E54A124198A5C00C3EE88 /* Assets.xcassets */,
-				384E54A324198A5C00C3EE88 /* LaunchScreen.storyboard */,
-				384E54A624198A5C00C3EE88 /* Info.plist */,
+				384E9A75241997570080FF4F /* Default */,
+				384E9A74241997500080FF4F /* Model */,
+				384E9A73241997470080FF4F /* View */,
+				384E9A722419973C0080FF4F /* Controller */,
 			);
 			path = "Lojong-Test";
 			sourceTree = "<group>";
@@ -126,6 +123,41 @@
 				384E54BC24198A5D00C3EE88 /* Info.plist */,
 			);
 			path = "Lojong-TestUITests";
+			sourceTree = "<group>";
+		};
+		384E9A722419973C0080FF4F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				384E549C24198A5B00C3EE88 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		384E9A73241997470080FF4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				384E54A124198A5C00C3EE88 /* Assets.xcassets */,
+				384E549E24198A5B00C3EE88 /* Main.storyboard */,
+				384E54A324198A5C00C3EE88 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		384E9A74241997500080FF4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		384E9A75241997570080FF4F /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				384E549824198A5B00C3EE88 /* AppDelegate.swift */,
+				384E549A24198A5B00C3EE88 /* SceneDelegate.swift */,
+				384E54A624198A5C00C3EE88 /* Info.plist */,
+			);
+			path = Default;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
