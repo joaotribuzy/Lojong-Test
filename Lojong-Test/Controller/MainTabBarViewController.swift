@@ -18,13 +18,15 @@ class MainTabBarViewController: UITabBarController {
     
     //MARK: - Tabs Configuration
     private func settingTabs(){
+        
         let fundamentViewController = UIViewController()
-
-        fundamentViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 0)
+        let fundamentItemImage = UIImage.init(named: "Fundaments-Item")
+        fundamentViewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Fundaments", comment: ""), image: fundamentItemImage, tag: 0)
+        
         
         let insightViewController = UIViewController()
-                
-        insightViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
+        let insightItemImage = UIImage.init(named: "Insight-Item")
+        insightViewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Insight", comment: ""), image: insightItemImage, tag: 1)
 
         let tabBarList = [fundamentViewController, insightViewController]
 
