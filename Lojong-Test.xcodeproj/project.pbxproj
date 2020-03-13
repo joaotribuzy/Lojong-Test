@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		384E549924198A5B00C3EE88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E549824198A5B00C3EE88 /* AppDelegate.swift */; };
 		384E549B24198A5B00C3EE88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E549A24198A5B00C3EE88 /* SceneDelegate.swift */; };
-		384E549D24198A5B00C3EE88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E549C24198A5B00C3EE88 /* ViewController.swift */; };
+		384E549D24198A5B00C3EE88 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E549C24198A5B00C3EE88 /* MainTabBarViewController.swift */; };
 		384E54A024198A5B00C3EE88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384E549E24198A5B00C3EE88 /* Main.storyboard */; };
 		384E54A224198A5C00C3EE88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384E54A124198A5C00C3EE88 /* Assets.xcassets */; };
 		384E54A524198A5C00C3EE88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384E54A324198A5C00C3EE88 /* LaunchScreen.storyboard */; };
@@ -38,7 +38,7 @@
 		384E549524198A5B00C3EE88 /* Lojong-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lojong-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		384E549824198A5B00C3EE88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		384E549A24198A5B00C3EE88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		384E549C24198A5B00C3EE88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		384E549C24198A5B00C3EE88 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		384E549F24198A5B00C3EE88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		384E54A124198A5C00C3EE88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		384E54A424198A5C00C3EE88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,6 +99,7 @@
 		384E549724198A5B00C3EE88 /* Lojong-Test */ = {
 			isa = PBXGroup;
 			children = (
+				384E54A624198A5C00C3EE88 /* Info.plist */,
 				384E9A75241997570080FF4F /* Default */,
 				384E9A74241997500080FF4F /* Model */,
 				384E9A73241997470080FF4F /* View */,
@@ -128,7 +129,7 @@
 		384E9A722419973C0080FF4F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				384E549C24198A5B00C3EE88 /* ViewController.swift */,
+				384E549C24198A5B00C3EE88 /* MainTabBarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -155,7 +156,6 @@
 			children = (
 				384E549824198A5B00C3EE88 /* AppDelegate.swift */,
 				384E549A24198A5B00C3EE88 /* SceneDelegate.swift */,
-				384E54A624198A5C00C3EE88 /* Info.plist */,
 			);
 			path = Default;
 			sourceTree = "<group>";
@@ -291,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				384E549D24198A5B00C3EE88 /* ViewController.swift in Sources */,
+				384E549D24198A5B00C3EE88 /* MainTabBarViewController.swift in Sources */,
 				384E549924198A5B00C3EE88 /* AppDelegate.swift in Sources */,
 				384E549B24198A5B00C3EE88 /* SceneDelegate.swift in Sources */,
 			);
