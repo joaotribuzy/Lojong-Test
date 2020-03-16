@@ -15,8 +15,13 @@ class InsightCustomSegmentedControlView: UIView, LojongCustomView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        self.setTitleButtons()
+        
         self.style()
         self.autolayout()
+        
+        
+        
     }
     
     required init?(coder: NSCoder) {
@@ -24,6 +29,10 @@ class InsightCustomSegmentedControlView: UIView, LojongCustomView {
     }
     
     // MARK: - Visual
+    let commaSeparatedButtonTitles: String = "Vai,Top"
+    
+    var titleButtons: [UIButton] = [UIButton]()
+    var titleButtonsStackView: UIStackView = UIStackView()
     
     func style() {
         self.backgroundColor = UIColor.init(red: 199, green: 128, blue: 128)
@@ -36,5 +45,33 @@ class InsightCustomSegmentedControlView: UIView, LojongCustomView {
     func autolayout() {
         self.translatesAutoresizingMaskIntoConstraints = false
         
+        // Buttons StackView
     }
+    
+    // MARK: - Segmented Control Buttons
+    private func setTitleButtons(){
+        titleButtons.removeAll()
+        subviews.forEach{ $0.removeFromSuperview() }
+        
+        let buttonTitles = commaSeparatedButtonTitles.components(separatedBy: ",")
+        
+        for buttonTitle in buttonTitles{
+            let button = UIButton(type: .system)
+            button.setTitle(buttonTitle, for: .normal)
+            titleButtons.append(button)
+        }
+        
+        titleButtonsStackView = UIStackView(arrangedSubviews: titleButtons)
+        titleButtonsStackView.axis = .horizontal
+        titleButtonsStackView.alignment = .fill
+        titleButtonsStackView.distribution = .fillEqually
+        self.addSubview(titleButtonsStackView)
+        titleButtonsStackView.translatesAutoresizingMaskIntoConstraints = false
+        titleButtonsStackView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        titleButtonsStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        titleButtonsStackView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        titleButtonsStackView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        
+    }
+    
 }
