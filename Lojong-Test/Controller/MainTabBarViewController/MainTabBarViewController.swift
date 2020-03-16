@@ -11,7 +11,7 @@ import UIKit
 class MainTabBarViewController: UITabBarController{
     
     let fundamentViewController = UIViewController()
-    let insightViewController = UIViewController()
+    let insightViewController = InsightViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
