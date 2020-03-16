@@ -11,6 +11,9 @@
 		380E2FFF241EF9ED00C41681 /* InsightMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E2FFE241EF9ED00C41681 /* InsightMainViewController.swift */; };
 		380E3001241F0E1F00C41681 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E3000241F0E1F00C41681 /* Extension+UIView.swift */; };
 		380E3003241F0E5500C41681 /* InsightContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E3002241F0E5500C41681 /* InsightContentView.swift */; };
+		380E3007241FC11B00C41681 /* InsightContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E3006241FC11B00C41681 /* InsightContentViewController.swift */; };
+		380E3009241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E3008241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift */; };
+		380E300B241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E300A241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift */; };
 		384E549924198A5B00C3EE88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E549824198A5B00C3EE88 /* AppDelegate.swift */; };
 		384E549B24198A5B00C3EE88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E549A24198A5B00C3EE88 /* SceneDelegate.swift */; };
 		384E549D24198A5B00C3EE88 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E549C24198A5B00C3EE88 /* MainTabBarViewController.swift */; };
@@ -46,6 +49,9 @@
 		380E2FFE241EF9ED00C41681 /* InsightMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightMainViewController.swift; sourceTree = "<group>"; };
 		380E3000241F0E1F00C41681 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		380E3002241F0E5500C41681 /* InsightContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightContentView.swift; sourceTree = "<group>"; };
+		380E3006241FC11B00C41681 /* InsightContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightContentViewController.swift; sourceTree = "<group>"; };
+		380E3008241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCustomSegmentedControlView.swift; sourceTree = "<group>"; };
+		380E300A241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCustomSegmentedControlViewController.swift; sourceTree = "<group>"; };
 		384E549524198A5B00C3EE88 /* Lojong-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lojong-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		384E549824198A5B00C3EE88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		384E549A24198A5B00C3EE88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				380E2FFE241EF9ED00C41681 /* InsightMainViewController.swift */,
+				380E3006241FC11B00C41681 /* InsightContentViewController.swift */,
+				380E300A241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift */,
 			);
 			path = InsightViewController;
 			sourceTree = "<group>";
@@ -103,6 +111,7 @@
 			children = (
 				380E2FFA241EF15E00C41681 /* InsightMainView.swift */,
 				380E3002241F0E5500C41681 /* InsightContentView.swift */,
+				380E3008241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift */,
 			);
 			name = InsightView;
 			sourceTree = "<group>";
@@ -360,12 +369,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				380E3007241FC11B00C41681 /* InsightContentViewController.swift in Sources */,
 				384E549D24198A5B00C3EE88 /* MainTabBarViewController.swift in Sources */,
 				38D527C6241EEB23007D1FB3 /* MainTabBarView.swift in Sources */,
 				384E549924198A5B00C3EE88 /* AppDelegate.swift in Sources */,
 				380E2FFF241EF9ED00C41681 /* InsightMainViewController.swift in Sources */,
+				380E300B241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift in Sources */,
 				380E2FFB241EF15E00C41681 /* InsightMainView.swift in Sources */,
 				386D3F69241C471E00F70F8F /* LojongCustomView.swift in Sources */,
+				380E3009241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift in Sources */,
 				380E3003241F0E5500C41681 /* InsightContentView.swift in Sources */,
 				384E549B24198A5B00C3EE88 /* SceneDelegate.swift in Sources */,
 				386D3F67241C443B00F70F8F /* Extension+UIColor.swift in Sources */,
@@ -552,7 +564,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Tribuzy.Lojong-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -570,7 +582,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Tribuzy.Lojong-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

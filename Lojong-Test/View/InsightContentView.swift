@@ -26,9 +26,14 @@ class InsightContentView: UIView, LojongCustomView {
     // MARK: - Visual
     func style() {
         self.backgroundColor = .white
+        
+        self.clipsToBounds = true
+        self.layer.cornerRadius = 15
+        self.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
     }
     
     func autolayout() {
+        self.translatesAutoresizingMaskIntoConstraints = false
         
     }
 }

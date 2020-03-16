@@ -10,6 +10,7 @@ import UIKit
 
 class InsightMainViewController: UIViewController {
 
+    // MARK: - ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         

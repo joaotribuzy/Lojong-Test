@@ -24,60 +24,46 @@ class InsightMainView: UIView, LojongCustomView {
     }
     
     // MARK: - Style
-    private let contentView = UIView()
+    private let contentView = InsightContentViewController()
+    private let customSegmentedControl = InsightCustomSegmentedControlViewController()
     
     func style() {
         // MainView
         self.backgroundColor = UIColor.init(red: 224, green: 144, blue: 144)
-        
-        // Content View
-        self.contentView.backgroundColor = .white
     }
     
     func autolayout() {
         // Main View
         self.layoutMargins = .zero
         
-        // ContentView
-        self.addSubview(contentView)
-        contentView.translatesAutoresizingMaskIntoConstraints = false
+        // Custom Segmented Control
+        self.addSubview(customSegmentedControl.view)
+        
+        let customSegmentedControlConstrainsts = [
+            customSegmentedControl.view.heightAnchor.constraint(equalToConstant: 45),
+            customSegmentedControl.view.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 12),
+            customSegmentedControl.view.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: -8),
+            customSegmentedControl.view.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor, constant: 8),
+        ]
+        
+        NSLayoutConstraint.activate(customSegmentedControlConstrainsts)
+        
+        
+        // ContentView Position
+        self.addSubview(contentView.view)
         
         let contentViewConstraints = [
-            NSLayoutConstraint(item: contentView,
-                               attribute: .top,
-                               relatedBy: .equal,
-                               toItem: self,
-                               attribute: .top,
-                               multiplier: 1.0,
-                               constant: 116),
-            NSLayoutConstraint(item: contentView,
-                                attribute: .bottom,
-                                relatedBy: .equal,
-                                toItem: self,
-                                attribute: .bottom,
-                                multiplier: 1.0,
-                                constant: 0),
-            NSLayoutConstraint(item: contentView,
-                                attribute: .right,
-                                relatedBy: .equal,
-                                toItem: self,
-                                attribute: .right,
-                                multiplier: 1.0,
-                                constant: 0),
-            NSLayoutConstraint(item: contentView,
-                                attribute: .left,
-                                relatedBy: .equal,
-                                toItem: self,
-                                attribute: .left,
-                                multiplier: 1.0,
-                                constant: 0)
+            contentView.view.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0),
+            contentView.view.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0),
+            contentView.view.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 65),
+            contentView.view.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0)
         ]
         
         NSLayoutConstraint.activate(contentViewConstraints)
         
-        contentView.clipsToBounds = true
-        contentView.layer.cornerRadius = 10
-        contentView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        
+        
+        
     }
     
     
