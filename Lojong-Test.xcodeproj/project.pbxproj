@@ -66,6 +66,7 @@
 		384E54B624198A5D00C3EE88 /* Lojong-TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lojong-TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		384E54BA24198A5D00C3EE88 /* Lojong_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lojong_TestUITests.swift; sourceTree = "<group>"; };
 		384E54BC24198A5D00C3EE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38602D552420405400E6EDB3 /* Asap-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Bold.ttf"; sourceTree = "<group>"; };
 		386D3F66241C443B00F70F8F /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 		386D3F68241C471E00F70F8F /* LojongCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojongCustomView.swift; sourceTree = "<group>"; };
 		38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
@@ -185,6 +186,7 @@
 				384E54A124198A5C00C3EE88 /* Assets.xcassets */,
 				384E549E24198A5B00C3EE88 /* Main.storyboard */,
 				384E54A324198A5C00C3EE88 /* LaunchScreen.storyboard */,
+				38602D542420403A00E6EDB3 /* Fonts */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +205,14 @@
 				384E549A24198A5B00C3EE88 /* SceneDelegate.swift */,
 			);
 			path = Default;
+			sourceTree = "<group>";
+		};
+		38602D542420403A00E6EDB3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				38602D552420405400E6EDB3 /* Asap-Bold.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		386D3F65241C43DB00F70F8F /* Extensions */ = {
