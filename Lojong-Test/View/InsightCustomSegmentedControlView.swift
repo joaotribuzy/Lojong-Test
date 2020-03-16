@@ -76,12 +76,12 @@ class InsightCustomSegmentedControlView: UIView, LojongCustomView {
             let buttonTitles = commaSeparatedButtonTitles.components(separatedBy: ",")
             
             for buttonTitle in buttonTitles{
-                let button = UIButton(type: .system)
-                button.setTitle(buttonTitle, for: .normal)
-                button.titleLabel?.font = UIFont(name: "Asap-Bold", size: 15)
-                button.setTitleColor(unselectedColor, for: .normal)
-                button.addTarget(self, action: #selector(buttonTapped(button:)), for: .touchUpInside)
-                titleButtons.append(button)
+               let button = UIButton(type: .system)
+               button.setTitle(buttonTitle, for: .normal)
+               button.titleLabel?.font = UIFont(name: "Asap-Bold", size: 15)
+               button.setTitleColor(unselectedColor, for: .normal)
+               button.addTarget(self, action: #selector(buttonTapped(button:)), for: .touchUpInside)
+               titleButtons.append(button)
             }
             
             
