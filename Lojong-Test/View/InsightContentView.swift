@@ -1,5 +1,5 @@
 //
-//  InsightView.swift
+//  ContentView.swift
 //  Lojong-Test
 //
 //  Created by João Tribuzy on 15/03/20.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class InsightView: UIView, LojongCustomView {
+class InsightContentView: UIView, LojongCustomView {
     
     // MARK: - View Lifecycle
     override init(frame: CGRect) {
@@ -23,14 +23,12 @@ class InsightView: UIView, LojongCustomView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - Style
+    // MARK: - Visual
     func style() {
-        self.backgroundColor = .green
+        self.backgroundColor = .white
     }
     
     func autolayout() {
-        self.layoutMargins = .zero
+        
     }
-    
-    
 }

@@ -8,12 +8,12 @@
 
 import UIKit
 
-class InsightViewController: UIViewController {
+class InsightMainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view = InsightView()
+        self.view = InsightMainView()
     }
     
 
