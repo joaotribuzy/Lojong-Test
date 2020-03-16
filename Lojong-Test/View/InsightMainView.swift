@@ -41,9 +41,9 @@ class InsightMainView: UIView, LojongCustomView {
         
         let customSegmentedControlConstrainsts = [
             customSegmentedControl.view.heightAnchor.constraint(equalToConstant: 45),
+            customSegmentedControl.view.widthAnchor.constraint(equalToConstant: 360),
             customSegmentedControl.view.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 12),
-            customSegmentedControl.view.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor, constant: -8),
-            customSegmentedControl.view.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor, constant: 8),
+            customSegmentedControl.view.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
         ]
         
         NSLayoutConstraint.activate(customSegmentedControlConstrainsts)
@@ -56,7 +56,7 @@ class InsightMainView: UIView, LojongCustomView {
             contentView.view.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0),
             contentView.view.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0),
             contentView.view.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 65),
-            contentView.view.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0)
+            contentView.view.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0),
         ]
         
         NSLayoutConstraint.activate(contentViewConstraints)
