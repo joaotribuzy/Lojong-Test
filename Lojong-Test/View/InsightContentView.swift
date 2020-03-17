@@ -26,6 +26,8 @@ class InsightContentView: UIView, LojongCustomView {
     }
     
     // MARK: - Visual
+    let insightContentTableView = InsightVideoTableViewController(style: .plain)
+    
     func style() {
         self.backgroundColor = .white
         
@@ -35,8 +37,16 @@ class InsightContentView: UIView, LojongCustomView {
     }
     
     func autolayout() {
+        // contentView
         self.translatesAutoresizingMaskIntoConstraints = false
         
+        // insightContentTableView
+        addSubview(insightContentTableView.view)
+        insightContentTableView.view.translatesAutoresizingMaskIntoConstraints = false
+        insightContentTableView.view.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        insightContentTableView.view.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        insightContentTableView.view.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        insightContentTableView.view.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
     }
     
     // MARK: - Notifications
