@@ -62,8 +62,6 @@ class InsightMainView: UIView, LojongCustomView {
         NSLayoutConstraint.activate(contentViewConstraints)
         
         
-        
-        
     }
     
     

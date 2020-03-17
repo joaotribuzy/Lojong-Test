@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class InsightCustomSegmentedControlView: UIView, LojongCustomView {
+class InsightCustomSegmentedControlView: UIControl, LojongCustomView {
         
         // MARK: - View Lifecycle
         override init(frame: CGRect) {
@@ -26,7 +26,7 @@ class InsightCustomSegmentedControlView: UIView, LojongCustomView {
         }
         
         // MARK: - Visual
-        
+        ///List of buttons in SegmentedControl
         let commaSeparatedButtonTitles: String = "\(NSLocalizedString(" VÍDEOS", comment: "")),\(NSLocalizedString("ARTIGOS", comment: "")),\(NSLocalizedString("CITAÇÕES ", comment: ""))"
         
         var titleButtons: [UIButton] = [UIButton]()
@@ -36,21 +36,24 @@ class InsightCustomSegmentedControlView: UIView, LojongCustomView {
         let unselectedColor: UIColor = .white
         
         func style() {
+            // Segmented Control
             self.backgroundColor = UIColor.init(red: 199, green: 128, blue: 128)
+            self.layer.borderColor = UIColor.init(red: 199, green: 128, blue: 128).cgColor
+            self.layer.borderWidth = 4.0
             
             self.clipsToBounds = true
             self.layer.cornerRadius = 22.5
             
-            self.layer.borderColor = UIColor.init(red: 199, green: 128, blue: 128).cgColor
-            self.layer.borderWidth = 4.0
-        
             // Segmented Control Selector
             titleButtons[0].setTitleColor(selectedColor, for: .normal)
+            
             let selectorWidht: CGFloat = 360 / CGFloat(titleButtons.count)
             let selectorHeight: CGFloat = 37
             segmentedControlSelector = UIView(frame: CGRect(x: 0, y: 4, width: selectorWidht, height: selectorHeight))
+            
             segmentedControlSelector.backgroundColor = .white
             segmentedControlSelector.layer.cornerRadius = selectorHeight / 2
+            
             addSubview(segmentedControlSelector)
         
         }
@@ -84,8 +87,6 @@ class InsightCustomSegmentedControlView: UIView, LojongCustomView {
                titleButtons.append(button)
             }
             
-            
-            
             setupStackView()
             
         }
@@ -101,6 +102,17 @@ class InsightCustomSegmentedControlView: UIView, LojongCustomView {
                         self.segmentedControlSelector.frame.origin.x = selectedStartPosition
                     }
                     tappedButton.setTitleColor(selectedColor, for: .normal)
+                    
+                    switch buttonIndex {
+                    case 0:
+                        NotificationCenter.default.post(name: .LojongChangeToVideoViewController, object: nil)
+                    case 1:
+                        NotificationCenter.default.post(name: .LojongChangeToArticlesViewController, object: nil)
+                    case 2:
+                        NotificationCenter.default.post(name: .LojongChangeToQuotesViewController, object: nil)
+                    default:
+                        break
+                    }
                 }
 
             }

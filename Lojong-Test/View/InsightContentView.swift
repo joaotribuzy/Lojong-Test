@@ -17,6 +17,8 @@ class InsightContentView: UIView, LojongCustomView {
         
         self.style()
         self.autolayout()
+        
+        self.setupNotification()
     }
     
     required init?(coder: NSCoder) {
@@ -35,5 +37,28 @@ class InsightContentView: UIView, LojongCustomView {
     func autolayout() {
         self.translatesAutoresizingMaskIntoConstraints = false
         
+    }
+    
+    // MARK: - Notifications
+    private func setupNotification(){
+        NotificationCenter.default.addObserver(self, selector: #selector(changeToVideoViewController), name: .LojongChangeToVideoViewController, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(changeToArticlesViewController), name: .LojongChangeToArticlesViewController, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(changeToQuotesViewController), name: .LojongChangeToQuotesViewController, object: nil)
+    }
+    
+    // MARK: - ContentView Segmented Control Changes
+    @objc
+    private func changeToVideoViewController() {
+        self.backgroundColor = .blue
+    }
+    
+    @objc
+    private func changeToArticlesViewController() {
+        self.backgroundColor = .green
+    }
+    
+    @objc
+    private func changeToQuotesViewController() {
+        self.backgroundColor = .cyan
     }
 }
