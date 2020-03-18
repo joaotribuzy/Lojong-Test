@@ -8,6 +8,8 @@
 
 import UIKit
 
+public var tabBarHeigh: CGFloat = 0
+
 class MainTabBarViewController: UITabBarController{
     
     let fundamentViewController = UIViewController()
@@ -21,6 +23,7 @@ class MainTabBarViewController: UITabBarController{
         self.style()
         self.autolayout()
     
+        tabBarHeigh = self.tabBar.frame.height
     }
     
     //MARK: - Tabs Configuration

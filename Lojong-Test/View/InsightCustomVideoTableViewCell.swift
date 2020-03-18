@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Stevia
 
 class InsightCustomVideoTableViewCell: UITableViewCell {
     
@@ -15,8 +16,9 @@ class InsightCustomVideoTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        self.style()
         self.autolayout()
+        self.style()
+        
     }
     
     required init?(coder: NSCoder) {
@@ -28,56 +30,66 @@ class InsightCustomVideoTableViewCell: UITableViewCell {
     public var videoPreviewImage = UIImageView()
     public var descriptionLabel = UILabel()
     public var shareButton = UIButton()
+    
+    public var shareLabel = UILabel()
+    public var shareIcon = UIImageView()
 }
 
 // MARK: - Visual
 extension InsightCustomVideoTableViewCell: LojongCustomView {
     func style() {
-        // titleLabel
-        self.titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width - 20, height: .greatestFiniteMagnitude))
-        self.titleLabel.numberOfLines = 1
-        // descriptionLabel
-        self.descriptionLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width - 120, height: .greatestFiniteMagnitude))
-        self.descriptionLabel.numberOfLines = 3
-        self.descriptionLabel.lineBreakMode = .byWordWrapping
-        self.descriptionLabel.font = UIFont(name: "Asap-Bold", size: 12)
-        self.descriptionLabel.text = "alkdlaksdj"
+        self.contentView.right(0).left(0).top(0).bottom(0)
         
+        // titleLabel
+        self.titleLabel.numberOfLines = 0
+        self.titleLabel.font = UIFont(name: "Asap-Bold", size: 18)
+        self.titleLabel.textColor = UIColor.init(red: 128, green: 132, blue: 143)
+        
+        
+        // videoPreviewImage
+        self.videoPreviewImage.backgroundColor = .green
+        self.videoPreviewImage.layer.cornerRadius = 5
+        
+        // descriptionLabel
+        self.descriptionLabel.numberOfLines = 0
+        self.descriptionLabel.lineBreakMode = .byWordWrapping
+        self.descriptionLabel.font = UIFont(name: "Asap-Regular", size: 18)
+        self.descriptionLabel.textColor = UIColor.init(red: 128, green: 132, blue: 143)
+        self.descriptionLabel.textAlignment = .center
+        self.descriptionLabel.text = "$get small article text description from api. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis felis neque."
+        
+        // shareButton
+        self.shareButton.backgroundColor = UIColor.init(red: 236, green: 236, blue: 236)
+        self.shareButton.layer.cornerRadius = 15
+        self.shareLabel.text = NSLocalizedString("Compartilhar", comment: "")
+        self.shareLabel.font = UIFont(name: "Asap-Bold", size: 15)
+        self.shareLabel.textColor = UIColor.init(red: 128, green: 132, blue: 143)
+        self.shareIcon.image = UIImage(named: "share")
     }
     
     func autolayout() {
-        self.translatesAutoresizingMaskIntoConstraints = false
+        self.contentView.sv(titleLabel,
+                            videoPreviewImage,
+                            descriptionLabel,
+                            shareButton.sv(shareIcon,
+                                           shareLabel))
+        self.contentView.top(0.0).left(0.0).right(0.0).bottom(0.0)
         
-        //        // titleLabel
-        //        self.titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        //        self.addSubview(titleLabel)
-        //        self.titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
-        //        self.titleLabel.centerXAnchor.constraint(equalTo: safeArea.centerXAnchor).isActive = true
-        //
-        //        // videoPreviewImage
-        //        self.videoPreviewImage.translatesAutoresizingMaskIntoConstraints = false
-        //        self.addSubview(videoPreviewImage)
-        //        self.videoPreviewImage.topAnchor.constraint(equalTo: self.titleLabel.bottomAnchor, constant: 10).isActive = true
-        //        self.videoPreviewImage.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        //
-        //        // descriptionLabel
-        //        self.descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
-        //        self.addSubview(descriptionLabel)
-        //        self.descriptionLabel.topAnchor.constraint(equalTo: self.videoPreviewImage.bottomAnchor, constant: 10).isActive = true
-        //        self.descriptionLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        //
-        //        // shareButton
-        //        self.shareButton.translatesAutoresizingMaskIntoConstraints = false
-        //        self.addSubview(shareButton)
-        //        self.shareButton.topAnchor.constraint(equalToSystemSpacingBelow: descriptionLabel.bottomAnchor, multiplier: 10).isActive = true
-        //        self.shareButton.bottomAnchor.constraint(equalToSystemSpacingBelow: self.bottomAnchor, multiplier: 10).isActive = true
-        //        self.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        //
+        self.contentView.layout(10,
+                                titleLabel.centerHorizontally(),
+                                10,
+                                videoPreviewImage.left(47).right(47).centerHorizontally(),
+                                10,
+                                descriptionLabel.height(100).left(40).right(40),
+                                10,
+                                shareButton.height(30).centerHorizontally(),
+                                10)
         
+        videoPreviewImage.Height == 56.25 % videoPreviewImage.Width
         
+        self.shareLabel.centerVertically()
         
-        var allConstraints: [NSLayoutConstraint] = []
-        allConstraints += NSLayoutConstraint.constraints(withVisualFormat: "V:|", options: <#T##NSLayoutConstraint.FormatOptions#>, metrics: <#T##[String : Any]?#>, views: <#T##[String : Any]#>)
+        self.shareButton.layout(|-15-shareIcon.width(12).height(14)-shareLabel-15-|)
         
     }
 }

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FCC1C4D630A6FA6D5C177C5 /* Pods_Lojong_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11697A45972DA282EB210F69 /* Pods_Lojong_Test.framework */; };
 		380E2FFB241EF15E00C41681 /* InsightMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E2FFA241EF15E00C41681 /* InsightMainView.swift */; };
 		380E2FFF241EF9ED00C41681 /* InsightMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E2FFE241EF9ED00C41681 /* InsightMainViewController.swift */; };
 		380E3003241F0E5500C41681 /* InsightContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E3002241F0E5500C41681 /* InsightContentView.swift */; };
@@ -29,6 +30,9 @@
 		386D3F67241C443B00F70F8F /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386D3F66241C443B00F70F8F /* Extension+UIColor.swift */; };
 		386D3F69241C471E00F70F8F /* LojongCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386D3F68241C471E00F70F8F /* LojongCustomView.swift */; };
 		38D527C6241EEB23007D1FB3 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */; };
+		38D714DD24226EF00023426C /* Asap-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38D714DC24226EF00023426C /* Asap-Regular.ttf */; };
+		55274B0DC7CBF3C07F02D0B6 /* Pods_Lojong_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C9DFB2F569377C3786E8E6 /* Pods_Lojong_TestTests.framework */; };
+		816DE5ECB6D5AEF77ED4C7D5 /* Pods_Lojong_Test_Lojong_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CF51D861F1A700986FAD6A /* Pods_Lojong_Test_Lojong_TestUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11697A45972DA282EB210F69 /* Pods_Lojong_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lojong_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34447C3728BBB4083A6CBA04 /* Pods-Lojong-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-Test.release.xcconfig"; path = "Target Support Files/Pods-Lojong-Test/Pods-Lojong-Test.release.xcconfig"; sourceTree = "<group>"; };
 		380E2FFA241EF15E00C41681 /* InsightMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightMainView.swift; sourceTree = "<group>"; };
 		380E2FFE241EF9ED00C41681 /* InsightMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightMainViewController.swift; sourceTree = "<group>"; };
 		380E3002241F0E5500C41681 /* InsightContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +83,14 @@
 		386D3F66241C443B00F70F8F /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 		386D3F68241C471E00F70F8F /* LojongCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojongCustomView.swift; sourceTree = "<group>"; };
 		38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		38D714DC24226EF00023426C /* Asap-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Regular.ttf"; sourceTree = "<group>"; };
+		504BC626E24237D5521D8E68 /* Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-Lojong-Test-Lojong-TestUITests/Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		53C9DFB2F569377C3786E8E6 /* Pods_Lojong_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lojong_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		588D6D3EAA069C349E0FC8BA /* Pods-Lojong-TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-TestTests.debug.xcconfig"; path = "Target Support Files/Pods-Lojong-TestTests/Pods-Lojong-TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DB1CB5AA16EFC0EA95DCC2C /* Pods-Lojong-TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-TestTests.release.xcconfig"; path = "Target Support Files/Pods-Lojong-TestTests/Pods-Lojong-TestTests.release.xcconfig"; sourceTree = "<group>"; };
+		80CF51D861F1A700986FAD6A /* Pods_Lojong_Test_Lojong_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lojong_Test_Lojong_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26D8FDED87CD670C6D15267 /* Pods-Lojong-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-Test.debug.xcconfig"; path = "Target Support Files/Pods-Lojong-Test/Pods-Lojong-Test.debug.xcconfig"; sourceTree = "<group>"; };
+		F634F313E3D99D0DA18BCFBE /* Pods-Lojong-Test-Lojong-TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-Test-Lojong-TestUITests.release.xcconfig"; path = "Target Support Files/Pods-Lojong-Test-Lojong-TestUITests/Pods-Lojong-Test-Lojong-TestUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FCC1C4D630A6FA6D5C177C5 /* Pods_Lojong_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55274B0DC7CBF3C07F02D0B6 /* Pods_Lojong_TestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +114,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				816DE5ECB6D5AEF77ED4C7D5 /* Pods_Lojong_Test_Lojong_TestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0822897A08CB04B67566690E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E26D8FDED87CD670C6D15267 /* Pods-Lojong-Test.debug.xcconfig */,
+				34447C3728BBB4083A6CBA04 /* Pods-Lojong-Test.release.xcconfig */,
+				504BC626E24237D5521D8E68 /* Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig */,
+				F634F313E3D99D0DA18BCFBE /* Pods-Lojong-Test-Lojong-TestUITests.release.xcconfig */,
+				588D6D3EAA069C349E0FC8BA /* Pods-Lojong-TestTests.debug.xcconfig */,
+				5DB1CB5AA16EFC0EA95DCC2C /* Pods-Lojong-TestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		380E2FF8241EF12F00C41681 /* InsightViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +164,8 @@
 				384E54AE24198A5D00C3EE88 /* Lojong-TestTests */,
 				384E54B924198A5D00C3EE88 /* Lojong-TestUITests */,
 				384E549624198A5B00C3EE88 /* Products */,
+				0822897A08CB04B67566690E /* Pods */,
+				5FD6C6D847DA09894D77754E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				38602D562420448C00E6EDB3 /* Asap-Bold.ttf */,
+				38D714DC24226EF00023426C /* Asap-Regular.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -258,6 +291,16 @@
 			path = MainTabBarViewController;
 			sourceTree = "<group>";
 		};
+		5FD6C6D847DA09894D77754E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11697A45972DA282EB210F69 /* Pods_Lojong_Test.framework */,
+				80CF51D861F1A700986FAD6A /* Pods_Lojong_Test_Lojong_TestUITests.framework */,
+				53C9DFB2F569377C3786E8E6 /* Pods_Lojong_TestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,9 +308,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 384E54BF24198A5D00C3EE88 /* Build configuration list for PBXNativeTarget "Lojong-Test" */;
 			buildPhases = (
+				4EAC028AC6758C1896E974B2 /* [CP] Check Pods Manifest.lock */,
 				384E549124198A5B00C3EE88 /* Sources */,
 				384E549224198A5B00C3EE88 /* Frameworks */,
 				384E549324198A5B00C3EE88 /* Resources */,
+				74C148CD5BDF53DC2343438B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,6 +327,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 384E54C224198A5D00C3EE88 /* Build configuration list for PBXNativeTarget "Lojong-TestTests" */;
 			buildPhases = (
+				C9258A12EDF442698F1317DB /* [CP] Check Pods Manifest.lock */,
 				384E54A724198A5D00C3EE88 /* Sources */,
 				384E54A824198A5D00C3EE88 /* Frameworks */,
 				384E54A924198A5D00C3EE88 /* Resources */,
@@ -300,9 +346,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 384E54C524198A5D00C3EE88 /* Build configuration list for PBXNativeTarget "Lojong-TestUITests" */;
 			buildPhases = (
+				83C90601EF822FA06DBA01E5 /* [CP] Check Pods Manifest.lock */,
 				384E54B224198A5D00C3EE88 /* Sources */,
 				384E54B324198A5D00C3EE88 /* Frameworks */,
 				384E54B424198A5D00C3EE88 /* Resources */,
+				507AC9E4F4B9D15255A39B4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -362,6 +410,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D714DD24226EF00023426C /* Asap-Regular.ttf in Resources */,
 				38602D572420448C00E6EDB3 /* Asap-Bold.ttf in Resources */,
 				384E54A524198A5C00C3EE88 /* LaunchScreen.storyboard in Resources */,
 				384E54A224198A5C00C3EE88 /* Assets.xcassets in Resources */,
@@ -384,6 +433,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EAC028AC6758C1896E974B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lojong-Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		507AC9E4F4B9D15255A39B4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lojong-Test-Lojong-TestUITests/Pods-Lojong-Test-Lojong-TestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lojong-Test-Lojong-TestUITests/Pods-Lojong-Test-Lojong-TestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lojong-Test-Lojong-TestUITests/Pods-Lojong-Test-Lojong-TestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74C148CD5BDF53DC2343438B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lojong-Test/Pods-Lojong-Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lojong-Test/Pods-Lojong-Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lojong-Test/Pods-Lojong-Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83C90601EF822FA06DBA01E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lojong-Test-Lojong-TestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9258A12EDF442698F1317DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lojong-TestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		384E549124198A5B00C3EE88 /* Sources */ = {
@@ -576,6 +728,7 @@
 		};
 		384E54C024198A5D00C3EE88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E26D8FDED87CD670C6D15267 /* Pods-Lojong-Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -594,6 +747,7 @@
 		};
 		384E54C124198A5D00C3EE88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34447C3728BBB4083A6CBA04 /* Pods-Lojong-Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -612,6 +766,7 @@
 		};
 		384E54C324198A5D00C3EE88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 588D6D3EAA069C349E0FC8BA /* Pods-Lojong-TestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -634,6 +789,7 @@
 		};
 		384E54C424198A5D00C3EE88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DB1CB5AA16EFC0EA95DCC2C /* Pods-Lojong-TestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -656,6 +812,7 @@
 		};
 		384E54C624198A5D00C3EE88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504BC626E24237D5521D8E68 /* Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -676,6 +833,7 @@
 		};
 		384E54C724198A5D00C3EE88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F634F313E3D99D0DA18BCFBE /* Pods-Lojong-Test-Lojong-TestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

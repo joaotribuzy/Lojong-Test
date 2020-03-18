@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Stevia
 
 class InsightContentView: UIView, LojongCustomView {
     
@@ -46,7 +47,10 @@ class InsightContentView: UIView, LojongCustomView {
         insightContentTableView.view.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         insightContentTableView.view.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         insightContentTableView.view.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-        insightContentTableView.view.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        insightContentTableView.view.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor).isActive = true
+        
+        insightContentTableView.tableView.contentInset.bottom = tabBarHeigh
+    
     }
     
     // MARK: - Notifications

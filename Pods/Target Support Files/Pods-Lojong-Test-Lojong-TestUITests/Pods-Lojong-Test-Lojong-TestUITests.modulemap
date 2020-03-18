@@ -1,0 +1,6 @@
+framework module Pods_Lojong_Test_Lojong_TestUITests {
+  umbrella header "Pods-Lojong-Test-Lojong-TestUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

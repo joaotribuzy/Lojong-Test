@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Stevia
 
 class InsightVideoTableView: UITableView{
     
@@ -34,11 +35,6 @@ extension InsightVideoTableView: LojongCustomView {
     func autolayout() {
         self.translatesAutoresizingMaskIntoConstraints = false
         
-        let safeArea = self.layoutMarginsGuide
-        
-        self.topAnchor.constraint(equalTo: safeArea.topAnchor).isActive = true
-        self.rightAnchor.constraint(equalTo: safeArea.rightAnchor).isActive = true
-        self.leftAnchor.constraint(equalTo: safeArea.leftAnchor).isActive = true
-        self.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor).isActive = true
+        self.top(0.0).left(0.0).right(0.0).bottom(100)
     }
 }
