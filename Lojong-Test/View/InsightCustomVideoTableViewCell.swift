@@ -30,6 +30,7 @@ class InsightCustomVideoTableViewCell: UITableViewCell {
     public var videoPreviewImage = UIImageView()
     public var descriptionLabel = UILabel()
     public var shareButton = UIButton()
+    public var separatorLine = UIView()
     
     public var shareLabel = UILabel()
     public var shareIcon = UIImageView()
@@ -38,7 +39,8 @@ class InsightCustomVideoTableViewCell: UITableViewCell {
 // MARK: - Visual
 extension InsightCustomVideoTableViewCell: LojongCustomView {
     func style() {
-        self.contentView.right(0).left(0).top(0).bottom(0)
+        // cellContentView
+        self.backgroundColor = .white
         
         // titleLabel
         self.titleLabel.numberOfLines = 0
@@ -65,15 +67,20 @@ extension InsightCustomVideoTableViewCell: LojongCustomView {
         self.shareLabel.font = UIFont(name: "Asap-Bold", size: 15)
         self.shareLabel.textColor = UIColor.init(red: 128, green: 132, blue: 143)
         self.shareIcon.image = UIImage(named: "share")
+        
+        // separatorLine
+        self.separatorLine.backgroundColor = UIColor.init(red: 236, green: 236, blue: 236)
     }
     
     func autolayout() {
+        self.contentView.top(0.0).left(0.0).right(0.0).bottom(0.0)
         self.contentView.sv(titleLabel,
                             videoPreviewImage,
                             descriptionLabel,
                             shareButton.sv(shareIcon,
-                                           shareLabel))
-        self.contentView.top(0.0).left(0.0).right(0.0).bottom(0.0)
+                                           shareLabel),
+                            separatorLine)
+        
         
         self.contentView.layout(10,
                                 titleLabel.centerHorizontally(),
@@ -83,7 +90,8 @@ extension InsightCustomVideoTableViewCell: LojongCustomView {
                                 descriptionLabel.height(100).left(40).right(40),
                                 10,
                                 shareButton.height(30).centerHorizontally(),
-                                10)
+                                10,
+                                separatorLine.right(10).left(10).height(1).bottom(0))
         
         videoPreviewImage.Height == 56.25 % videoPreviewImage.Width
         

@@ -30,6 +30,8 @@ extension InsightVideoTableView: LojongCustomView {
     // MARK: - Visual
     func style() {
         self.backgroundColor = .clear
+        
+        self.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
     
     func autolayout() {
