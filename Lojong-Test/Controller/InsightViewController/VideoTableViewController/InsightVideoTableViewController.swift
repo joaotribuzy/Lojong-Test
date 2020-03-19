@@ -11,9 +11,7 @@ import UIKit
 
 class InsightVideoTableViewController: UITableViewController {
     
-    var model: LojongVideoDataController = {
-        return LojongVideoDataController.shared
-    }()
+    let characters = ["Zelda","Link","Ganon"]
     
     // MARK: - TableViewController Lifecycle
     override init(style: UITableView.Style) {
@@ -21,12 +19,7 @@ class InsightVideoTableViewController: UITableViewController {
         
         self.tableView = InsightVideoTableView(frame: .zero, style: style)
         
-        self.setupNotification()
-        
         self.setupTableView()
-        
-        self.model.downloadVideo()
-        
     }
     
     required init?(coder: NSCoder) {
@@ -41,25 +34,12 @@ extension InsightVideoTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.insightVideos.count
+        return characters.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "videoCell", for: indexPath) as! InsightCustomVideoTableViewCell
-        cell.titleLabel.text = "EP. \(model.insightVideos[indexPath.row].order): \(String(model.insightVideos[indexPath.row].name).uppercased())"
-        cell.descriptionLabel.text = "\(model.insightVideos[indexPath.row].description)"
+        cell.titleLabel.text = characters[indexPath.row]
         return cell
-    }
-}
-
-// MARK: - Notifications
-extension InsightVideoTableViewController{
-    func setupNotification(){
-        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableViewData), name: .LojongDataVideosDownloaded, object: nil)
-    }
-    
-    @objc
-    func reloadTableViewData(){
-        self.tableView.reloadData()
     }
 }

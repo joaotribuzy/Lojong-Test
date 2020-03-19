@@ -24,6 +24,7 @@ class MainTabBarViewController: UITabBarController{
         self.autolayout()
     
         tabBarHeigh = self.tabBar.frame.height
+        
     }
     
     //MARK: - Tabs Configuration
