@@ -34,6 +34,7 @@
 		38D714E92423CA4D0023426C /* InsightVideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714E82423CA4D0023426C /* InsightVideoTableViewController.swift */; };
 		38D714EB2423CAEA0023426C /* InsightVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714EA2423CAEA0023426C /* InsightVideoModel.swift */; };
 		38D714EF2423D2890023426C /* LojongDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714EE2423D2890023426C /* LojongDataController.swift */; };
+		38F6AED72423E8BC00B35D95 /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F6AED62423E8BC00B35D95 /* Extension+UIImageView.swift */; };
 		55274B0DC7CBF3C07F02D0B6 /* Pods_Lojong_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C9DFB2F569377C3786E8E6 /* Pods_Lojong_TestTests.framework */; };
 		816DE5ECB6D5AEF77ED4C7D5 /* Pods_Lojong_Test_Lojong_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CF51D861F1A700986FAD6A /* Pods_Lojong_Test_Lojong_TestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,7 @@
 		38D714E82423CA4D0023426C /* InsightVideoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightVideoTableViewController.swift; sourceTree = "<group>"; };
 		38D714EA2423CAEA0023426C /* InsightVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsightVideoModel.swift; path = "Lojong-Test/Controller/InsightViewController/InsightVideoModel.swift"; sourceTree = SOURCE_ROOT; };
 		38D714EE2423D2890023426C /* LojongDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LojongDataController.swift; path = "Lojong-Test/Controller/InsightViewController/LojongDataController.swift"; sourceTree = SOURCE_ROOT; };
+		38F6AED62423E8BC00B35D95 /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
 		504BC626E24237D5521D8E68 /* Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-Lojong-Test-Lojong-TestUITests/Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		53C9DFB2F569377C3786E8E6 /* Pods_Lojong_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lojong_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		588D6D3EAA069C349E0FC8BA /* Pods-Lojong-TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-TestTests.debug.xcconfig"; path = "Target Support Files/Pods-Lojong-TestTests/Pods-Lojong-TestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 			children = (
 				386D3F66241C443B00F70F8F /* Extension+UIColor.swift */,
 				38602D5824205C1A00E6EDB3 /* Extension+NSNotification.swift */,
+				38F6AED62423E8BC00B35D95 /* Extension+UIImageView.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 			files = (
 				38D714EB2423CAEA0023426C /* InsightVideoModel.swift in Sources */,
 				380E3007241FC11B00C41681 /* InsightContentViewController.swift in Sources */,
+				38F6AED72423E8BC00B35D95 /* Extension+UIImageView.swift in Sources */,
 				384E549D24198A5B00C3EE88 /* MainTabBarViewController.swift in Sources */,
 				38D527C6241EEB23007D1FB3 /* MainTabBarView.swift in Sources */,
 				38602D5924205C1A00E6EDB3 /* Extension+NSNotification.swift in Sources */,

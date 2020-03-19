@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class LojongVideoDataController {
     public static let shared = LojongVideoDataController()
@@ -34,8 +35,11 @@ class LojongVideoDataController {
                 do{
                     let video = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [NSDictionary]
                     
+                    
+                    
                     for cachedVideo in video{
-                        let insightVideo: InsightVideo = InsightVideo.init(id: cachedVideo.value(forKey: "id") as! Int,
+                        
+                        let insightContentVideo: InsightVideo = InsightVideo.init(id: cachedVideo.value(forKey: "id") as! Int,
                                                                            name: cachedVideo.value(forKey: "name") as? String ?? "Bla",
                                                                            description: cachedVideo.value(forKey: "description") as? String ?? "Bla",
                                                                            file: cachedVideo.value(forKey: "file") as? String ?? "",
@@ -47,16 +51,26 @@ class LojongVideoDataController {
                                                                            premium: cachedVideo.value(forKey: "premium") as! Int,
                                                                            order: cachedVideo.value(forKey: "order") as! Int)
                         
-                        self.insightVideos.append(insightVideo)
+                        self.insightVideos.append(insightContentVideo)
+                        
+                        DispatchQueue.main.async {
+                            NotificationCenter.default.post(name: .LojongDataVideosDownloaded, object: nil)
+                        }
+                        
                     }
-                    
-                    DispatchQueue.main.async {
-                        NotificationCenter.default.post(name: .LojongDataVideosDownloaded, object: nil)
-                    }
-                    
                 } catch {
                     print(error)
                 }
             }.resume()
         }
+    
+    
+    func downloadJSONImage(url: URL) -> UIImage?{
+        var image = UIImage()
+        DispatchQueue.main.async{
+            let data = try? Data(contentsOf: url)
+            image = UIImage(data: data!) ?? UIImage()
+        }
+        return image
+    }
 }

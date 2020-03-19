@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
 
 class InsightVideo: Codable {
     var id: Int
@@ -34,4 +36,5 @@ class InsightVideo: Codable {
         self.premium = premium
         self.order = order
     }
+    
 }

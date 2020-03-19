@@ -26,6 +26,7 @@ class InsightVideoTableViewController: UITableViewController {
         self.setupTableView()
         
         self.model.downloadVideo()
+
         
     }
     
@@ -46,9 +47,24 @@ extension InsightVideoTableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "videoCell", for: indexPath) as! InsightCustomVideoTableViewCell
-        cell.titleLabel.text = "EP. \(model.insightVideos[indexPath.row].order): \(String(model.insightVideos[indexPath.row].name).uppercased())"
+        cell.titleLabel.text = "EP. \(String(describing: model.insightVideos[indexPath.row].order)): \(String(describing: model.insightVideos[indexPath.row].name.uppercased()))"
+        let auxiliarImageView: UIImageView = UIImageView()
+        
+        auxiliarImageView.downloadJSONImage(url: URL(string: self.model.insightVideos[indexPath.row].image_url)!)
+        
+        if cell.videoPreviewImage.image == nil{
+            cell.videoPreviewImage.downloadJSONImage(url: URL(string: self.model.insightVideos[indexPath.row].image_url)!)
+        }else if auxiliarImageView.image != cell.videoPreviewImage.image{
+            cell.videoPreviewImage.downloadJSONImage(url: URL(string: self.model.insightVideos[indexPath.row].image_url)!)
+        }
+        
+        print(cell.videoPreviewImage)
         cell.descriptionLabel.text = "\(model.insightVideos[indexPath.row].description)"
+        
+        
         return cell
+        
+        
     }
 }
 
@@ -63,3 +79,4 @@ extension InsightVideoTableViewController{
         self.tableView.reloadData()
     }
 }
+

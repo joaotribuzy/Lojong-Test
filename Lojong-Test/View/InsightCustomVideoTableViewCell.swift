@@ -49,7 +49,7 @@ extension InsightCustomVideoTableViewCell: LojongCustomView {
         
         
         // videoPreviewImage
-        self.videoPreviewImage.backgroundColor = .green
+        self.videoPreviewImage.backgroundColor = .gray
         self.videoPreviewImage.layer.cornerRadius = 5
         
         // descriptionLabel
