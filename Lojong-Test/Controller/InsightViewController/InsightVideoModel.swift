@@ -9,6 +9,15 @@
 import Foundation
 import UIKit
 
+class Video{
+    var imageView: UIImageView = UIImageView()
+    var content: InsightVideo
+    
+    init(content: InsightVideo) {
+        self.imageView.downloadJSONImage(url: URL(string: content.image_url)!)
+        self.content = content
+    }
+}
 
 class InsightVideo: Codable {
     var id: Int

@@ -47,19 +47,21 @@ extension InsightVideoTableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "videoCell", for: indexPath) as! InsightCustomVideoTableViewCell
-        cell.titleLabel.text = "EP. \(String(describing: model.insightVideos[indexPath.row].order)): \(String(describing: model.insightVideos[indexPath.row].name.uppercased()))"
-        let auxiliarImageView: UIImageView = UIImageView()
+        cell.titleLabel.text = "EP. \(String(describing: model.insightVideos[indexPath.row].content.order)): \(String(describing: model.insightVideos[indexPath.row].content.name.uppercased()))"
         
-        auxiliarImageView.downloadJSONImage(url: URL(string: self.model.insightVideos[indexPath.row].image_url)!)
+        cell.videoPreviewImage.image = model.insightVideos[indexPath.row].imageView.image
+//        let auxiliarImageView: UIImageView = UIImageView()
         
-        if cell.videoPreviewImage.image == nil{
-            cell.videoPreviewImage.downloadJSONImage(url: URL(string: self.model.insightVideos[indexPath.row].image_url)!)
-        }else if auxiliarImageView.image != cell.videoPreviewImage.image{
-            cell.videoPreviewImage.downloadJSONImage(url: URL(string: self.model.insightVideos[indexPath.row].image_url)!)
-        }
+//        auxiliarImageView.downloadJSONImage(url: URL(string: self.model.insightVideos[indexPath.row].image_url)!)
+//
+//        if cell.videoPreviewImage.image == nil{
+//            cell.videoPreviewImage.downloadJSONImage(url: URL(string: self.model.insightVideos[indexPath.row].image_url)!)
+//        }else if auxiliarImageView.image != cell.videoPreviewImage.image{
+//            cell.videoPreviewImage.downloadJSONImage(url: URL(string: self.model.insightVideos[indexPath.row].image_url)!)
+//        }
         
         print(cell.videoPreviewImage)
-        cell.descriptionLabel.text = "\(model.insightVideos[indexPath.row].description)"
+        cell.descriptionLabel.text = "\(model.insightVideos[indexPath.row].content.description)"
         
         
         return cell
@@ -67,6 +69,8 @@ extension InsightVideoTableViewController {
         
     }
 }
+
+
 
 // MARK: - Notifications
 extension InsightVideoTableViewController{

@@ -12,7 +12,7 @@ import UIKit
 class LojongVideoDataController {
     public static let shared = LojongVideoDataController()
     
-    public var insightVideos: [InsightVideo]
+    public var insightVideos: [Video]
     
     private init() {
         self.insightVideos = []
@@ -51,9 +51,10 @@ class LojongVideoDataController {
                                                                            premium: cachedVideo.value(forKey: "premium") as! Int,
                                                                            order: cachedVideo.value(forKey: "order") as! Int)
                         
-                        self.insightVideos.append(insightContentVideo)
+                        
                         
                         DispatchQueue.main.async {
+                            self.insightVideos.append(Video.init(content: insightContentVideo))
                             NotificationCenter.default.post(name: .LojongDataVideosDownloaded, object: nil)
                         }
                         
