@@ -34,32 +34,19 @@ class InsightMainView: UIView, LojongCustomView {
     
     func autolayout() {
         // Main View
-        self.layoutMargins = .zero
+        self.top(0.0).left(0.0).right(0.0).bottom(0.0)
         
         // Custom Segmented Control
-        self.addSubview(customSegmentedControl.view)
-        
-        let customSegmentedControlConstrainsts = [
-            customSegmentedControl.view.heightAnchor.constraint(equalToConstant: 45),
-            customSegmentedControl.view.widthAnchor.constraint(equalToConstant: 360),
-            customSegmentedControl.view.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 12),
-            customSegmentedControl.view.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
-        ]
-        
-        NSLayoutConstraint.activate(customSegmentedControlConstrainsts)
+        sv(customSegmentedControl.view)
+        customSegmentedControl.view.height(45).width(360).centerHorizontally()
+        customSegmentedControl.view.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 12).isActive = true
         
         
         // ContentView Position
-        self.addSubview(contentView.view)
-        
-        let contentViewConstraints = [
-            contentView.view.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0),
-            contentView.view.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0),
-            contentView.view.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 65),
-            contentView.view.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0),
-        ]
-        
-        NSLayoutConstraint.activate(contentViewConstraints)
+        sv(contentView.view)
+        contentView.view.left(0.0).right(0.0)
+        contentView.view.topAnchor.constraint(equalTo: self.customSegmentedControl.view.bottomAnchor, constant: 12).isActive = true
+        contentView.view.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: 0).isActive = true
         
         
     }

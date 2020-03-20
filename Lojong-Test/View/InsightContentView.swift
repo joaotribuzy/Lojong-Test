@@ -42,37 +42,31 @@ class InsightContentView: UIView, LojongCustomView {
         self.translatesAutoresizingMaskIntoConstraints = false
         
         // insightContentTableView
-        addSubview(insightContentTableView.view)
-        insightContentTableView.view.translatesAutoresizingMaskIntoConstraints = false
-        insightContentTableView.view.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        insightContentTableView.view.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        insightContentTableView.view.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-        insightContentTableView.view.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor).isActive = true
+        sv(insightContentTableView.view)
+        insightContentTableView.view.right(0.0).left(0.0).top(0.0).bottom(0.0)
         
-        insightContentTableView.tableView.contentInset.bottom = tabBarHeigh
-    
     }
     
     // MARK: - Notifications
     private func setupNotification(){
-        NotificationCenter.default.addObserver(self, selector: #selector(changeToVideoViewController), name: .LojongChangeToVideoViewController, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(changeToArticlesViewController), name: .LojongChangeToArticlesViewController, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(changeToQuotesViewController), name: .LojongChangeToQuotesViewController, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(changeToVideoViewControllerNotificationReceived(_:)), name: .LojongChangeToVideoViewController, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(changeToArticlesViewControllerNotificationReceived(_:)), name: .LojongChangeToArticlesViewController, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(changeToQuotesViewControllerNotificationReceived(_:)), name: .LojongChangeToQuotesViewController, object: nil)
     }
     
     // MARK: - ContentView Segmented Control Changes
     @objc
-    private func changeToVideoViewController() {
-        self.backgroundColor = .blue
+    private func changeToVideoViewControllerNotificationReceived(_ notification: Notification) {
+        
     }
     
     @objc
-    private func changeToArticlesViewController() {
-        self.backgroundColor = .green
+    private func changeToArticlesViewControllerNotificationReceived(_ notification: Notification) {
+
     }
     
     @objc
-    private func changeToQuotesViewController() {
-        self.backgroundColor = .cyan
+    private func changeToQuotesViewControllerNotificationReceived(_ notification: Notification) {
+        
     }
 }

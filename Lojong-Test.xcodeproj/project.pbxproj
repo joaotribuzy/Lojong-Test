@@ -22,6 +22,8 @@
 		384E54A524198A5C00C3EE88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384E54A324198A5C00C3EE88 /* LaunchScreen.storyboard */; };
 		384E54B024198A5D00C3EE88 /* Lojong_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E54AF24198A5D00C3EE88 /* Lojong_TestTests.swift */; };
 		384E54BB24198A5D00C3EE88 /* Lojong_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E54BA24198A5D00C3EE88 /* Lojong_TestUITests.swift */; };
+		38529DE724256C88006FDBC0 /* CustomAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38529DE624256C88006FDBC0 /* CustomAVPlayer.swift */; };
+		3859093624252940003D1DDF /* InsightCustomTableViewCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859093524252940003D1DDF /* InsightCustomTableViewCellStyle.swift */; };
 		38602D572420448C00E6EDB3 /* Asap-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38602D562420448C00E6EDB3 /* Asap-Bold.ttf */; };
 		38602D5924205C1A00E6EDB3 /* Extension+NSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38602D5824205C1A00E6EDB3 /* Extension+NSNotification.swift */; };
 		38602D5B242127D600E6EDB3 /* InsightVideoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38602D5A242127D600E6EDB3 /* InsightVideoTableView.swift */; };
@@ -31,10 +33,8 @@
 		386D3F69241C471E00F70F8F /* LojongCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386D3F68241C471E00F70F8F /* LojongCustomView.swift */; };
 		38D527C6241EEB23007D1FB3 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */; };
 		38D714DD24226EF00023426C /* Asap-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38D714DC24226EF00023426C /* Asap-Regular.ttf */; };
-		38D714E92423CA4D0023426C /* InsightVideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714E82423CA4D0023426C /* InsightVideoTableViewController.swift */; };
 		38D714EB2423CAEA0023426C /* InsightVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714EA2423CAEA0023426C /* InsightVideoModel.swift */; };
-		38D714EF2423D2890023426C /* LojongDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714EE2423D2890023426C /* LojongDataController.swift */; };
-		38F6AED72423E8BC00B35D95 /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F6AED62423E8BC00B35D95 /* Extension+UIImageView.swift */; };
+		38D714EF2423D2890023426C /* LojongVideoModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714EE2423D2890023426C /* LojongVideoModelController.swift */; };
 		55274B0DC7CBF3C07F02D0B6 /* Pods_Lojong_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C9DFB2F569377C3786E8E6 /* Pods_Lojong_TestTests.framework */; };
 		816DE5ECB6D5AEF77ED4C7D5 /* Pods_Lojong_Test_Lojong_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CF51D861F1A700986FAD6A /* Pods_Lojong_Test_Lojong_TestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +79,8 @@
 		384E54B624198A5D00C3EE88 /* Lojong-TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lojong-TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		384E54BA24198A5D00C3EE88 /* Lojong_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lojong_TestUITests.swift; sourceTree = "<group>"; };
 		384E54BC24198A5D00C3EE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38529DE624256C88006FDBC0 /* CustomAVPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAVPlayer.swift; sourceTree = "<group>"; };
+		3859093524252940003D1DDF /* InsightCustomTableViewCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCustomTableViewCellStyle.swift; sourceTree = "<group>"; };
 		38602D562420448C00E6EDB3 /* Asap-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Bold.ttf"; sourceTree = "<group>"; };
 		38602D5824205C1A00E6EDB3 /* Extension+NSNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSNotification.swift"; sourceTree = "<group>"; };
 		38602D5A242127D600E6EDB3 /* InsightVideoTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightVideoTableView.swift; sourceTree = "<group>"; };
@@ -88,10 +90,8 @@
 		386D3F68241C471E00F70F8F /* LojongCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojongCustomView.swift; sourceTree = "<group>"; };
 		38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		38D714DC24226EF00023426C /* Asap-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Regular.ttf"; sourceTree = "<group>"; };
-		38D714E82423CA4D0023426C /* InsightVideoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightVideoTableViewController.swift; sourceTree = "<group>"; };
-		38D714EA2423CAEA0023426C /* InsightVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsightVideoModel.swift; path = "Lojong-Test/Controller/InsightViewController/InsightVideoModel.swift"; sourceTree = SOURCE_ROOT; };
-		38D714EE2423D2890023426C /* LojongDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LojongDataController.swift; path = "Lojong-Test/Controller/InsightViewController/LojongDataController.swift"; sourceTree = SOURCE_ROOT; };
-		38F6AED62423E8BC00B35D95 /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
+		38D714EA2423CAEA0023426C /* InsightVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsightVideoModel.swift; path = "Lojong-Test/Model/InsightVideoModel/InsightVideoModel.swift"; sourceTree = SOURCE_ROOT; };
+		38D714EE2423D2890023426C /* LojongVideoModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LojongVideoModelController.swift; path = "Lojong-Test/Model/InsightVideoModel/LojongVideoModelController.swift"; sourceTree = SOURCE_ROOT; };
 		504BC626E24237D5521D8E68 /* Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-Lojong-Test-Lojong-TestUITests/Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		53C9DFB2F569377C3786E8E6 /* Pods_Lojong_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lojong_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		588D6D3EAA069C349E0FC8BA /* Pods-Lojong-TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-TestTests.debug.xcconfig"; path = "Target Support Files/Pods-Lojong-TestTests/Pods-Lojong-TestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,11 +145,10 @@
 		380E2FF8241EF12F00C41681 /* InsightViewController */ = {
 			isa = PBXGroup;
 			children = (
-				380E2FFE241EF9ED00C41681 /* InsightMainViewController.swift */,
-				380E3006241FC11B00C41681 /* InsightContentViewController.swift */,
-				380E300A241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift */,
-				38602D5C242127F100E6EDB3 /* InsightVideoTableViewController.swift */,
-				38D714E82423CA4D0023426C /* InsightVideoTableViewController.swift */,
+				3859093D24252B09003D1DDF /* InsightMainViewController */,
+				3859093E24252B1E003D1DDF /* InsightContentViewController */,
+				3859093F24252B68003D1DDF /* InsightSegmentedControlViewController */,
+				3859094024252BA2003D1DDF /* InsightVideoTableViewController */,
 			);
 			path = InsightViewController;
 			sourceTree = "<group>";
@@ -157,11 +156,10 @@
 		380E2FF9241EF14500C41681 /* InsightView */ = {
 			isa = PBXGroup;
 			children = (
-				380E2FFA241EF15E00C41681 /* InsightMainView.swift */,
-				380E3002241F0E5500C41681 /* InsightContentView.swift */,
-				380E3008241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift */,
-				38602D5A242127D600E6EDB3 /* InsightVideoTableView.swift */,
-				38602D5E242136AB00E6EDB3 /* InsightCustomVideoTableViewCell.swift */,
+				38590937242529A3003D1DDF /* InsightMainView */,
+				38590938242529AF003D1DDF /* InsightContentView */,
+				38590939242529CE003D1DDF /* InsightSegmentedControl */,
+				3859093A242529EC003D1DDF /* InsighVideoTableView */,
 			);
 			name = InsightView;
 			sourceTree = "<group>";
@@ -231,7 +229,7 @@
 		384E9A73241997470080FF4F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				386D3F6A241C476D00F70F8F /* LojongCustomView */,
+				386D3F6A241C476D00F70F8F /* Architecture */,
 				38D527C3241EE83F007D1FB3 /* MainTabBarView */,
 				380E2FF9241EF14500C41681 /* InsightView */,
 				384E54A124198A5C00C3EE88 /* Assets.xcassets */,
@@ -245,8 +243,7 @@
 		384E9A74241997500080FF4F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				38D714EE2423D2890023426C /* LojongDataController.swift */,
-				38D714EA2423CAEA0023426C /* InsightVideoModel.swift */,
+				3859093C24252A5B003D1DDF /* InsightVideoModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -258,6 +255,97 @@
 				384E549A24198A5B00C3EE88 /* SceneDelegate.swift */,
 			);
 			path = Default;
+			sourceTree = "<group>";
+		};
+		38590937242529A3003D1DDF /* InsightMainView */ = {
+			isa = PBXGroup;
+			children = (
+				380E2FFA241EF15E00C41681 /* InsightMainView.swift */,
+			);
+			name = InsightMainView;
+			sourceTree = "<group>";
+		};
+		38590938242529AF003D1DDF /* InsightContentView */ = {
+			isa = PBXGroup;
+			children = (
+				380E3002241F0E5500C41681 /* InsightContentView.swift */,
+			);
+			name = InsightContentView;
+			sourceTree = "<group>";
+		};
+		38590939242529CE003D1DDF /* InsightSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				380E3008241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift */,
+			);
+			name = InsightSegmentedControl;
+			sourceTree = "<group>";
+		};
+		3859093A242529EC003D1DDF /* InsighVideoTableView */ = {
+			isa = PBXGroup;
+			children = (
+				38602D5A242127D600E6EDB3 /* InsightVideoTableView.swift */,
+				3859093B242529FC003D1DDF /* InsightVideoTableViewCell */,
+			);
+			name = InsighVideoTableView;
+			sourceTree = "<group>";
+		};
+		3859093B242529FC003D1DDF /* InsightVideoTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3859093524252940003D1DDF /* InsightCustomTableViewCellStyle.swift */,
+			);
+			name = InsightVideoTableViewCell;
+			sourceTree = "<group>";
+		};
+		3859093C24252A5B003D1DDF /* InsightVideoModel */ = {
+			isa = PBXGroup;
+			children = (
+				38D714EE2423D2890023426C /* LojongVideoModelController.swift */,
+				38D714EA2423CAEA0023426C /* InsightVideoModel.swift */,
+			);
+			path = InsightVideoModel;
+			sourceTree = "<group>";
+		};
+		3859093D24252B09003D1DDF /* InsightMainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				380E2FFE241EF9ED00C41681 /* InsightMainViewController.swift */,
+			);
+			path = InsightMainViewController;
+			sourceTree = "<group>";
+		};
+		3859093E24252B1E003D1DDF /* InsightContentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				380E3006241FC11B00C41681 /* InsightContentViewController.swift */,
+			);
+			path = InsightContentViewController;
+			sourceTree = "<group>";
+		};
+		3859093F24252B68003D1DDF /* InsightSegmentedControlViewController */ = {
+			isa = PBXGroup;
+			children = (
+				380E300A241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift */,
+			);
+			path = InsightSegmentedControlViewController;
+			sourceTree = "<group>";
+		};
+		3859094024252BA2003D1DDF /* InsightVideoTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				38602D5C242127F100E6EDB3 /* InsightVideoTableViewController.swift */,
+				3859094124252BF2003D1DDF /* InsightVideoTableViewCellController */,
+			);
+			path = InsightVideoTableViewController;
+			sourceTree = "<group>";
+		};
+		3859094124252BF2003D1DDF /* InsightVideoTableViewCellController */ = {
+			isa = PBXGroup;
+			children = (
+				38602D5E242136AB00E6EDB3 /* InsightCustomVideoTableViewCell.swift */,
+			);
+			path = InsightVideoTableViewCellController;
 			sourceTree = "<group>";
 		};
 		38602D542420403A00E6EDB3 /* Fonts */ = {
@@ -274,17 +362,17 @@
 			children = (
 				386D3F66241C443B00F70F8F /* Extension+UIColor.swift */,
 				38602D5824205C1A00E6EDB3 /* Extension+NSNotification.swift */,
-				38F6AED62423E8BC00B35D95 /* Extension+UIImageView.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		386D3F6A241C476D00F70F8F /* LojongCustomView */ = {
+		386D3F6A241C476D00F70F8F /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				38529DE624256C88006FDBC0 /* CustomAVPlayer.swift */,
 				386D3F68241C471E00F70F8F /* LojongCustomView.swift */,
 			);
-			name = LojongCustomView;
+			name = Architecture;
 			sourceTree = "<group>";
 		};
 		38D527C3241EE83F007D1FB3 /* MainTabBarView */ = {
@@ -555,8 +643,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				38D714EB2423CAEA0023426C /* InsightVideoModel.swift in Sources */,
+				3859093624252940003D1DDF /* InsightCustomTableViewCellStyle.swift in Sources */,
 				380E3007241FC11B00C41681 /* InsightContentViewController.swift in Sources */,
-				38F6AED72423E8BC00B35D95 /* Extension+UIImageView.swift in Sources */,
 				384E549D24198A5B00C3EE88 /* MainTabBarViewController.swift in Sources */,
 				38D527C6241EEB23007D1FB3 /* MainTabBarView.swift in Sources */,
 				38602D5924205C1A00E6EDB3 /* Extension+NSNotification.swift in Sources */,
@@ -564,14 +652,14 @@
 				38602D5D242127F100E6EDB3 /* InsightVideoTableViewController.swift in Sources */,
 				380E2FFF241EF9ED00C41681 /* InsightMainViewController.swift in Sources */,
 				380E300B241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift in Sources */,
+				38529DE724256C88006FDBC0 /* CustomAVPlayer.swift in Sources */,
 				380E2FFB241EF15E00C41681 /* InsightMainView.swift in Sources */,
 				38602D5B242127D600E6EDB3 /* InsightVideoTableView.swift in Sources */,
-				38D714EF2423D2890023426C /* LojongDataController.swift in Sources */,
+				38D714EF2423D2890023426C /* LojongVideoModelController.swift in Sources */,
 				386D3F69241C471E00F70F8F /* LojongCustomView.swift in Sources */,
 				38602D5F242136AB00E6EDB3 /* InsightCustomVideoTableViewCell.swift in Sources */,
 				380E3009241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift in Sources */,
 				380E3003241F0E5500C41681 /* InsightContentView.swift in Sources */,
-				38D714E92423CA4D0023426C /* InsightVideoTableViewController.swift in Sources */,
 				384E549B24198A5B00C3EE88 /* SceneDelegate.swift in Sources */,
 				386D3F67241C443B00F70F8F /* Extension+UIColor.swift in Sources */,
 			);

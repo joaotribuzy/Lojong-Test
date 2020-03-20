@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Stevia
 
 class InsightCustomSegmentedControlView: UIControl, LojongCustomView {
         
@@ -54,20 +55,19 @@ class InsightCustomSegmentedControlView: UIControl, LojongCustomView {
             segmentedControlSelector.backgroundColor = .white
             segmentedControlSelector.layer.cornerRadius = selectorHeight / 2
             
-            addSubview(segmentedControlSelector)
+            
         
         }
         
         func autolayout() {
-            self.translatesAutoresizingMaskIntoConstraints = false
+            // Selector
+            sv(segmentedControlSelector)
             
             // Buttons StackView
-            self.addSubview(titleButtonsStackView)
+            sv(titleButtonsStackView)
             titleButtonsStackView.translatesAutoresizingMaskIntoConstraints = false
-            titleButtonsStackView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-            titleButtonsStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-            titleButtonsStackView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-            titleButtonsStackView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+            titleButtonsStackView.top(0.0).left(0.0).right(0.0).bottom(0.0)
+            
         }
         
         // MARK: - Segmented Control Buttons

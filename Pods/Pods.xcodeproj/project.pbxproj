@@ -87,7 +87,7 @@
 		56596B08C906EF219B497C060DE6C040 /* Stevia+Percentage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Percentage.swift"; path = "Source/Stevia+Percentage.swift"; sourceTree = "<group>"; };
 		58D70BCA6AC3501C7A5EC319DC4CFBC2 /* Pods-Lojong-TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lojong-TestTests.release.xcconfig"; sourceTree = "<group>"; };
 		5F4DC72001D79165C6E25533FF772D12 /* Stevia+Center.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Center.swift"; path = "Source/Stevia+Center.swift"; sourceTree = "<group>"; };
-		609C06AEF4372CA1F22B834FA0E51DB7 /* Pods_Lojong_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Lojong_TestTests.framework; path = "Pods-Lojong-TestTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		609C06AEF4372CA1F22B834FA0E51DB7 /* Pods_Lojong_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lojong_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6205A3E4DF7099E39C53533F102DF663 /* Pods-Lojong-Test-Lojong-TestUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Lojong-Test-Lojong-TestUITests-dummy.m"; sourceTree = "<group>"; };
 		6280F717DDFD555B4AFE7D6E678F06D9 /* Stevia+Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Notifications.swift"; path = "Source/Stevia+Notifications.swift"; sourceTree = "<group>"; };
 		6366113D0F736E3742F257791076655C /* Stevia+DoubleDash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+DoubleDash.swift"; path = "Source/Stevia+DoubleDash.swift"; sourceTree = "<group>"; };
@@ -102,9 +102,9 @@
 		8984A435F1A10B39B3D40F5139FC78E9 /* Pods-Lojong-TestTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Lojong-TestTests-umbrella.h"; sourceTree = "<group>"; };
 		8EDBD746EE8F8D82839052D1B70BBC77 /* Pods-Lojong-Test-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Lojong-Test-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9314D0794C36CC4B272425F63D85078A /* Stevia+Equation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Equation.swift"; path = "Source/Stevia+Equation.swift"; sourceTree = "<group>"; };
-		976A888A9832DDE2E02C8EE8EA7B151E /* Pods_Lojong_Test_Lojong_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Lojong_Test_Lojong_TestUITests.framework; path = "Pods-Lojong-Test-Lojong-TestUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		976A888A9832DDE2E02C8EE8EA7B151E /* Pods_Lojong_Test_Lojong_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lojong_Test_Lojong_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B02DAFB54420FA2DA7BEF396B0330BD /* Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A607DDE70F800379F03969F2669D4FB6 /* Pods-Lojong-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lojong-Test.debug.xcconfig"; sourceTree = "<group>"; };
 		B6903C2FA245C55127203F8E3A67DF19 /* SteviaLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SteviaLayout-dummy.m"; sourceTree = "<group>"; };
 		B6A673FBA6B3F9DD0F5FD65B09B16841 /* Pods-Lojong-Test-Lojong-TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lojong-Test-Lojong-TestUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,10 +114,10 @@
 		C8F1A650BA419BB9C520362B5E1B9A71 /* Pods-Lojong-TestTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Lojong-TestTests-Info.plist"; sourceTree = "<group>"; };
 		D1D8F65C48A9073712B3F65955F0C9E0 /* Pods-Lojong-Test-Lojong-TestUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Lojong-Test-Lojong-TestUITests-umbrella.h"; sourceTree = "<group>"; };
 		D4A9FB3772731100F29A7B15B55A1BBB /* Pods-Lojong-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Lojong-Test.release.xcconfig"; sourceTree = "<group>"; };
-		DE90CE8A0DA0F3A5364FCDD4803AD3EC /* Stevia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Stevia.framework; path = SteviaLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE90CE8A0DA0F3A5364FCDD4803AD3EC /* Stevia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stevia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB00B7AD8D6F2C62F01885195C4D92F /* Stevia+LayoutAnchors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+LayoutAnchors.swift"; path = "Source/Stevia+LayoutAnchors.swift"; sourceTree = "<group>"; };
 		E32CB94F29151CC8DEF932E38C8044E7 /* Stevia+Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Constraints.swift"; path = "Source/Stevia+Constraints.swift"; sourceTree = "<group>"; };
-		E37202331EEFE8FC1F8F1E7D18E3401A /* Pods_Lojong_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Lojong_Test.framework; path = "Pods-Lojong-Test.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37202331EEFE8FC1F8F1E7D18E3401A /* Pods_Lojong_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lojong_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D94E4B4CBE950BDD6A011648FBA001 /* Stevia+Fill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Fill.swift"; path = "Source/Stevia+Fill.swift"; sourceTree = "<group>"; };
 		EE98205B7122187D7B1A94F769CC37D9 /* Stevia+Content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Content.swift"; path = "Source/Stevia+Content.swift"; sourceTree = "<group>"; };
 		F00D885B5509EEF523A2A7621E7F1998 /* SteviaLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SteviaLayout.modulemap; sourceTree = "<group>"; };
@@ -253,7 +253,6 @@
 				3BDDA1BB2AAC69FEE855EF3F27155CB5 /* Stevia+Style.swift */,
 				66FDEA45EA76122CF95E38D812B2F419 /* Support Files */,
 			);
-			name = SteviaLayout;
 			path = SteviaLayout;
 			sourceTree = "<group>";
 		};
@@ -436,6 +435,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 79573E9EF7B363AB96B8345BBEEAB499 /* Products */;

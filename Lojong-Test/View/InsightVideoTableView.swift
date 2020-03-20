@@ -44,7 +44,7 @@ extension InsightVideoTableView: LojongCustomView {
     func autolayout() {
         self.translatesAutoresizingMaskIntoConstraints = false
         
-        self.top(0.0).left(0.0).right(0.0).bottom(100)
+        self.top(0.0).left(0.0).right(0.0).bottom(0)
     }
     
 }
