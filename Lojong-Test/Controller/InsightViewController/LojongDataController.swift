@@ -12,7 +12,7 @@ import UIKit
 class LojongVideoDataController {
     public static let shared = LojongVideoDataController()
     
-    public var insightVideos: [Video]
+    public var insightVideos: [InsightVideo]
     
     private init() {
         self.insightVideos = []
@@ -40,13 +40,13 @@ class LojongVideoDataController {
                     for cachedVideo in video{
                         
                         let insightContentVideo: InsightVideo = InsightVideo.init(id: cachedVideo.value(forKey: "id") as! Int,
-                                                                           name: cachedVideo.value(forKey: "name") as? String ?? "Bla",
-                                                                           description: cachedVideo.value(forKey: "description") as? String ?? "Bla",
+                                                                           name: cachedVideo.value(forKey: "name") as? String ?? "",
+                                                                           description: cachedVideo.value(forKey: "description") as? String ?? "",
                                                                            file: cachedVideo.value(forKey: "file") as? String ?? "",
-                                                                           url: cachedVideo.value(forKey: "url") as? String ?? "Bla",
-                                                                           url2: cachedVideo.value(forKey: "url2") as? String ?? "Bla",
+                                                                           url: cachedVideo.value(forKey: "url") as? String ?? "",
+                                                                           url2: cachedVideo.value(forKey: "url2") as? String ?? "",
                                                                            aws_url: cachedVideo.value(forKey: "aws_url") as? String ?? "Bla",
-                                                                           image: cachedVideo.value(forKey: "image") as? String ?? "Bla",
+                                                                           image: cachedVideo.value(forKey: "image") as? String ?? "",
                                                                            image_url: cachedVideo.value(forKey: "image_url") as? String ?? "Bla",
                                                                            premium: cachedVideo.value(forKey: "premium") as! Int,
                                                                            order: cachedVideo.value(forKey: "order") as! Int)
@@ -54,8 +54,8 @@ class LojongVideoDataController {
                         
                         
                         DispatchQueue.main.async {
-                            self.insightVideos.append(Video.init(content: insightContentVideo))
-                            NotificationCenter.default.post(name: .LojongDataVideosDownloaded, object: nil)
+                            self.insightVideos.append(insightContentVideo)
+                            NotificationCenter.default.post(name: .LojongVideosChanged, object: nil)
                         }
                         
                     }
@@ -64,14 +64,4 @@ class LojongVideoDataController {
                 }
             }.resume()
         }
-    
-    
-    func downloadJSONImage(url: URL) -> UIImage?{
-        var image = UIImage()
-        DispatchQueue.main.async{
-            let data = try? Data(contentsOf: url)
-            image = UIImage(data: data!) ?? UIImage()
-        }
-        return image
-    }
 }

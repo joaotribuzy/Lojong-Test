@@ -47,21 +47,27 @@ extension InsightVideoTableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "videoCell", for: indexPath) as! InsightCustomVideoTableViewCell
-        cell.titleLabel.text = "EP. \(String(describing: model.insightVideos[indexPath.row].content.order)): \(String(describing: model.insightVideos[indexPath.row].content.name.uppercased()))"
         
-        cell.videoPreviewImage.image = model.insightVideos[indexPath.row].imageView.image
-//        let auxiliarImageView: UIImageView = UIImageView()
+        let video = model.insightVideos[indexPath.row]
         
-//        auxiliarImageView.downloadJSONImage(url: URL(string: self.model.insightVideos[indexPath.row].image_url)!)
+        cell.fill(video)
+//        cell.titleLabel.text = "EP. \(String(describing: model.insightVideos[indexPath.row].content.order)): \(String(describing: model.insightVideos[indexPath.row].content.name.uppercased()))"
 //
-//        if cell.videoPreviewImage.image == nil{
-//            cell.videoPreviewImage.downloadJSONImage(url: URL(string: self.model.insightVideos[indexPath.row].image_url)!)
-//        }else if auxiliarImageView.image != cell.videoPreviewImage.image{
-//            cell.videoPreviewImage.downloadJSONImage(url: URL(string: self.model.insightVideos[indexPath.row].image_url)!)
-//        }
+//        cell.videoPreviewImage.image = model.insightVideos[indexPath.row].imageView.image
+//        self.tableView.reloadRows(at: [indexPath], with: .automatic)
+////        let auxiliarImageView: UIImageView = UIImageView()
+//
+////        auxiliarImageView.downloadJSONImage(url: URL(string: self.model.insightVideos[indexPath.row].image_url)!)
+////
+////        if cell.videoPreviewImage.image == nil{
+////            cell.videoPreviewImage.downloadJSONImage(url: URL(string: self.model.insightVideos[indexPath.row].image_url)!)
+////        }else if auxiliarImageView.image != cell.videoPreviewImage.image{
+////            cell.videoPreviewImage.downloadJSONImage(url: URL(string: self.model.insightVideos[indexPath.row].image_url)!)
+////        }
+//
+//        print(cell.videoPreviewImage)
+//        cell.descriptionLabel.text = "\(model.insightVideos[indexPath.row].content.description)"
         
-        print(cell.videoPreviewImage)
-        cell.descriptionLabel.text = "\(model.insightVideos[indexPath.row].content.description)"
         
         
         return cell
@@ -75,12 +81,14 @@ extension InsightVideoTableViewController {
 // MARK: - Notifications
 extension InsightVideoTableViewController{
     func setupNotification(){
-        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableViewData), name: .LojongDataVideosDownloaded, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(videosChangedNotificationReceived(_:)), name: .LojongVideosChanged, object: nil)
     }
     
-    @objc
-    func reloadTableViewData(){
-        self.tableView.reloadData()
+    @objc private func videosChangedNotificationReceived(_ notification: Notification){
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+        
     }
 }
 

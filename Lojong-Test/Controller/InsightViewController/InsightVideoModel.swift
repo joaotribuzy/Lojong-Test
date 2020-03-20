@@ -9,17 +9,20 @@
 import Foundation
 import UIKit
 
-class Video{
-    var imageView: UIImageView = UIImageView()
-    var content: InsightVideo
-    
-    init(content: InsightVideo) {
-        self.imageView.downloadJSONImage(url: URL(string: content.image_url)!)
-        self.content = content
-    }
-}
+//class InsightVideo{
+//    var imageView: UIImageView = UIImageView()
+//    var content: InsightVideo
+//    
+//    init(content: InsightVideo) {
+//        self.imageView.downloadJSONImage(url: URL(string: content.image_url)!)
+//        DispatchQueue.main.async {
+//            NotificationCenter.default.post(name: .LojongDataVideosDownloaded, object: nil)
+//        }
+//        self.content = content
+//    }
+//}
 
-class InsightVideo: Codable {
+class InsightVideo {
     var id: Int
     var name: String
     var description: String
@@ -44,6 +47,33 @@ class InsightVideo: Codable {
         self.image_url = image_url
         self.premium = premium
         self.order = order
+    }
+    
+    static let placeholderImage: UIImage = {
+        return UIImage(named: "share")!
+    }()
+    
+    private static let imageDownloadSession = URLSession(configuration: URLSessionConfiguration.default)
+    
+    private var cachedImage: UIImage? = nil
+    var videoImage: UIImage {
+        if cachedImage == nil {
+            cachedImage = InsightVideo.placeholderImage
+            fetchImage()
+        }
+
+        return cachedImage!
+    }
+    
+    
+    private func fetchImage() {
+        var image = UIImage()
+        DispatchQueue.main.async{
+            let data = try? Data(contentsOf: URL(string: "\(self.image_url)")!)
+            image = UIImage(data: data!) ?? UIImage()
+            
+            self.cachedImage = image
+        }
     }
     
 }

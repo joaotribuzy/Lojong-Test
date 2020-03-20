@@ -19,6 +19,7 @@ class InsightCustomVideoTableViewCell: UITableViewCell {
         self.autolayout()
         self.style()
         
+        self.setupNotification()
     }
     
     required init?(coder: NSCoder) {
@@ -34,6 +35,9 @@ class InsightCustomVideoTableViewCell: UITableViewCell {
     
     public var shareLabel = UILabel()
     public var shareIcon = UIImageView()
+    
+    // MARK: - Data Receiver
+    private var video: InsightVideo? = nil
 }
 
 // MARK: - Visual
@@ -99,5 +103,26 @@ extension InsightCustomVideoTableViewCell: LojongCustomView {
         
         self.shareButton.layout(|-15-shareIcon.width(12).height(14)-shareLabel-15-|)
         
+    }
+}
+
+// MARK: Content
+extension InsightCustomVideoTableViewCell{
+    func fill(_ video: InsightVideo){
+        self.video = video
+        
+        self.titleLabel.text = video.name
+        
+        self.videoPreviewImage.image = video.videoImage
+    }
+    
+    func setupNotification(){
+        NotificationCenter.default.addObserver(self, selector: #selector(endpointDownloadedImageReceive(_:)), name: .LojongVideoPreviewImageDownloaded, object: nil)
+    }
+    
+    @objc private func endpointDownloadedImageReceive(_ notification: Notification) {
+        DispatchQueue.main.async {
+            self.videoPreviewImage.image = self.video?.videoImage
+        }
     }
 }
