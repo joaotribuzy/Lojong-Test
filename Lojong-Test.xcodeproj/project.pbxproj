@@ -23,6 +23,7 @@
 		384E54B024198A5D00C3EE88 /* Lojong_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E54AF24198A5D00C3EE88 /* Lojong_TestTests.swift */; };
 		384E54BB24198A5D00C3EE88 /* Lojong_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E54BA24198A5D00C3EE88 /* Lojong_TestUITests.swift */; };
 		38529DE724256C88006FDBC0 /* CustomAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38529DE624256C88006FDBC0 /* CustomAVPlayer.swift */; };
+		38529DF82425ACFF006FDBC0 /* InsightArticleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38529DF72425ACFF006FDBC0 /* InsightArticleTableViewController.swift */; };
 		3859093624252940003D1DDF /* InsightCustomTableViewCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859093524252940003D1DDF /* InsightCustomTableViewCellStyle.swift */; };
 		38602D572420448C00E6EDB3 /* Asap-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38602D562420448C00E6EDB3 /* Asap-Bold.ttf */; };
 		38602D5924205C1A00E6EDB3 /* Extension+NSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38602D5824205C1A00E6EDB3 /* Extension+NSNotification.swift */; };
@@ -80,6 +81,7 @@
 		384E54BA24198A5D00C3EE88 /* Lojong_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lojong_TestUITests.swift; sourceTree = "<group>"; };
 		384E54BC24198A5D00C3EE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38529DE624256C88006FDBC0 /* CustomAVPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAVPlayer.swift; sourceTree = "<group>"; };
+		38529DF72425ACFF006FDBC0 /* InsightArticleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightArticleTableViewController.swift; sourceTree = "<group>"; };
 		3859093524252940003D1DDF /* InsightCustomTableViewCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCustomTableViewCellStyle.swift; sourceTree = "<group>"; };
 		38602D562420448C00E6EDB3 /* Asap-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Bold.ttf"; sourceTree = "<group>"; };
 		38602D5824205C1A00E6EDB3 /* Extension+NSNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSNotification.swift"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				3859093E24252B1E003D1DDF /* InsightContentViewController */,
 				3859093F24252B68003D1DDF /* InsightSegmentedControlViewController */,
 				3859094024252BA2003D1DDF /* InsightVideoTableViewController */,
+				38529DF62425AC7C006FDBC0 /* InsightArticleTableViewController */,
 			);
 			path = InsightViewController;
 			sourceTree = "<group>";
@@ -255,6 +258,14 @@
 				384E549A24198A5B00C3EE88 /* SceneDelegate.swift */,
 			);
 			path = Default;
+			sourceTree = "<group>";
+		};
+		38529DF62425AC7C006FDBC0 /* InsightArticleTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				38529DF72425ACFF006FDBC0 /* InsightArticleTableViewController.swift */,
+			);
+			path = InsightArticleTableViewController;
 			sourceTree = "<group>";
 		};
 		38590937242529A3003D1DDF /* InsightMainView */ = {
@@ -649,6 +660,7 @@
 				38D527C6241EEB23007D1FB3 /* MainTabBarView.swift in Sources */,
 				38602D5924205C1A00E6EDB3 /* Extension+NSNotification.swift in Sources */,
 				384E549924198A5B00C3EE88 /* AppDelegate.swift in Sources */,
+				38529DF82425ACFF006FDBC0 /* InsightArticleTableViewController.swift in Sources */,
 				38602D5D242127F100E6EDB3 /* InsightVideoTableViewController.swift in Sources */,
 				380E2FFF241EF9ED00C41681 /* InsightMainViewController.swift in Sources */,
 				380E300B241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift in Sources */,

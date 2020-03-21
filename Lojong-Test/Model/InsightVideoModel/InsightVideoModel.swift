@@ -60,6 +60,8 @@ class InsightVideo {
             image = UIImage(data: data!) ?? UIImage()
             
             self.cachedImage = image
+            
+            NotificationCenter.default.post(name: .LojongVideoPreviewImageDownloaded, object: nil)
         }
     }
     

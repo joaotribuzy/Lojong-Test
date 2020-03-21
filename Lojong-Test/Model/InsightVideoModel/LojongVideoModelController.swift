@@ -57,7 +57,9 @@ class LojongVideoModelController {
                         
                         DispatchQueue.main.async {
                             self.insightVideos.append(insightContentVideo)
-                            NotificationCenter.default.post(name: .LojongVideosChanged, object: nil)
+                            DispatchQueue.main.async {
+                                NotificationCenter.default.post(name: .LojongVideosChanged, object: nil)
+                            }
                         }
                         
                     }

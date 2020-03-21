@@ -20,8 +20,6 @@ class InsightCustomVideoTableViewCell: UITableViewCell {
         self.autolayout()
         self.style()
         
-        self.setupNotification()
-        
         self.setupImageViewTouch()
     }
     
@@ -54,7 +52,11 @@ class InsightCustomVideoTableViewCell: UITableViewCell {
 // MARK: Content
 extension InsightCustomVideoTableViewCell{
     func fill(_ video: InsightVideo){
+        NotificationCenter.default.removeObserver(self)
+        
         self.video = video
+        
+        setupNotification()
         
         self.titleLabel.text = "EP \(video.order): \(video.name.uppercased())"
         
@@ -65,12 +67,12 @@ extension InsightCustomVideoTableViewCell{
     
     func setupNotification(){
         NotificationCenter.default.addObserver(self, selector: #selector(endpointDownloadedImageReceive(_:)), name: .LojongVideoPreviewImageDownloaded, object: nil)
+        
     }
     
     @objc private func endpointDownloadedImageReceive(_ notification: Notification) {
         DispatchQueue.main.async {
             self.videoPreviewImage.image = self.video?.videoImage
-            
         }
     }
     
@@ -86,4 +88,5 @@ extension InsightCustomVideoTableViewCell{
             NotificationCenter.default.post(name: .LojongPlayVideoOnController, object: nil)
         }
     }
+
 }
