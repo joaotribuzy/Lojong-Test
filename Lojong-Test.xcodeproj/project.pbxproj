@@ -32,6 +32,9 @@
 		38602D5F242136AB00E6EDB3 /* InsightCustomVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38602D5E242136AB00E6EDB3 /* InsightCustomVideoTableViewCell.swift */; };
 		386D3F67241C443B00F70F8F /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386D3F66241C443B00F70F8F /* Extension+UIColor.swift */; };
 		386D3F69241C471E00F70F8F /* LojongCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386D3F68241C471E00F70F8F /* LojongCustomView.swift */; };
+		388F8CE62426888D00712073 /* InsightArticleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CE52426888D00712073 /* InsightArticleTableView.swift */; };
+		388F8CE9242689EC00712073 /* InsightArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CE8242689EC00712073 /* InsightArticleTableViewCell.swift */; };
+		388F8CEC24268B1400712073 /* InsightArticleTableViewCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CEB24268B1400712073 /* InsightArticleTableViewCellStyle.swift */; };
 		38D527C6241EEB23007D1FB3 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */; };
 		38D714DD24226EF00023426C /* Asap-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38D714DC24226EF00023426C /* Asap-Regular.ttf */; };
 		38D714EB2423CAEA0023426C /* InsightVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714EA2423CAEA0023426C /* InsightVideoModel.swift */; };
@@ -90,6 +93,9 @@
 		38602D5E242136AB00E6EDB3 /* InsightCustomVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCustomVideoTableViewCell.swift; sourceTree = "<group>"; };
 		386D3F66241C443B00F70F8F /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 		386D3F68241C471E00F70F8F /* LojongCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojongCustomView.swift; sourceTree = "<group>"; };
+		388F8CE52426888D00712073 /* InsightArticleTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightArticleTableView.swift; sourceTree = "<group>"; };
+		388F8CE8242689EC00712073 /* InsightArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightArticleTableViewCell.swift; sourceTree = "<group>"; };
+		388F8CEB24268B1400712073 /* InsightArticleTableViewCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightArticleTableViewCellStyle.swift; sourceTree = "<group>"; };
 		38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		38D714DC24226EF00023426C /* Asap-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Regular.ttf"; sourceTree = "<group>"; };
 		38D714EA2423CAEA0023426C /* InsightVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsightVideoModel.swift; path = "Lojong-Test/Model/InsightVideoModel/InsightVideoModel.swift"; sourceTree = SOURCE_ROOT; };
@@ -163,6 +169,7 @@
 				38590938242529AF003D1DDF /* InsightContentView */,
 				38590939242529CE003D1DDF /* InsightSegmentedControl */,
 				3859093A242529EC003D1DDF /* InsighVideoTableView */,
+				388F8CE42426885A00712073 /* InsightArticleTableView */,
 			);
 			name = InsightView;
 			sourceTree = "<group>";
@@ -264,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				38529DF72425ACFF006FDBC0 /* InsightArticleTableViewController.swift */,
+				388F8CE7242689C300712073 /* InsightArticleTableViewCotrollerCell */,
 			);
 			path = InsightArticleTableViewController;
 			sourceTree = "<group>";
@@ -384,6 +392,31 @@
 				386D3F68241C471E00F70F8F /* LojongCustomView.swift */,
 			);
 			name = Architecture;
+			sourceTree = "<group>";
+		};
+		388F8CE42426885A00712073 /* InsightArticleTableView */ = {
+			isa = PBXGroup;
+			children = (
+				388F8CE52426888D00712073 /* InsightArticleTableView.swift */,
+				388F8CEA24268AF500712073 /* InsightArticelTableViewCellStyle */,
+			);
+			name = InsightArticleTableView;
+			sourceTree = "<group>";
+		};
+		388F8CE7242689C300712073 /* InsightArticleTableViewCotrollerCell */ = {
+			isa = PBXGroup;
+			children = (
+				388F8CE8242689EC00712073 /* InsightArticleTableViewCell.swift */,
+			);
+			path = InsightArticleTableViewCotrollerCell;
+			sourceTree = "<group>";
+		};
+		388F8CEA24268AF500712073 /* InsightArticelTableViewCellStyle */ = {
+			isa = PBXGroup;
+			children = (
+				388F8CEB24268B1400712073 /* InsightArticleTableViewCellStyle.swift */,
+			);
+			name = InsightArticelTableViewCellStyle;
 			sourceTree = "<group>";
 		};
 		38D527C3241EE83F007D1FB3 /* MainTabBarView */ = {
@@ -654,6 +687,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38D714EB2423CAEA0023426C /* InsightVideoModel.swift in Sources */,
+				388F8CE9242689EC00712073 /* InsightArticleTableViewCell.swift in Sources */,
 				3859093624252940003D1DDF /* InsightCustomTableViewCellStyle.swift in Sources */,
 				380E3007241FC11B00C41681 /* InsightContentViewController.swift in Sources */,
 				384E549D24198A5B00C3EE88 /* MainTabBarViewController.swift in Sources */,
@@ -664,6 +698,7 @@
 				38602D5D242127F100E6EDB3 /* InsightVideoTableViewController.swift in Sources */,
 				380E2FFF241EF9ED00C41681 /* InsightMainViewController.swift in Sources */,
 				380E300B241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift in Sources */,
+				388F8CE62426888D00712073 /* InsightArticleTableView.swift in Sources */,
 				38529DE724256C88006FDBC0 /* CustomAVPlayer.swift in Sources */,
 				380E2FFB241EF15E00C41681 /* InsightMainView.swift in Sources */,
 				38602D5B242127D600E6EDB3 /* InsightVideoTableView.swift in Sources */,
@@ -674,6 +709,7 @@
 				380E3003241F0E5500C41681 /* InsightContentView.swift in Sources */,
 				384E549B24198A5B00C3EE88 /* SceneDelegate.swift in Sources */,
 				386D3F67241C443B00F70F8F /* Extension+UIColor.swift in Sources */,
+				388F8CEC24268B1400712073 /* InsightArticleTableViewCellStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

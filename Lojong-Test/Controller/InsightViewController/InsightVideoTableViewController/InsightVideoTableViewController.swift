@@ -62,17 +62,7 @@ extension InsightVideoTableViewController {
         
         
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.splitViewController?.preferredDisplayMode = UISplitViewController.DisplayMode.allVisible
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        self.splitViewController?.preferredDisplayMode = UISplitViewController.DisplayMode.automatic
-        super.viewWillAppear(animated)
-    }
+
 }
 
 

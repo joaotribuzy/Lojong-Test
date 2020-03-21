@@ -14,7 +14,6 @@ class InsightContentView: UIView, LojongCustomView {
     
     // MARK: - View Lifecycle
     override init(frame: CGRect) {
-        insightContentTableView = videoTableViewController
         
         super.init(frame: frame)
         
@@ -33,8 +32,6 @@ class InsightContentView: UIView, LojongCustomView {
     // MARK: - Visual
     var videoTableViewController: UITableViewController = InsightVideoTableViewController(style: .plain)
     var articleTableViewController: UITableViewController = InsightArticleTableViewController(style: .plain)
-
-    var insightContentTableView: UITableViewController
     
     func style() {
         self.backgroundColor = .white
@@ -42,6 +39,9 @@ class InsightContentView: UIView, LojongCustomView {
         self.clipsToBounds = true
         self.layer.cornerRadius = 15
         self.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        
+        // videoTableViewController
+        
     }
     
     func autolayout() {
@@ -49,8 +49,8 @@ class InsightContentView: UIView, LojongCustomView {
         self.translatesAutoresizingMaskIntoConstraints = false
         
         // insightContentTableView
-        sv(insightContentTableView.view)
-        insightContentTableView.view.right(0.0).left(0.0).top(0.0).bottom(0.0)
+        sv(videoTableViewController.view)
+        videoTableViewController.view.right(0.0).left(0.0).top(0.0).bottom(0.0)
         
         sv(articleTableViewController.view)
         articleTableViewController.view.top(0).right(0).bottom(0).left(0)
