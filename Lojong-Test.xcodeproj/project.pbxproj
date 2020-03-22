@@ -35,6 +35,8 @@
 		388F8CE62426888D00712073 /* InsightArticleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CE52426888D00712073 /* InsightArticleTableView.swift */; };
 		388F8CE9242689EC00712073 /* InsightArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CE8242689EC00712073 /* InsightArticleTableViewCell.swift */; };
 		388F8CEC24268B1400712073 /* InsightArticleTableViewCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CEB24268B1400712073 /* InsightArticleTableViewCellStyle.swift */; };
+		388F8CF02427D1A200712073 /* LojongArticleModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CEF2427D1A200712073 /* LojongArticleModelController.swift */; };
+		388F8CF22427D1B100712073 /* LojongArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CF12427D1B100712073 /* LojongArticleModel.swift */; };
 		38D527C6241EEB23007D1FB3 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */; };
 		38D714DD24226EF00023426C /* Asap-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38D714DC24226EF00023426C /* Asap-Regular.ttf */; };
 		38D714EB2423CAEA0023426C /* InsightVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714EA2423CAEA0023426C /* InsightVideoModel.swift */; };
@@ -96,6 +98,8 @@
 		388F8CE52426888D00712073 /* InsightArticleTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightArticleTableView.swift; sourceTree = "<group>"; };
 		388F8CE8242689EC00712073 /* InsightArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightArticleTableViewCell.swift; sourceTree = "<group>"; };
 		388F8CEB24268B1400712073 /* InsightArticleTableViewCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightArticleTableViewCellStyle.swift; sourceTree = "<group>"; };
+		388F8CEF2427D1A200712073 /* LojongArticleModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojongArticleModelController.swift; sourceTree = "<group>"; };
+		388F8CF12427D1B100712073 /* LojongArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojongArticleModel.swift; sourceTree = "<group>"; };
 		38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		38D714DC24226EF00023426C /* Asap-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Regular.ttf"; sourceTree = "<group>"; };
 		38D714EA2423CAEA0023426C /* InsightVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsightVideoModel.swift; path = "Lojong-Test/Model/InsightVideoModel/InsightVideoModel.swift"; sourceTree = SOURCE_ROOT; };
@@ -254,6 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				3859093C24252A5B003D1DDF /* InsightVideoModel */,
+				388F8CEF2427D1A200712073 /* LojongArticleModelController.swift */,
+				388F8CF12427D1B100712073 /* LojongArticleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -693,6 +699,7 @@
 				384E549D24198A5B00C3EE88 /* MainTabBarViewController.swift in Sources */,
 				38D527C6241EEB23007D1FB3 /* MainTabBarView.swift in Sources */,
 				38602D5924205C1A00E6EDB3 /* Extension+NSNotification.swift in Sources */,
+				388F8CF02427D1A200712073 /* LojongArticleModelController.swift in Sources */,
 				384E549924198A5B00C3EE88 /* AppDelegate.swift in Sources */,
 				38529DF82425ACFF006FDBC0 /* InsightArticleTableViewController.swift in Sources */,
 				38602D5D242127F100E6EDB3 /* InsightVideoTableViewController.swift in Sources */,
@@ -710,6 +717,7 @@
 				384E549B24198A5B00C3EE88 /* SceneDelegate.swift in Sources */,
 				386D3F67241C443B00F70F8F /* Extension+UIColor.swift in Sources */,
 				388F8CEC24268B1400712073 /* InsightArticleTableViewCellStyle.swift in Sources */,
+				388F8CF22427D1B100712073 /* LojongArticleModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
