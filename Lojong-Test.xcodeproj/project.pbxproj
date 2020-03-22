@@ -39,6 +39,7 @@
 		388F8CF22427D1B100712073 /* LojongArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CF12427D1B100712073 /* LojongArticleModel.swift */; };
 		388F8CF52427E8D700712073 /* InsightQuoteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CF42427E8D700712073 /* InsightQuoteTableView.swift */; };
 		388F8CF72427E8F100712073 /* InsightQuoteTableViewCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CF62427E8F100712073 /* InsightQuoteTableViewCellStyle.swift */; };
+		388F8CFA2427EA3E00712073 /* InisghtQuoteTabeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CF92427EA3E00712073 /* InisghtQuoteTabeViewController.swift */; };
 		38D527C6241EEB23007D1FB3 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */; };
 		38D714DD24226EF00023426C /* Asap-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38D714DC24226EF00023426C /* Asap-Regular.ttf */; };
 		38D714EB2423CAEA0023426C /* InsightVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714EA2423CAEA0023426C /* InsightVideoModel.swift */; };
@@ -104,6 +105,7 @@
 		388F8CF12427D1B100712073 /* LojongArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojongArticleModel.swift; sourceTree = "<group>"; };
 		388F8CF42427E8D700712073 /* InsightQuoteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightQuoteTableView.swift; sourceTree = "<group>"; };
 		388F8CF62427E8F100712073 /* InsightQuoteTableViewCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightQuoteTableViewCellStyle.swift; sourceTree = "<group>"; };
+		388F8CF92427EA3E00712073 /* InisghtQuoteTabeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InisghtQuoteTabeViewController.swift; sourceTree = "<group>"; };
 		38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		38D714DC24226EF00023426C /* Asap-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Regular.ttf"; sourceTree = "<group>"; };
 		38D714EA2423CAEA0023426C /* InsightVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsightVideoModel.swift; path = "Lojong-Test/Model/InsightVideoModel/InsightVideoModel.swift"; sourceTree = SOURCE_ROOT; };
@@ -166,6 +168,7 @@
 				3859093F24252B68003D1DDF /* InsightSegmentedControlViewController */,
 				3859094024252BA2003D1DDF /* InsightVideoTableViewController */,
 				38529DF62425AC7C006FDBC0 /* InsightArticleTableViewController */,
+				388F8CF82427EA0200712073 /* InsightQuoteTableViewController */,
 			);
 			path = InsightViewController;
 			sourceTree = "<group>";
@@ -437,6 +440,14 @@
 				388F8CF62427E8F100712073 /* InsightQuoteTableViewCellStyle.swift */,
 			);
 			name = InsightQuoteTableView;
+			sourceTree = "<group>";
+		};
+		388F8CF82427EA0200712073 /* InsightQuoteTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				388F8CF92427EA3E00712073 /* InisghtQuoteTabeViewController.swift */,
+			);
+			path = InsightQuoteTableViewController;
 			sourceTree = "<group>";
 		};
 		38D527C3241EE83F007D1FB3 /* MainTabBarView */ = {
@@ -725,6 +736,7 @@
 				38529DE724256C88006FDBC0 /* CustomAVPlayer.swift in Sources */,
 				380E2FFB241EF15E00C41681 /* InsightMainView.swift in Sources */,
 				38602D5B242127D600E6EDB3 /* InsightVideoTableView.swift in Sources */,
+				388F8CFA2427EA3E00712073 /* InisghtQuoteTabeViewController.swift in Sources */,
 				38D714EF2423D2890023426C /* LojongVideoModelController.swift in Sources */,
 				386D3F69241C471E00F70F8F /* LojongCustomView.swift in Sources */,
 				38602D5F242136AB00E6EDB3 /* InsightCustomVideoTableViewCell.swift in Sources */,

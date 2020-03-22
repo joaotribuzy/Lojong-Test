@@ -32,6 +32,7 @@ class InsightContentView: UIView, LojongCustomView {
     // MARK: - Visual
     var videoTableViewController: UITableViewController = InsightVideoTableViewController(style: .plain)
     var articleTableViewController: UITableViewController = InsightArticleTableViewController(style: .plain)
+    var quoteTableViewController: UITableViewController = InsightQuoteTableViewController(style: .plain)
     
     func style() {
         self.backgroundColor = .white
@@ -55,6 +56,10 @@ class InsightContentView: UIView, LojongCustomView {
         sv(articleTableViewController.view)
         articleTableViewController.view.top(0).right(0).bottom(0).left(0)
         articleTableViewController.view.alpha = 0
+        
+        sv(quoteTableViewController.view)
+        quoteTableViewController.view.top(0).right(0).bottom(0).left(0)
+        quoteTableViewController.view.alpha = 0
     }
     
     // MARK: - Notifications
@@ -70,6 +75,7 @@ class InsightContentView: UIView, LojongCustomView {
         UIView.animate(withDuration: 0.2, animations: {
             self.videoTableViewController.view.alpha = 1
             self.articleTableViewController.view.alpha = 0
+            self.quoteTableViewController.view.alpha = 0
         })
     }
     
@@ -78,12 +84,17 @@ class InsightContentView: UIView, LojongCustomView {
         UIView.animate(withDuration: 0.2, animations: {
             self.videoTableViewController.view.alpha = 0
             self.articleTableViewController.view.alpha = 1
+            self.quoteTableViewController.view.alpha = 0
         })
     }
     
     @objc
     private func changeToQuotesViewControllerNotificationReceived(_ notification: Notification) {
-        
+        UIView.animate(withDuration: 0.2, animations: {
+            self.videoTableViewController.view.alpha = 0
+            self.articleTableViewController.view.alpha = 0
+            self.quoteTableViewController.view.alpha = 1
+        })
     }
 }
 
