@@ -37,7 +37,7 @@ class InsightVideo {
     }
     
     static let placeholderImage: UIImage? = {
-        return UIImage(named: "VideoPlacheholder")!
+        return UIImage(named: "Placeholder")!
     }()
     
     private static let imageDownloadSession = URLSession(configuration: URLSessionConfiguration.default)

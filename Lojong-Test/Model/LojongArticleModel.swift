@@ -30,5 +30,32 @@ class InsightArticle {
         self.image = image
     }
     
+    static let placeholderImage: UIImage? = {
+        return UIImage(named: "Placeholder")!
+    }()
     
+    private static let imageDownloadSession = URLSession(configuration: URLSessionConfiguration.default)
+    
+    private var cachedImage: UIImage? = nil
+    var videoImage: UIImage {
+        if cachedImage == nil {
+            cachedImage = InsightArticle.placeholderImage
+            fetchImage()
+        }
+
+        return cachedImage!
+    }
+    
+    
+    private func fetchImage() {
+        var image = UIImage()
+        DispatchQueue.main.async{
+            let data = try? Data(contentsOf: self.image_url)
+            image = UIImage(data: data!) ?? UIImage()
+            
+            self.cachedImage = image
+            
+//            NotificationCenter.default.post(name: .LojongVideoPreviewImageDownloaded, object: nil)
+        }
+    }
 }
