@@ -37,6 +37,8 @@
 		388F8CEC24268B1400712073 /* InsightArticleTableViewCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CEB24268B1400712073 /* InsightArticleTableViewCellStyle.swift */; };
 		388F8CF02427D1A200712073 /* LojongArticleModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CEF2427D1A200712073 /* LojongArticleModelController.swift */; };
 		388F8CF22427D1B100712073 /* LojongArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CF12427D1B100712073 /* LojongArticleModel.swift */; };
+		388F8CF52427E8D700712073 /* InsightQuoteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CF42427E8D700712073 /* InsightQuoteTableView.swift */; };
+		388F8CF72427E8F100712073 /* InsightQuoteTableViewCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CF62427E8F100712073 /* InsightQuoteTableViewCellStyle.swift */; };
 		38D527C6241EEB23007D1FB3 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */; };
 		38D714DD24226EF00023426C /* Asap-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38D714DC24226EF00023426C /* Asap-Regular.ttf */; };
 		38D714EB2423CAEA0023426C /* InsightVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714EA2423CAEA0023426C /* InsightVideoModel.swift */; };
@@ -100,6 +102,8 @@
 		388F8CEB24268B1400712073 /* InsightArticleTableViewCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightArticleTableViewCellStyle.swift; sourceTree = "<group>"; };
 		388F8CEF2427D1A200712073 /* LojongArticleModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojongArticleModelController.swift; sourceTree = "<group>"; };
 		388F8CF12427D1B100712073 /* LojongArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojongArticleModel.swift; sourceTree = "<group>"; };
+		388F8CF42427E8D700712073 /* InsightQuoteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightQuoteTableView.swift; sourceTree = "<group>"; };
+		388F8CF62427E8F100712073 /* InsightQuoteTableViewCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightQuoteTableViewCellStyle.swift; sourceTree = "<group>"; };
 		38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		38D714DC24226EF00023426C /* Asap-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Regular.ttf"; sourceTree = "<group>"; };
 		38D714EA2423CAEA0023426C /* InsightVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsightVideoModel.swift; path = "Lojong-Test/Model/InsightVideoModel/InsightVideoModel.swift"; sourceTree = SOURCE_ROOT; };
@@ -174,6 +178,7 @@
 				38590939242529CE003D1DDF /* InsightSegmentedControl */,
 				3859093A242529EC003D1DDF /* InsighVideoTableView */,
 				388F8CE42426885A00712073 /* InsightArticleTableView */,
+				388F8CF32427E88B00712073 /* InsightQuoteTableView */,
 			);
 			name = InsightView;
 			sourceTree = "<group>";
@@ -423,6 +428,15 @@
 				388F8CEB24268B1400712073 /* InsightArticleTableViewCellStyle.swift */,
 			);
 			name = InsightArticelTableViewCellStyle;
+			sourceTree = "<group>";
+		};
+		388F8CF32427E88B00712073 /* InsightQuoteTableView */ = {
+			isa = PBXGroup;
+			children = (
+				388F8CF42427E8D700712073 /* InsightQuoteTableView.swift */,
+				388F8CF62427E8F100712073 /* InsightQuoteTableViewCellStyle.swift */,
+			);
+			name = InsightQuoteTableView;
 			sourceTree = "<group>";
 		};
 		38D527C3241EE83F007D1FB3 /* MainTabBarView */ = {
@@ -695,6 +709,7 @@
 				38D714EB2423CAEA0023426C /* InsightVideoModel.swift in Sources */,
 				388F8CE9242689EC00712073 /* InsightArticleTableViewCell.swift in Sources */,
 				3859093624252940003D1DDF /* InsightCustomTableViewCellStyle.swift in Sources */,
+				388F8CF72427E8F100712073 /* InsightQuoteTableViewCellStyle.swift in Sources */,
 				380E3007241FC11B00C41681 /* InsightContentViewController.swift in Sources */,
 				384E549D24198A5B00C3EE88 /* MainTabBarViewController.swift in Sources */,
 				38D527C6241EEB23007D1FB3 /* MainTabBarView.swift in Sources */,
@@ -702,6 +717,7 @@
 				388F8CF02427D1A200712073 /* LojongArticleModelController.swift in Sources */,
 				384E549924198A5B00C3EE88 /* AppDelegate.swift in Sources */,
 				38529DF82425ACFF006FDBC0 /* InsightArticleTableViewController.swift in Sources */,
+				388F8CF52427E8D700712073 /* InsightQuoteTableView.swift in Sources */,
 				38602D5D242127F100E6EDB3 /* InsightVideoTableViewController.swift in Sources */,
 				380E2FFF241EF9ED00C41681 /* InsightMainViewController.swift in Sources */,
 				380E300B241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift in Sources */,
