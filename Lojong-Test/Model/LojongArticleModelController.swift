@@ -51,7 +51,6 @@ class InsightArticleModelController{
 
                     
                     self.insightArticles.append(insightContentArticle)
-                    self.insightArticles.sort(by: {$0.order < $1.order})
                     NotificationCenter.default.post(name: .LojongArticlesChanged, object: nil)
 
                     

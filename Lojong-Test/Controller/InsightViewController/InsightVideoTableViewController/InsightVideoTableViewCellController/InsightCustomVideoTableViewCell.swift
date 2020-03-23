@@ -17,6 +17,8 @@ class InsightCustomVideoTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        self.setupNotification()
+        
         self.autolayout()
         self.style()
         
@@ -52,11 +54,8 @@ class InsightCustomVideoTableViewCell: UITableViewCell {
 // MARK: Content
 extension InsightCustomVideoTableViewCell{
     func fill(_ video: InsightVideo){
-        NotificationCenter.default.removeObserver(self)
         
         self.video = video
-        
-        setupNotification()
         
         self.titleLabel.text = "EP \(video.order): \(video.name.uppercased())"
         

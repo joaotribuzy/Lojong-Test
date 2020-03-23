@@ -55,7 +55,7 @@ class InsightVideo {
     
     private func fetchImage() {
         var image = UIImage()
-        DispatchQueue.main.async{
+        DispatchQueue.global(qos: .userInitiated).async{
             let data = try? Data(contentsOf: URL(string: "\(self.image_url)")!)
             image = UIImage(data: data!) ?? UIImage()
             

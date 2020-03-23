@@ -50,7 +50,7 @@ class InsightContentView: UIView, LojongCustomView {
         self.translatesAutoresizingMaskIntoConstraints = false
         
         // insightContentTableView
-//        sv(videoTableViewController.view)
+        sv(videoTableViewController.view)
         videoTableViewController.view.right(0.0).left(0.0).top(0.0).bottom(0.0)
         
         sv(articleTableViewController.view)
