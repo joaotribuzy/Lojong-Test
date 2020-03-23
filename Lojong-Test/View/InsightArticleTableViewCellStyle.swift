@@ -20,6 +20,8 @@ extension InsightArticleTableViewCell: LojongCustomView{
         
         // titleLabel
         self.titleLabel.numberOfLines = 0
+        self.titleLabel.lineBreakMode = .byWordWrapping
+        self.titleLabel.textAlignment = .center
         self.titleLabel.font = UIFont(name: "Asap-Bold", size: 15)
         self.titleLabel.textColor = UIColor.init(red: 128, green: 132, blue: 143)
         
@@ -27,6 +29,8 @@ extension InsightArticleTableViewCell: LojongCustomView{
         // videoPreviewImage
         self.articleImageView.backgroundColor = .gray
         self.articleImageView.layer.cornerRadius = 5
+        self.articleImageView.contentMode = .scaleAspectFill
+        self.articleImageView.clipsToBounds = true
         
         // descriptionLabel
         self.descriptionLabel.numberOfLines = 0
@@ -46,6 +50,7 @@ extension InsightArticleTableViewCell: LojongCustomView{
         
         // separatorLine
         self.separatorLine.backgroundColor = UIColor.init(red: 236, green: 236, blue: 236)
+        
     }
     
     func autolayout() {
@@ -59,7 +64,7 @@ extension InsightArticleTableViewCell: LojongCustomView{
         
         
         self.contentView.layout(10,
-                                titleLabel.centerHorizontally(),
+                                titleLabel.right(10).left(10),
                                 10,
                                 articleImageView.left(10).right(10).centerHorizontally(),
                                 10,
@@ -74,5 +79,6 @@ extension InsightArticleTableViewCell: LojongCustomView{
         self.shareLabel.centerVertically()
         
         self.shareButton.layout(|-15-shareIcon.width(12).height(14)-shareLabel-15-|)
+        
     }
 }

@@ -15,5 +15,6 @@ extension NSNotification.Name{
     public static let LojongVideoPreviewImageDownloaded = NSNotification.Name("com.tribuzy.Lojong-Test.lojongVideosPreviewImageDownloaded")
     public static let LojongVideosChanged = NSNotification.Name("com.tribuzy.Lojong-Test.lojongVideosChanged")
     public static let LojongPlayVideoOnController = NSNotification.Name("com.tribuzy.Lojong-Test.lojongPlayVideoOnController")
-    
+    public static let LojongInsightArticleImageDownloaded = NSNotification.Name("com.tribuzy.Lojong-Test.lojongInsightArticleImageDownloaded")
+    public static let LojongArticlesChanged = NSNotification.Name("com.tribuzy.Lojong-Test.lojongArticlesChanged")
 }

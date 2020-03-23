@@ -20,8 +20,8 @@ class InsightMainViewController: UIViewController {
         self.setupNotification()
     }
     
-    var model: LojongVideoModelController = {
-        return LojongVideoModelController.shared
+    var model: InsightVideoModelController = {
+        return InsightVideoModelController.shared
     }()
     
     private var player: AVPlayer? = nil

@@ -3,4 +3,70 @@
    uuid = "5CC19B16-874D-41FC-BD13-2F143FF2D7A1"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C74B0BDE-550D-4135-ACD9-B07B982AB0B3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lojong-Test/Model/LojongArticleModelController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "downloadArticle()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C74B0BDE-550D-4135-ACD9-B07B982AB0B3 - ad5fa41e45a9ae96"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lojong_Test.InsightArticleModelController.downloadArticle() -&gt; ()"
+                  moduleName = "Lojong-Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jvtribuzy/Desktop/Lojong-Test/Lojong-Test/Model/LojongArticleModelController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "824">
+               </Location>
+               <Location
+                  uuid = "C74B0BDE-550D-4135-ACD9-B07B982AB0B3 - 219333c40c3d6d15"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Lojong_Test.InsightArticleModelController.downloadArticle() -&gt; ()"
+                  moduleName = "Lojong-Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jvtribuzy/Desktop/Lojong-Test/Lojong-Test/Model/LojongArticleModelController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "269">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A9EF7BE-2538-4412-A5F9-2364B6C5EC3C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SteviaLayout/Source/Stevia+Position.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "UIView"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

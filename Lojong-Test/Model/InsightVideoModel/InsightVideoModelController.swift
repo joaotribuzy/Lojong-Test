@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-class LojongVideoModelController {
-    public static let shared = LojongVideoModelController()
+class InsightVideoModelController {
+    public static let shared = InsightVideoModelController()
     
     public var insightVideos: [InsightVideo]
     

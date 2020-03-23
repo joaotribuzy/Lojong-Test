@@ -12,6 +12,7 @@ import UIKit
 class InsightArticle {
     var id: Int
     var text: String
+    var title: String
     var image_url: URL
     var author_name: String
     var url: URL
@@ -19,9 +20,10 @@ class InsightArticle {
     var order: Int
     var image: URL
     
-    init(id: Int, text: String, image_url: URL, author_name: String, url: URL, premium: Int, order: Int, image: URL) {
+    init(id: Int, text: String, title: String, image_url: URL, author_name: String, url: URL, premium: Int, order: Int, image: URL) {
         self.id = id
         self.text = text
+        self.title = title
         self.image_url = image_url
         self.author_name = author_name
         self.url = url
@@ -37,7 +39,8 @@ class InsightArticle {
     private static let imageDownloadSession = URLSession(configuration: URLSessionConfiguration.default)
     
     private var cachedImage: UIImage? = nil
-    var videoImage: UIImage {
+    
+    var articleImage: UIImage {
         if cachedImage == nil {
             cachedImage = InsightArticle.placeholderImage
             fetchImage()
@@ -49,13 +52,13 @@ class InsightArticle {
     
     private func fetchImage() {
         var image = UIImage()
-        DispatchQueue.main.async{
+        DispatchQueue.global(qos: .userInitiated).async{
             let data = try? Data(contentsOf: self.image_url)
             image = UIImage(data: data!) ?? UIImage()
             
             self.cachedImage = image
             
-//            NotificationCenter.default.post(name: .LojongVideoPreviewImageDownloaded, object: nil)
+            NotificationCenter.default.post(name: .LojongInsightArticleImageDownloaded, object: nil)
         }
     }
 }

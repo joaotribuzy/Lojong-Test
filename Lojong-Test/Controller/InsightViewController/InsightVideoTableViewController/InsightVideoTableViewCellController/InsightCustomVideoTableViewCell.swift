@@ -28,8 +28,8 @@ class InsightCustomVideoTableViewCell: UITableViewCell {
     }
     
     // MARK: - Components
-    var model: LojongVideoModelController = {
-        return LojongVideoModelController.shared
+    var model: InsightVideoModelController = {
+        return InsightVideoModelController.shared
     }()
     
     public var titleLabel = UILabel()

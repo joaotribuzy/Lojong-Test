@@ -12,8 +12,8 @@ import AVKit
 
 
 class InsightVideoTableViewController: UITableViewController {
-    var model: LojongVideoModelController = {
-        return LojongVideoModelController.shared
+    var model: InsightVideoModelController = {
+        return InsightVideoModelController.shared
     }()
     
     

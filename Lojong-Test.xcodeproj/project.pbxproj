@@ -43,7 +43,7 @@
 		38D527C6241EEB23007D1FB3 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */; };
 		38D714DD24226EF00023426C /* Asap-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38D714DC24226EF00023426C /* Asap-Regular.ttf */; };
 		38D714EB2423CAEA0023426C /* InsightVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714EA2423CAEA0023426C /* InsightVideoModel.swift */; };
-		38D714EF2423D2890023426C /* LojongVideoModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714EE2423D2890023426C /* LojongVideoModelController.swift */; };
+		38D714EF2423D2890023426C /* InsightVideoModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714EE2423D2890023426C /* InsightVideoModelController.swift */; };
 		55274B0DC7CBF3C07F02D0B6 /* Pods_Lojong_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C9DFB2F569377C3786E8E6 /* Pods_Lojong_TestTests.framework */; };
 		816DE5ECB6D5AEF77ED4C7D5 /* Pods_Lojong_Test_Lojong_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CF51D861F1A700986FAD6A /* Pods_Lojong_Test_Lojong_TestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -109,7 +109,7 @@
 		38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		38D714DC24226EF00023426C /* Asap-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Regular.ttf"; sourceTree = "<group>"; };
 		38D714EA2423CAEA0023426C /* InsightVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsightVideoModel.swift; path = "Lojong-Test/Model/InsightVideoModel/InsightVideoModel.swift"; sourceTree = SOURCE_ROOT; };
-		38D714EE2423D2890023426C /* LojongVideoModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LojongVideoModelController.swift; path = "Lojong-Test/Model/InsightVideoModel/LojongVideoModelController.swift"; sourceTree = SOURCE_ROOT; };
+		38D714EE2423D2890023426C /* InsightVideoModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InsightVideoModelController.swift; path = "Lojong-Test/Model/InsightVideoModel/InsightVideoModelController.swift"; sourceTree = SOURCE_ROOT; };
 		504BC626E24237D5521D8E68 /* Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-Lojong-Test-Lojong-TestUITests/Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		53C9DFB2F569377C3786E8E6 /* Pods_Lojong_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lojong_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		588D6D3EAA069C349E0FC8BA /* Pods-Lojong-TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-TestTests.debug.xcconfig"; path = "Target Support Files/Pods-Lojong-TestTests/Pods-Lojong-TestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -334,7 +334,7 @@
 		3859093C24252A5B003D1DDF /* InsightVideoModel */ = {
 			isa = PBXGroup;
 			children = (
-				38D714EE2423D2890023426C /* LojongVideoModelController.swift */,
+				38D714EE2423D2890023426C /* InsightVideoModelController.swift */,
 				38D714EA2423CAEA0023426C /* InsightVideoModel.swift */,
 			);
 			path = InsightVideoModel;
@@ -737,7 +737,7 @@
 				380E2FFB241EF15E00C41681 /* InsightMainView.swift in Sources */,
 				38602D5B242127D600E6EDB3 /* InsightVideoTableView.swift in Sources */,
 				388F8CFA2427EA3E00712073 /* InisghtQuoteTabeViewController.swift in Sources */,
-				38D714EF2423D2890023426C /* LojongVideoModelController.swift in Sources */,
+				38D714EF2423D2890023426C /* InsightVideoModelController.swift in Sources */,
 				386D3F69241C471E00F70F8F /* LojongCustomView.swift in Sources */,
 				38602D5F242136AB00E6EDB3 /* InsightCustomVideoTableViewCell.swift in Sources */,
 				380E3009241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift in Sources */,
