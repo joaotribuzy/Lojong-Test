@@ -15,6 +15,9 @@ class InsightQuoteTableView: UITableView{
     // MARK: - TableView Lifecycle
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
+        
+        self.style()
+        self.autolayout()
     }
     
     required init?(coder: NSCoder) {
@@ -27,6 +30,7 @@ class InsightQuoteTableView: UITableView{
 extension InsightQuoteTableView: LojongCustomView{
     func style() {
         self.backgroundColor = .white
+        self.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
     
     func autolayout() {

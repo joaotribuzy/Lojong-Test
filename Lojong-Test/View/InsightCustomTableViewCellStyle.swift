@@ -21,7 +21,7 @@ extension InsightCustomVideoTableViewCell: LojongCustomView {
         
         // titleLabel
         self.titleLabel.numberOfLines = 0
-        self.titleLabel.font = UIFont(name: "Asap-Bold", size: 18)
+        self.titleLabel.font = UIFont(name: "Asap-Bold", size: 15)
         self.titleLabel.textColor = UIColor.init(red: 128, green: 132, blue: 143)
         
         
@@ -32,7 +32,7 @@ extension InsightCustomVideoTableViewCell: LojongCustomView {
         // descriptionLabel
         self.descriptionLabel.numberOfLines = 0
         self.descriptionLabel.lineBreakMode = .byWordWrapping
-        self.descriptionLabel.font = UIFont(name: "Asap-Regular", size: 18)
+        self.descriptionLabel.font = UIFont(name: "Asap-Regular", size: 15)
         self.descriptionLabel.textColor = UIColor.init(red: 128, green: 132, blue: 143)
         self.descriptionLabel.textAlignment = .center
         self.descriptionLabel.text = "$get small article text description from api. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis felis neque."
@@ -69,7 +69,7 @@ extension InsightCustomVideoTableViewCell: LojongCustomView {
                                 10,
                                 videoPreviewImage.left(47).right(47).centerHorizontally(),
                                 10,
-                                descriptionLabel.height(100).left(40).right(40),
+                                descriptionLabel.left(40).right(40),
                                 10,
                                 shareButton.height(30).centerHorizontally(),
                                 10,

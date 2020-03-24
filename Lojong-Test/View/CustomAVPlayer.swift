@@ -20,4 +20,7 @@ class CustomAVPlayer: AVPlayerViewController {
           onDismiss?()
         }
     }
+    override func viewDidLoad() {
+        exitsFullScreenWhenPlaybackEnds = true
+    }
 }
