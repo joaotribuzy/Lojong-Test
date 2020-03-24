@@ -19,7 +19,9 @@ class InsightQuote {
     
     var author: String
     
-    init(id: Int, text: String, order: Int, background: String, colorFont: UIColor, author: String) {
+    var lojongLogo: String
+    
+    init(id: Int, text: String, order: Int, background: String, colorFont: UIColor, author: String, lojongLogo: String) {
         self.id = id
         self.text = text
         self.order = order
@@ -28,6 +30,8 @@ class InsightQuote {
         self.colorFont = colorFont
         
         self.author = author
+        
+        self.lojongLogo = lojongLogo
     }
     
 }

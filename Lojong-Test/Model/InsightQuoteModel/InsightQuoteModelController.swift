@@ -42,8 +42,13 @@ class InsightQuoteModelController {
                             "yellowCard" : "Quote-2",
                             "redCard" : "Quote-3"]
                 
+                let logo = ["blueCard" : "logoBlue",
+                            "yellowCard" : "logoYellow",
+                            "redCard" : "logoRed"]
+                
                 var colorToSet: UIColor = colorFont["redCard"]!
                 var cardToSet: String = card["redCard"]!
+                var logoToSet: String = logo["redCard"]!
                 
                 for cachedQuote in quote{
                     
@@ -51,12 +56,15 @@ class InsightQuoteModelController {
                         case colorFont["blueCard"]:
                             colorToSet = colorFont["yellowCard"]!
                             cardToSet = card["yellowCard"]!
+                            logoToSet = logo["yellowCard"]!
                         case colorFont["yellowCard"]:
                             colorToSet = colorFont["redCard"]!
                             cardToSet = card["redCard"]!
+                            logoToSet = logo["redCard"]!
                         case colorFont["redCard"]:
                             colorToSet = colorFont["blueCard"]!
                             cardToSet = card["blueCard"]!
+                            logoToSet = logo["blueCard"]!
                     default:
                         break
                     }
@@ -68,9 +76,9 @@ class InsightQuoteModelController {
                                                                               order: cachedQuote["order"] as! Int,
                                                                               background: cardToSet,
                                                                               colorFont: colorToSet,
-                                                                              author: contentText[1])
+                                                                              author: contentText[1],
+                                                                              lojongLogo: logoToSet)
                     
-                    print(cachedQuote["text"] as! String)
                     self.insightQuotes.append(insightContentQuote)
                     NotificationCenter.default.post(name: .LojongQuotesChanged, object: nil)
 

@@ -33,15 +33,18 @@ class InsightQuoteTableViewCell: UITableViewCell{
     public var quoteBackgroundImageView: UIImageView = UIImageView()
     
     public var topFirstSeparatorLine: UIView = UIView()
-    public var topsecondSeparator: UIView = UIView()
+    public var topSecondSeparatorLine: UIView = UIView()
     public var topAppLogo: UIImageView = UIImageView()
     
     public var descriptionLabel: UILabel = UILabel()
+    
+    public var authorLabel: UILabel = UILabel()
     
     public var bottomFirstSeparatorLine: UIView = UIView()
     public var bottomSecondSeparatorLine: UIView = UIView()
     public var bottomAppSite: UILabel = UILabel()
     
+    public var shareButton = UIButton()
     public var shareLabel: UILabel = UILabel()
     public var shareIcon: UIImageView = UIImageView()
     
@@ -57,6 +60,14 @@ extension InsightQuoteTableViewCell{
         
         self.descriptionLabel.text = self.quote?.text
         self.descriptionLabel.textColor = self.quote?.colorFont
+        
+        self.authorLabel.text = self.quote?.author
+        self.authorLabel.textColor = self.quote?.colorFont
+        
+        self.topFirstSeparatorLine.backgroundColor = self.quote?.colorFont
+        self.topSecondSeparatorLine.backgroundColor = self.quote?.colorFont
+        
+        self.topAppLogo.image = UIImage(named: self.quote!.lojongLogo)
         
     }
     
