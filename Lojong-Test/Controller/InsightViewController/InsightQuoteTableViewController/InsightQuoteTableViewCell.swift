@@ -31,6 +31,9 @@ class InsightQuoteTableViewCell: UITableViewCell{
     public var quote: InsightQuote? = nil
     
     public var quoteBackgroundImageView: UIImageView = UIImageView()
+    public var quoteContent: UIView = UIView()
+    
+    public var descriptionContent: UIView = UIView()
     
     public var topFirstSeparatorLine: UIView = UIView()
     public var topSecondSeparatorLine: UIView = UIView()
@@ -68,6 +71,12 @@ extension InsightQuoteTableViewCell{
         self.topSecondSeparatorLine.backgroundColor = self.quote?.colorFont
         
         self.topAppLogo.image = UIImage(named: self.quote!.lojongLogo)
+        
+        self.bottomAppSite.textColor = self.quote?.colorFont
+        self.bottomFirstSeparatorLine.backgroundColor = self.quote?.colorFont
+        self.bottomSecondSeparatorLine.backgroundColor = self.quote?.colorFont
+        
+        
         
     }
     

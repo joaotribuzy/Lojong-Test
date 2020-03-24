@@ -79,6 +79,7 @@ extension InsightArticleTableViewCell: LojongCustomView{
         self.shareLabel.centerVertically()
         
         self.shareButton.layout(|-15-shareIcon.width(12).height(14)-shareLabel-15-|)
+
         
     }
 }
