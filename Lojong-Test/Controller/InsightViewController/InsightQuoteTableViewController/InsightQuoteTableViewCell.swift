@@ -50,12 +50,10 @@ class InsightQuoteTableViewCell: UITableViewCell{
     public var bottomSecondSeparatorLine: UIView = UIView()
     public var bottomAppSite: UILabel = UILabel()
     
-    public var shareButton = UIButton()
+    public var shareButton: UIButton = UIButton()
     public var shareLabel: UILabel = UILabel()
     public var shareIcon: UIImageView = UIImageView()
     public var buttomBackgroundView: UIView = UIView()
-    
-    public var shareView: QuoteShareView? = QuoteShareView.init()
     
 }
 
@@ -64,8 +62,6 @@ extension InsightQuoteTableViewCell{
     public func fill(_ quote: InsightQuote){
         
         self.quote = quote
-        
-        self.shareView!.fill(self.quote!)
         
         self.quoteBackgroundImageView.image = UIImage(named: self.quote!.background)
         
@@ -109,21 +105,22 @@ extension InsightQuoteTableViewCell{
     }
     
     func setupImageViewTouch(){
-        self.contentView.isUserInteractionEnabled = true
-        self.contentView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(shareImage)))
+        self.shareButton.isUserInteractionEnabled = true
+        self.shareButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(shareImage)))
     }
     
     @objc private func shareImage(){
-        UIGraphicsBeginImageContext(self.shareView!.frame.size)
-        self.shareView!.layer.render(in: UIGraphicsGetCurrentContext()!)
+        self.shareButton.isHidden = true
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: self.quoteBackgroundImageView.frame.size.width, height: self.quoteBackgroundImageView.frame.size.height - 18), false, 0)
+        self.quoteBackgroundImageView.layer.render(in: UIGraphicsGetCurrentContext()!)
         
         let image = UIGraphicsGetImageFromCurrentImageContext()
         
         imageToShare = image
         
-        NotificationCenter.default.post(name: .LojongShareQuoteImage, object: nil)
+        self.shareButton.isHidden = false
         
-        print("\n\n\n\n\nCompartilhou\n\n\n\n\n")
+        NotificationCenter.default.post(name: .LojongShareQuoteImage, object: nil)
     }
     
 }

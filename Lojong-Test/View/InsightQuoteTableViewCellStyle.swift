@@ -20,7 +20,7 @@ extension InsightQuoteTableViewCell: LojongCustomView{
         // quoteBackgroundImageView
         self.quoteBackgroundImageView.contentMode = .scaleToFill
         self.quoteBackgroundImageView.clipsToBounds = true
-        self.quoteBackgroundImageView.layer.cornerRadius = 10
+        self.quoteBackgroundImageView.layer.cornerRadius = 0
         
         // quoteContent
         self.quoteContent.backgroundColor = .clear
@@ -87,8 +87,8 @@ extension InsightQuoteTableViewCell: LojongCustomView{
                                                                                               authorLabel),
                                                                         bottomFirstSeparatorLine,
                                                                         bottomSecondSeparatorLine,
-                                                                        bottomAppSite),
-                                                        shareButton.sv(buttomBackgroundView,shareIcon, shareLabel)))
+                                                                        bottomAppSite)),
+                                                        shareButton.sv(buttomBackgroundView,shareIcon, shareLabel))
         
         self.contentView.layout(8,
                                 quoteBackgroundImageView.right(10).left(10),
@@ -117,7 +117,8 @@ extension InsightQuoteTableViewCell: LojongCustomView{
 
         self.shareButton.layout(|-15-shareIcon.width(12).height(14)-shareLabel-15-|)
         self.shareLabel.top(0).bottom(0).centerVertically()
-        self.shareButton.bottom(10).height(30).centerHorizontally()
+        self.shareButton.height(30).bottom(11).centerHorizontally()
         buttomBackgroundView.top(0).right(0).bottom(0).left(0)
+        
     }
 }
