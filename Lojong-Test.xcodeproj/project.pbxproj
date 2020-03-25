@@ -25,6 +25,8 @@
 		38529DE724256C88006FDBC0 /* CustomAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38529DE624256C88006FDBC0 /* CustomAVPlayer.swift */; };
 		38529DF82425ACFF006FDBC0 /* InsightArticleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38529DF72425ACFF006FDBC0 /* InsightArticleTableViewController.swift */; };
 		3859093624252940003D1DDF /* InsightCustomTableViewCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859093524252940003D1DDF /* InsightCustomTableViewCellStyle.swift */; };
+		38600F3A242ABF69005FB0F5 /* QuoteShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38600F39242ABF69005FB0F5 /* QuoteShareView.swift */; };
+		38600F3C242ABFD5005FB0F5 /* QuoteShareViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38600F3B242ABFD5005FB0F5 /* QuoteShareViewStyle.swift */; };
 		38602D572420448C00E6EDB3 /* Asap-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38602D562420448C00E6EDB3 /* Asap-Bold.ttf */; };
 		38602D5924205C1A00E6EDB3 /* Extension+NSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38602D5824205C1A00E6EDB3 /* Extension+NSNotification.swift */; };
 		38602D5B242127D600E6EDB3 /* InsightVideoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38602D5A242127D600E6EDB3 /* InsightVideoTableView.swift */; };
@@ -94,6 +96,8 @@
 		38529DE624256C88006FDBC0 /* CustomAVPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAVPlayer.swift; sourceTree = "<group>"; };
 		38529DF72425ACFF006FDBC0 /* InsightArticleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightArticleTableViewController.swift; sourceTree = "<group>"; };
 		3859093524252940003D1DDF /* InsightCustomTableViewCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCustomTableViewCellStyle.swift; sourceTree = "<group>"; };
+		38600F39242ABF69005FB0F5 /* QuoteShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteShareView.swift; sourceTree = "<group>"; };
+		38600F3B242ABFD5005FB0F5 /* QuoteShareViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteShareViewStyle.swift; sourceTree = "<group>"; };
 		38602D562420448C00E6EDB3 /* Asap-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Bold.ttf"; sourceTree = "<group>"; };
 		38602D5824205C1A00E6EDB3 /* Extension+NSNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSNotification.swift"; sourceTree = "<group>"; };
 		38602D5A242127D600E6EDB3 /* InsightVideoTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightVideoTableView.swift; sourceTree = "<group>"; };
@@ -462,6 +466,7 @@
 			children = (
 				388F8CF42427E8D700712073 /* InsightQuoteTableView.swift */,
 				388F8CF62427E8F100712073 /* InsightQuoteTableViewCellStyle.swift */,
+				38600F3B242ABFD5005FB0F5 /* QuoteShareViewStyle.swift */,
 			);
 			name = InsightQuoteTableView;
 			sourceTree = "<group>";
@@ -471,6 +476,7 @@
 			children = (
 				388F8CF92427EA3E00712073 /* InsightQuoteTabeViewController.swift */,
 				3865010A24294E7000AB4567 /* InsightQuoteTableViewCell.swift */,
+				38600F39242ABF69005FB0F5 /* QuoteShareView.swift */,
 			);
 			path = InsightQuoteTableViewController;
 			sourceTree = "<group>";
@@ -756,12 +762,14 @@
 				38529DF82425ACFF006FDBC0 /* InsightArticleTableViewController.swift in Sources */,
 				388F8CF52427E8D700712073 /* InsightQuoteTableView.swift in Sources */,
 				38602D5D242127F100E6EDB3 /* InsightVideoTableViewController.swift in Sources */,
+				38600F3A242ABF69005FB0F5 /* QuoteShareView.swift in Sources */,
 				380E2FFF241EF9ED00C41681 /* InsightMainViewController.swift in Sources */,
 				380E300B241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift in Sources */,
 				388F8CE62426888D00712073 /* InsightArticleTableView.swift in Sources */,
 				38529DE724256C88006FDBC0 /* CustomAVPlayer.swift in Sources */,
 				380E2FFB241EF15E00C41681 /* InsightMainView.swift in Sources */,
 				38650109242947A100AB4567 /* LojongArticleModelController.swift in Sources */,
+				38600F3C242ABFD5005FB0F5 /* QuoteShareViewStyle.swift in Sources */,
 				38602D5B242127D600E6EDB3 /* InsightVideoTableView.swift in Sources */,
 				388F8CFA2427EA3E00712073 /* InsightQuoteTabeViewController.swift in Sources */,
 				3865010E24295F0600AB4567 /* InsightQuoteModel.swift in Sources */,

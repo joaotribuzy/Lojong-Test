@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+public var imageToShare: UIImage? = nil
+
 class InsightQuote {
     var id: Int
     var text: String

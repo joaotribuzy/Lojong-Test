@@ -18,6 +18,9 @@ class InsightQuoteTableViewCell: UITableViewCell{
         self.style()
         self.autolayout()
         
+        shareButton.addTarget(self, action:#selector(shareImage), for: .touchUpInside)
+        setupImageViewTouch()
+        
     }
     
     required init?(coder: NSCoder) {
@@ -50,6 +53,9 @@ class InsightQuoteTableViewCell: UITableViewCell{
     public var shareButton = UIButton()
     public var shareLabel: UILabel = UILabel()
     public var shareIcon: UIImageView = UIImageView()
+    public var buttomBackgroundView: UIView = UIView()
+    
+    public var shareView: QuoteShareView? = QuoteShareView.init()
     
 }
 
@@ -58,6 +64,8 @@ extension InsightQuoteTableViewCell{
     public func fill(_ quote: InsightQuote){
         
         self.quote = quote
+        
+        self.shareView!.fill(self.quote!)
         
         self.quoteBackgroundImageView.image = UIImage(named: self.quote!.background)
         
@@ -78,6 +86,44 @@ extension InsightQuoteTableViewCell{
         
         
         
+        switch self.quote?.lojongLogo {
+        case "logoBlue":
+            self.buttomBackgroundView.alpha = 1
+            self.buttomBackgroundView.backgroundColor = self.quote?.colorFont
+        case "logoYellow":
+            self.buttomBackgroundView.alpha = 0.25
+            self.buttomBackgroundView.backgroundColor = .white
+        case "logoRed":
+            self.buttomBackgroundView.alpha = 0.25
+            self.buttomBackgroundView.backgroundColor = .white
+        default:
+            break
+        }
+        
+        if self.descriptionLabel.text!.count > 455 {
+            self.descriptionLabel.font = UIFont(name: "Asap-Bold", size: 13)
+        } else {
+            self.descriptionLabel.font = UIFont(name: "Asap-Bold", size: 15.5)
+        }
+        
+    }
+    
+    func setupImageViewTouch(){
+        self.contentView.isUserInteractionEnabled = true
+        self.contentView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(shareImage)))
+    }
+    
+    @objc private func shareImage(){
+        UIGraphicsBeginImageContext(self.shareView!.frame.size)
+        self.shareView!.layer.render(in: UIGraphicsGetCurrentContext()!)
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        
+        imageToShare = image
+        
+        NotificationCenter.default.post(name: .LojongShareQuoteImage, object: nil)
+        
+        print("\n\n\n\n\nCompartilhou\n\n\n\n\n")
     }
     
 }
