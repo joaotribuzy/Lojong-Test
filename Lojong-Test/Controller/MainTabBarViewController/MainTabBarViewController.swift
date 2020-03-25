@@ -10,7 +10,7 @@ import UIKit
 
 class MainTabBarViewController: UITabBarController{
     
-    let fundamentViewController = UIViewController()
+    let fundamentViewController = PracticeTableViewController()
     let insightViewController = InsightMainViewController()
     
     override func viewDidLoad() {
@@ -26,7 +26,7 @@ class MainTabBarViewController: UITabBarController{
     //MARK: - Tabs Configuration
     private func settingTabs(){
         
-        fundamentViewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Fundaments", comment: ""), image: UIImage.init(named: "Fundaments-Item"), tag: 0)
+        fundamentViewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Práticas", comment: ""), image: UIImage.init(named: "Fundaments-Item"), tag: 0)
         
         insightViewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Insight", comment: ""), image: UIImage.init(named: "Insight-Item"), tag: 1)
         

@@ -9,8 +9,6 @@
 import Foundation
 import UIKit
 
-let fakeDB = ["Zelda", "Link", "Goron", "Ganon", "Epona"]
-
 class InsightArticleTableViewController: UITableViewController {
     
     var model: InsightArticleModelController = {
