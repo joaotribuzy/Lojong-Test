@@ -19,6 +19,8 @@ class FundamentsView: UIView{
         self.autolayout()
         self.style()
         
+        scrollToEnd()
+        
         buttom.addTarget(self, action: #selector(dismissFundamentViewController), for: .touchUpInside)
     }
     
@@ -41,10 +43,8 @@ extension FundamentsView: LojongCustomView{
         
         // scrollView
         scrollView.backgroundColor = UIColor.init(red: 155, green: 218, blue: 94)
-        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: (7371/640) * UIScreen.main.bounds.width)
         scrollView.bounces = false
         
-//
         // imageViewBackGround
         imageBackGround.contentMode = .scaleAspectFit
         imageBackGround.image = UIImage(named: "fundaments")
@@ -58,6 +58,7 @@ extension FundamentsView: LojongCustomView{
         
         sv(scrollView)
         scrollView.top(70).right(0).bottom(0).left(0)
+        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: (7371/640) * UIScreen.main.bounds.width)
         
         scrollView.sv(imageBackGround)
         imageBackGround.width(UIScreen.main.bounds.width).height((7371/640) * UIScreen.main.bounds.width)
@@ -67,5 +68,10 @@ extension FundamentsView: LojongCustomView{
     @objc private func dismissFundamentViewController(){
 
         NotificationCenter.default.post(name: .LojongDismissFundamentViewController, object: nil)
+    }
+    
+    func scrollToEnd(){
+        let bottomOffset = CGPoint(x: 0, y: scrollView.contentSize.height - scrollView.bounds.size.height)
+        scrollView.setContentOffset(bottomOffset, animated: true)
     }
 }
