@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Stevia
 
 class FundamentsViewController: UIViewController {
 
@@ -14,5 +15,7 @@ class FundamentsViewController: UIViewController {
         super.viewDidLoad()
 
         self.view = FundamentsView()
+        
+        self.modalPresentationStyle = .custom
     }
 }

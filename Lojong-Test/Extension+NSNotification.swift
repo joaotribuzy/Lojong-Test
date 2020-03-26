@@ -19,4 +19,5 @@ extension NSNotification.Name{
     public static let LojongArticlesChanged = NSNotification.Name("com.tribuzy.Lojong-Test.lojongArticlesChanged")
     public static let LojongQuotesChanged = NSNotification.Name("com.tribuzy.Lojong-Test.lojongQuotesChanged")
     public static let LojongShareQuoteImage = NSNotification.Name("com.tribuzy.Lojong-Test.lojongShareQuoteImage")
+    public static let LojongDismissFundamentViewController = NSNotification.Name("com.tribuzy.Lojong-Test.lojongDismissFundamentViewController")
 }

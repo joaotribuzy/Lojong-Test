@@ -34,5 +34,7 @@ class MainTabBarViewController: UITabBarController{
 
         viewControllers = tabBarList
     }
+    
+
 }
 

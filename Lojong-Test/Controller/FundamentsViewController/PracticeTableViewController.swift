@@ -16,9 +16,10 @@ class PracticeTableViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView = PracticeTableView()
+        self.setupNotification()
         
         self.setupTableView()
+        
     }
     
 }
@@ -31,7 +32,8 @@ extension PracticeTableViewController{
     }
 
     func setupTableView(){
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(FundamentsTableViewCell.self, forCellReuseIdentifier: "fundamentsCell")
+        self.tableView.backgroundColor = .white
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -39,9 +41,7 @@ extension PracticeTableViewController{
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        cell.textLabel?.text = fakeDB[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "fundamentsCell", for: indexPath) as! FundamentsTableViewCell
 
         return cell
     }
@@ -55,6 +55,7 @@ extension PracticeTableViewController{
         
         headerView.sv(sectionTitle)
         sectionTitle.font = UIFont(name: "Asap-Bold", size: 15)
+        sectionTitle.textColor = .gray
         switch section {
         case 0:
             sectionTitle.text = NSLocalizedString("Treinamentos", comment: "Treinamentos")
@@ -66,12 +67,34 @@ extension PracticeTableViewController{
         return headerView
     }
 
-    
-    // MARK: - Navigation
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let fundamentsViewController = FundamentsViewController()
+        fundamentsViewController.modalPresentationStyle = .custom
+        
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromRight
+        transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
+        view.window!.layer.add(transition, forKey: kCATransition)
+        
+        
+        present(fundamentsViewController, animated: false, completion: nil)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    }
+    
+    // MARK: - Notification
+    private func setupNotification(){
+        NotificationCenter.default.addObserver(self, selector: #selector(dismissFundamentViewControllerNotificationReceived(_:)), name: .LojongDismissFundamentViewController, object: nil)
+    }
+    
+    @objc private func dismissFundamentViewControllerNotificationReceived(_ notificatio: Notification){
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromLeft
+        transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
+        view.window?.layer.add(transition, forKey: kCATransition)
+        dismiss(animated: true, completion: nil)
     }
 }
