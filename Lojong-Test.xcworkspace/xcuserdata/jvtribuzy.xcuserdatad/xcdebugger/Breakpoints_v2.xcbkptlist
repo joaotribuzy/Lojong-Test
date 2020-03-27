@@ -222,8 +222,8 @@
             filePath = "Lojong-Test/View/FundamentsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "autolayout()"
             landmarkType = "7">
          </BreakpointContent>

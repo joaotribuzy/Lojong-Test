@@ -73,16 +73,17 @@ extension FundamentsView: LojongCustomView{
             let dayLabel: UILabel = UILabel()
             dayLabel.text = "Dia \(current + 1)"
             dayLabel.font = UIFont(name: "Asap-Regular", size: 11)
-            dayLabel.textColor = UIColor.init(red: 139, green: 87, blue: 41)
             
             view.sv(dayLabel)
             view.contentMode = .scaleAspectFit
             
             switch current {
-            case 0,1,3:
+            case 0,1,3,5,7,8,9,11:
                 view.image = UIImage(named: "vertical-ground")
-            case 2,4:
+                dayLabel.textColor = UIColor.init(red: 139, green: 87, blue: 41)
+            case 2,4,6,10:
                 view.image = UIImage(named: "horizontal-ground")
+                dayLabel.textColor = UIColor.init(red: 139, green: 87, blue: 41)
             default:
                 break
             }
@@ -122,28 +123,35 @@ extension FundamentsView: LojongCustomView{
         for current in 0...30{
         
             imageBackGround.sv(listViewClick[current])
+            listViewClick[current].subviews[0].centerHorizontally().bottom(28)
+            
+            switch current {
+            case 0,1,3:
+                listViewClick[current].width(widthPointsTransform(76))
+                listViewClick[current].height(heightPointsTranform(81))
+            case 2,4:
+                listViewClick[current].width(widthPointsTransform(75))
+                listViewClick[current].height(heightPointsTranform(72.5))
+            default:
+                break
+            }
             
             switch current {
             case 0:
-                listViewClick[current].width(84.3).height(90).right(85.3)
-                listViewClick[current].Bottom == 54
-                listViewClick[current].subviews[0].centerHorizontally().bottom(28)
+                listViewClick[current].right(widthPointsTransform(77.3))
+                listViewClick[current].bottom(heightPointsTranform(55))
             case 1:
-                listViewClick[current].width(84.3).height(90).right(85.3)
-                listViewClick[current].Bottom == 175
-                listViewClick[current].subviews[0].centerHorizontally().bottom(28)
+                listViewClick[current].right(widthPointsTransform(77.3))
+                listViewClick[current].bottom(heightPointsTranform(161))
             case 2:
                 listViewClick[current].width(90).height(79.5).right(185)
                 listViewClick[current].Bottom == 280
-                listViewClick[current].subviews[0].centerHorizontally().bottom(28)
             case 3:
                 listViewClick[current].width(84.3).height(90).left(40)
                 listViewClick[current].Bottom == 367
-                listViewClick[current].subviews[0].centerHorizontally().bottom(28)
             case 4:
                 listViewClick[current].width(90).height(79.5).centerHorizontally()
                 listViewClick[current].Bottom == 472
-                listViewClick[current].subviews[0].centerHorizontally().bottom(28)
             default:
                 break
             }
@@ -153,6 +161,13 @@ extension FundamentsView: LojongCustomView{
         }
     }
     
+    private func widthPointsTransform(_ points: CGFloat) -> CGFloat{
+        return (points/375) * scrollView.contentSize.width
+    }
+    
+    private func heightPointsTranform(_ points: CGFloat) -> CGFloat{
+        return (points/4315.43) * scrollView.contentSize.height
+    }
     @objc private func dismissFundamentViewController(){
 
         NotificationCenter.default.post(name: .LojongDismissFundamentViewController, object: nil)
