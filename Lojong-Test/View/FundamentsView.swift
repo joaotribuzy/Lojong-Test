@@ -38,7 +38,7 @@ class FundamentsView: UIView{
     let scrollView: UIScrollView = UIScrollView()
     let imageBackGround: UIImageView = UIImageView()
     
-    var listViewClick: [UIImageView] = []
+    var listViewClick: [UIButton] = []
 }
 
 extension FundamentsView: LojongCustomView{
@@ -63,39 +63,49 @@ extension FundamentsView: LojongCustomView{
         
         // imageViewBackGround
         imageBackGround.contentMode = .scaleAspectFit
+        imageBackGround.isUserInteractionEnabled = true
         imageBackGround.image = UIImage(named: "fundaments")
         
         // listViewClick
         for current in 0...30 {
-            let view: UIImageView = UIImageView()
-            view.backgroundColor = .clear
+            let day: UIButton = {
+                let buttom = UIButton()
+                buttom.backgroundColor = .red
+                return buttom
+            }()
+            
             
             let dayLabel: UILabel = UILabel()
             dayLabel.text = "Dia \(current + 1)"
             dayLabel.font = UIFont(name: "Asap-Medium", size: 11)
             
-            view.sv(dayLabel)
-            view.contentMode = .scaleAspectFit
+            day.sv(dayLabel)
+            day.contentMode = .scaleAspectFit
             
             switch current {
             case 0,1,3,5,7,8,9,11:
-                view.image = UIImage(named: "vertical-ground")
+                day.setImage(UIImage(named: "vertical-ground"), for: .normal)
                 dayLabel.textColor = UIColor.init(red: 139, green: 87, blue: 41)
             case 2,4,6,10:
-                view.image = UIImage(named: "horizontal-ground")
+                day.setImage(UIImage(named: "horizontal-ground"), for: .normal)
                 dayLabel.textColor = UIColor.init(red: 139, green: 87, blue: 41)
             case 12,13,14,15,16,18,19,20,21,22,23,25,26,27,29,30:
-                view.image = UIImage(named: "vertical-water")
+                day.setImage(UIImage(named: "vertical-water"), for: .normal)
                 dayLabel.textColor = .white
             case 17,24,28:
-                view.image = UIImage(named: "horizontal-water")
+                day.setImage(UIImage(named: "horizontal-water"), for: .normal)
                 dayLabel.textColor = .white
             default:
                 break
             }
-            
-            listViewClick.append(view)
+            day.isUserInteractionEnabled = true
+            day.addTarget(self, action: #selector(changeBackground), for: .touchUpInside)
+            listViewClick.append(day)
         }
+    }
+    
+    @objc func changeBackground(_ sender: UIButton){
+        sender.backgroundColor = .brown
     }
     
     func autolayout() {
