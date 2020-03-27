@@ -15,6 +15,7 @@
 		380E3009241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E3008241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift */; };
 		380E300B241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E300A241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift */; };
 		3842B514242DAA8B00C55DD3 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842B513242DAA8B00C55DD3 /* Extension+UIView.swift */; };
+		3842B516242E7E0000C55DD3 /* Asap-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3842B515242E7E0000C55DD3 /* Asap-Medium.otf */; };
 		384E549924198A5B00C3EE88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E549824198A5B00C3EE88 /* AppDelegate.swift */; };
 		384E549B24198A5B00C3EE88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E549A24198A5B00C3EE88 /* SceneDelegate.swift */; };
 		384E549D24198A5B00C3EE88 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E549C24198A5B00C3EE88 /* MainTabBarViewController.swift */; };
@@ -84,6 +85,7 @@
 		380E3008241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCustomSegmentedControlView.swift; sourceTree = "<group>"; };
 		380E300A241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCustomSegmentedControlViewController.swift; sourceTree = "<group>"; };
 		3842B513242DAA8B00C55DD3 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		3842B515242E7E0000C55DD3 /* Asap-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Medium.otf"; sourceTree = "<group>"; };
 		384E549524198A5B00C3EE88 /* Lojong-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lojong-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		384E549824198A5B00C3EE88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		384E549A24198A5B00C3EE88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -425,6 +427,7 @@
 			children = (
 				38602D562420448C00E6EDB3 /* Asap-Bold.ttf */,
 				38D714DC24226EF00023426C /* Asap-Regular.ttf */,
+				3842B515242E7E0000C55DD3 /* Asap-Medium.otf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -645,6 +648,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38D714DD24226EF00023426C /* Asap-Regular.ttf in Resources */,
+				3842B516242E7E0000C55DD3 /* Asap-Medium.otf in Resources */,
 				38602D572420448C00E6EDB3 /* Asap-Bold.ttf in Resources */,
 				384E54A524198A5C00C3EE88 /* LaunchScreen.storyboard in Resources */,
 				384E54A224198A5C00C3EE88 /* Assets.xcassets in Resources */,

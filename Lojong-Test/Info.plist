@@ -24,6 +24,7 @@
 	<array>
 		<string>Asap-Bold.ttf</string>
 		<string>Asap-Regular.ttf</string>
+		<string>Asap-Medium.otf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
