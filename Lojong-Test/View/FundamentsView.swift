@@ -40,6 +40,8 @@ class FundamentsView: UIView{
     
     var listViewClick: [UIButton] = []
     lazy var tags: Int = 0
+    var listCheckedDays: [Bool] = []
+    var elephantPosition: Int = 0
 }
 
 extension FundamentsView: LojongCustomView{
@@ -102,6 +104,7 @@ extension FundamentsView: LojongCustomView{
             day.isUserInteractionEnabled = true
             day.tag = tags
             tags += 1
+            listCheckedDays.append(false)
             day.addTarget(self, action: #selector(changeBackground), for: .touchUpInside)
             listViewClick.append(day)
         }
@@ -111,14 +114,36 @@ extension FundamentsView: LojongCustomView{
         switch sender.tag {
         case 0,1,3,5,7,8,9,11:
             sender.setImage(UIImage(named: "vertical-ground-unlocked"), for: .normal)
+            listCheckedDays[sender.tag]  = true
+            refreshElephantPosition()
         case 2,4,6,10:
             sender.setImage(UIImage(named: "horizontal-ground-unlocked"), for: .normal)
+            listCheckedDays[sender.tag]  = true
+            refreshElephantPosition()
         case 12,13,14,15,16,18,19,20,21,22,23,25,26,27,29,30:
             sender.setImage(UIImage(named: "vertical-water-unlocked"), for: .normal)
+            listCheckedDays[sender.tag]  = true
+            refreshElephantPosition()
         case 17,24,28:
             sender.setImage(UIImage(named: "horizontal-water-unlocked"), for: .normal)
+            listCheckedDays[sender.tag]  = true
+            refreshElephantPosition()
         default:
+            refreshElephantPosition()
             break
+        }
+        print(listCheckedDays)
+        print(elephantPosition)
+    }
+    
+    private func refreshElephantPosition(){
+        for (index,position) in listCheckedDays.enumerated(){
+            if position == true{
+                continue
+            } else{
+                elephantPosition = index
+                break
+            }
         }
     }
     

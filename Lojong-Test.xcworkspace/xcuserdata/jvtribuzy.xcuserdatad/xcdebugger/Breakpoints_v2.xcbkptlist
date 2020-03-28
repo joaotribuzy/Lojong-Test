@@ -14,8 +14,8 @@
             filePath = "Lojong-Test/View/FundamentsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "298"
-            endingLineNumber = "298">
+            startingLineNumber = "323"
+            endingLineNumber = "323">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -28,8 +28,8 @@
             filePath = "Lojong-Test/View/FundamentsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "style()"
             landmarkType = "7">
          </BreakpointContent>
@@ -44,8 +44,8 @@
             filePath = "Lojong-Test/View/FundamentsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "style()"
             landmarkType = "7">
          </BreakpointContent>
