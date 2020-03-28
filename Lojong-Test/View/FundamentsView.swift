@@ -41,7 +41,9 @@ class FundamentsView: UIView{
     var listViewClick: [UIButton] = []
     lazy var tags: Int = 0
     var listCheckedDays: [Bool] = []
-    var elephantPosition: Int = 0
+    
+    var elephantPosition: [UIImageView] = []
+    var elephantLastPosition: Int = 0
 }
 
 extension FundamentsView: LojongCustomView{
@@ -108,6 +110,22 @@ extension FundamentsView: LojongCustomView{
             day.addTarget(self, action: #selector(changeBackground), for: .touchUpInside)
             listViewClick.append(day)
         }
+        
+        // elephantPosition
+        for current in 0...31{
+            let elephantImage: UIImageView = UIImageView()
+            
+            switch current {
+            case 0...10:
+                elephantImage.image = UIImage(named: "elephant-ground")
+            case 11...31:
+                elephantImage.image = UIImage(named: "elephant-water")
+            default:
+                break
+            }
+            
+            elephantPosition.append(elephantImage)
+        }
     }
     
     @objc func changeBackground(_ sender: UIButton){
@@ -133,7 +151,7 @@ extension FundamentsView: LojongCustomView{
             break
         }
         print(listCheckedDays)
-        print(elephantPosition)
+        print(elephantLastPosition)
     }
     
     private func refreshElephantPosition(){
@@ -141,7 +159,7 @@ extension FundamentsView: LojongCustomView{
             if position == true{
                 continue
             } else{
-                elephantPosition = index
+                elephantLastPosition = index
                 break
             }
         }
@@ -301,6 +319,30 @@ extension FundamentsView: LojongCustomView{
             
         
         }
+        
+        // elephantPosition
+        for current in 0...31{
+            imageBackGround.sv(elephantPosition[current])
+            switch current {
+            case 0...10:
+                elephantPosition[current].width(widthPointsTransform(48))
+                elephantPosition[current].height(heightPointsTranform(37))
+            case 11...31:
+                elephantPosition[current].width(widthPointsTransform(44))
+                elephantPosition[current].height(heightPointsTranform(53))
+            default:
+                break
+            }
+            
+            switch current {
+            case 0:
+                elephantPosition[current].bottom(heightPointsTranform(13))
+                elephantPosition[current].right(87)
+            default:
+                break
+            }
+        }
+        
     }
     
     private func widthPointsTransform(_ points: CGFloat) -> CGFloat{
