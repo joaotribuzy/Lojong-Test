@@ -323,6 +323,7 @@ extension FundamentsView: LojongCustomView{
         // elephantPosition
         for current in 0...31{
             imageBackGround.sv(elephantPosition[current])
+            elephantPosition[current].tag = current
             switch current {
             case 0...10:
                 elephantPosition[current].width(widthPointsTransform(48))
@@ -337,7 +338,97 @@ extension FundamentsView: LojongCustomView{
             switch current {
             case 0:
                 elephantPosition[current].bottom(heightPointsTranform(13))
-                elephantPosition[current].right(87)
+                elephantPosition[current].right(widthPointsTransform(87))
+            case 1:
+                elephantPosition[current].bottom(heightPointsTranform(128))
+                elephantPosition[current].right(widthPointsTransform(87))
+            case 2:
+                elephantPosition[current].bottom(heightPointsTranform(253))
+                elephantPosition[current].right(widthPointsTransform(100))
+            case 3:
+                elephantPosition[current].bottom(heightPointsTranform(270))
+                elephantPosition[current].right(widthPointsTransform(241))
+//            case 4:
+//                listViewClick[current].centerHorizontally()
+//                listViewClick[current].bottom(heightPointsTranform(427.5))
+//            case 5:
+//                listViewClick[current].right(widthPointsTransform(31))
+//                listViewClick[current].bottom(heightPointsTranform(508.5))
+//            case 6:
+//                listViewClick[current].right(widthPointsTransform(120))
+//                listViewClick[current].bottom(heightPointsTranform(605.5))
+//            case 7:
+//                listViewClick[current].right(widthPointsTransform(212))
+//                listViewClick[current].bottom(heightPointsTranform(697.5))
+//            case 8:
+//                listViewClick[current].right(widthPointsTransform(212))
+//                listViewClick[current].bottom(heightPointsTranform(798))
+//            case 9:
+//                listViewClick[current].right(widthPointsTransform(212))
+//                listViewClick[current].bottom(heightPointsTranform(898))
+//            case 10:
+//                listViewClick[current].right(widthPointsTransform(137))
+//                listViewClick[current].bottom(heightPointsTranform(1009.5))
+//            case 11:
+//                listViewClick[current].right(widthPointsTransform(62))
+//                listViewClick[current].bottom(heightPointsTranform(1113.5))
+//            case 12:
+//                listViewClick[current].right(widthPointsTransform(221))
+//                listViewClick[current].bottom(heightPointsTranform(1420.5))
+//            case 13:
+//                listViewClick[current].right(widthPointsTransform(221))
+//                listViewClick[current].bottom(heightPointsTranform(1544))
+//            case 14:
+//                listViewClick[current].right(widthPointsTransform(98.5))
+//                listViewClick[current].bottom(heightPointsTranform(1720))
+//            case 15:
+//                listViewClick[current].left(widthPointsTransform(28.5))
+//                listViewClick[current].bottom(heightPointsTranform(1886))
+//            case 16:
+//                listViewClick[current].left(widthPointsTransform(28.5))
+//                listViewClick[current].bottom(heightPointsTranform(2009))
+//            case 17:
+//                listViewClick[current].right(widthPointsTransform(166))
+//                listViewClick[current].bottom(heightPointsTranform(2106))
+//            case 18:
+//                listViewClick[current].right(widthPointsTransform(79.5))
+//                listViewClick[current].bottom(heightPointsTranform(2190))
+//            case 19:
+//                listViewClick[current].right(widthPointsTransform(79.5))
+//                listViewClick[current].bottom(heightPointsTranform(2288))
+//            case 20:
+//                listViewClick[current].right(widthPointsTransform(79.5))
+//                listViewClick[current].bottom(heightPointsTranform(2388))
+//            case 21:
+//                listViewClick[current].right(widthPointsTransform(202))
+//                listViewClick[current].bottom(heightPointsTranform(2550))
+//            case 22:
+//                listViewClick[current].right(widthPointsTransform(40))
+//                listViewClick[current].bottom(heightPointsTranform(2705))
+//            case 23:
+//                listViewClick[current].right(widthPointsTransform(40))
+//                listViewClick[current].bottom(heightPointsTranform(2834))
+//            case 24:
+//                listViewClick[current].right(widthPointsTransform(130))
+//                listViewClick[current].bottom(heightPointsTranform(2931.5))
+//            case 25:
+//                listViewClick[current].left(widthPointsTransform(68.5))
+//                listViewClick[current].bottom(heightPointsTranform(3024))
+//            case 26:
+//                listViewClick[current].left(widthPointsTransform(68.5))
+//                listViewClick[current].bottom(heightPointsTranform(3140))
+//            case 27:
+//                listViewClick[current].left(widthPointsTransform(68.5))
+//                listViewClick[current].bottom(heightPointsTranform(3262))
+//            case 28:
+//                listViewClick[current].right(widthPointsTransform(134))
+//                listViewClick[current].bottom(heightPointsTranform(3359))
+//            case 29:
+//                listViewClick[current].right(widthPointsTransform(40))
+//                listViewClick[current].bottom(heightPointsTranform(3467))
+//            case 30:
+//                listViewClick[current].right(widthPointsTransform(40))
+//                listViewClick[current].bottom(heightPointsTranform(3589))
             default:
                 break
             }
