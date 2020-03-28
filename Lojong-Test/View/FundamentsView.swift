@@ -141,11 +141,14 @@ extension FundamentsView: LojongCustomView{
         case 12,13,14,15,16,18,19,20,21,22,23,25,26,27,29,30:
             sender.setImage(UIImage(named: "vertical-water-unlocked"), for: .normal)
             listCheckedDays[sender.tag]  = true
-            refreshElephantPosition()
+            if sender.tag == 30{
+                elephantPosition[30].isHidden = true
+            } else{
+                refreshElephantPosition()
+            }
         case 17,24,28:
             sender.setImage(UIImage(named: "horizontal-water-unlocked"), for: .normal)
             listCheckedDays[sender.tag]  = true
-            refreshElephantPosition()
         default:
             refreshElephantPosition()
             break
@@ -161,6 +164,13 @@ extension FundamentsView: LojongCustomView{
             } else{
                 elephantLastPosition = index
                 break
+            }
+        }
+        for (index,_) in listViewClick.enumerated(){
+            if elephantLastPosition == index{
+                elephantPosition[index].isHidden = false
+            } else{
+                elephantPosition[index].isHidden = true
             }
         }
     }
@@ -325,6 +335,7 @@ extension FundamentsView: LojongCustomView{
             imageBackGround.sv(elephantPosition[current])
             elephantPosition[current].tag = current
             elephantPosition[current].contentMode = .scaleAspectFit
+            elephantPosition[current].isHidden = true
             switch current {
             case 0...11:
                 elephantPosition[current].width(widthPointsTransform(48))
@@ -340,6 +351,7 @@ extension FundamentsView: LojongCustomView{
             case 0:
                 elephantPosition[current].bottom(heightPointsTranform(13))
                 elephantPosition[current].right(widthPointsTransform(87))
+                elephantPosition[current].isHidden = false
             case 1:
                 elephantPosition[current].bottom(heightPointsTranform(128))
                 elephantPosition[current].right(widthPointsTransform(87))
