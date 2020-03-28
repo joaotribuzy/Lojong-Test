@@ -39,6 +39,7 @@ class FundamentsView: UIView{
     let imageBackGround: UIImageView = UIImageView()
     
     var listViewClick: [UIButton] = []
+    lazy var tags: Int = 0
 }
 
 extension FundamentsView: LojongCustomView{
@@ -70,7 +71,7 @@ extension FundamentsView: LojongCustomView{
         for current in 0...30 {
             let day: UIButton = {
                 let buttom = UIButton()
-                buttom.backgroundColor = .red
+                buttom.backgroundColor = .clear
                 return buttom
             }()
             
@@ -99,13 +100,26 @@ extension FundamentsView: LojongCustomView{
                 break
             }
             day.isUserInteractionEnabled = true
+            day.tag = tags
+            tags += 1
             day.addTarget(self, action: #selector(changeBackground), for: .touchUpInside)
             listViewClick.append(day)
         }
     }
     
     @objc func changeBackground(_ sender: UIButton){
-        sender.backgroundColor = .brown
+        switch sender.tag {
+        case 0,1,3,5,7,8,9,11:
+            sender.setImage(UIImage(named: "vertical-ground-unlocked"), for: .normal)
+        case 2,4,6,10:
+            sender.setImage(UIImage(named: "horizontal-ground-unlocked"), for: .normal)
+        case 12,13,14,15,16,18,19,20,21,22,23,25,26,27,29,30:
+            sender.setImage(UIImage(named: "vertical-water-unlocked"), for: .normal)
+        case 17,24,28:
+            sender.setImage(UIImage(named: "horizontal-water-unlocked"), for: .normal)
+        default:
+            break
+        }
     }
     
     func autolayout() {
