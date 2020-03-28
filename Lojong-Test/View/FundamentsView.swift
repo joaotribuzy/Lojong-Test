@@ -116,9 +116,9 @@ extension FundamentsView: LojongCustomView{
             let elephantImage: UIImageView = UIImageView()
             
             switch current {
-            case 0...10:
+            case 0...11:
                 elephantImage.image = UIImage(named: "elephant-ground")
-            case 11...31:
+            case 12...31:
                 elephantImage.image = UIImage(named: "elephant-water")
             default:
                 break
@@ -324,11 +324,12 @@ extension FundamentsView: LojongCustomView{
         for current in 0...31{
             imageBackGround.sv(elephantPosition[current])
             elephantPosition[current].tag = current
+            elephantPosition[current].contentMode = .scaleAspectFit
             switch current {
-            case 0...10:
+            case 0...11:
                 elephantPosition[current].width(widthPointsTransform(48))
                 elephantPosition[current].height(heightPointsTranform(37))
-            case 11...31:
+            case 12...31:
                 elephantPosition[current].width(widthPointsTransform(44))
                 elephantPosition[current].height(heightPointsTranform(53))
             default:
@@ -348,87 +349,105 @@ extension FundamentsView: LojongCustomView{
             case 3:
                 elephantPosition[current].bottom(heightPointsTranform(270))
                 elephantPosition[current].right(widthPointsTransform(241))
-//            case 4:
-//                listViewClick[current].centerHorizontally()
-//                listViewClick[current].bottom(heightPointsTranform(427.5))
-//            case 5:
-//                listViewClick[current].right(widthPointsTransform(31))
-//                listViewClick[current].bottom(heightPointsTranform(508.5))
-//            case 6:
-//                listViewClick[current].right(widthPointsTransform(120))
-//                listViewClick[current].bottom(heightPointsTranform(605.5))
-//            case 7:
-//                listViewClick[current].right(widthPointsTransform(212))
-//                listViewClick[current].bottom(heightPointsTranform(697.5))
-//            case 8:
-//                listViewClick[current].right(widthPointsTransform(212))
-//                listViewClick[current].bottom(heightPointsTranform(798))
-//            case 9:
-//                listViewClick[current].right(widthPointsTransform(212))
-//                listViewClick[current].bottom(heightPointsTranform(898))
-//            case 10:
-//                listViewClick[current].right(widthPointsTransform(137))
-//                listViewClick[current].bottom(heightPointsTranform(1009.5))
-//            case 11:
-//                listViewClick[current].right(widthPointsTransform(62))
-//                listViewClick[current].bottom(heightPointsTranform(1113.5))
-//            case 12:
-//                listViewClick[current].right(widthPointsTransform(221))
-//                listViewClick[current].bottom(heightPointsTranform(1420.5))
-//            case 13:
-//                listViewClick[current].right(widthPointsTransform(221))
-//                listViewClick[current].bottom(heightPointsTranform(1544))
-//            case 14:
-//                listViewClick[current].right(widthPointsTransform(98.5))
-//                listViewClick[current].bottom(heightPointsTranform(1720))
-//            case 15:
-//                listViewClick[current].left(widthPointsTransform(28.5))
-//                listViewClick[current].bottom(heightPointsTranform(1886))
-//            case 16:
-//                listViewClick[current].left(widthPointsTransform(28.5))
-//                listViewClick[current].bottom(heightPointsTranform(2009))
-//            case 17:
-//                listViewClick[current].right(widthPointsTransform(166))
-//                listViewClick[current].bottom(heightPointsTranform(2106))
-//            case 18:
-//                listViewClick[current].right(widthPointsTransform(79.5))
-//                listViewClick[current].bottom(heightPointsTranform(2190))
-//            case 19:
-//                listViewClick[current].right(widthPointsTransform(79.5))
-//                listViewClick[current].bottom(heightPointsTranform(2288))
-//            case 20:
-//                listViewClick[current].right(widthPointsTransform(79.5))
-//                listViewClick[current].bottom(heightPointsTranform(2388))
-//            case 21:
-//                listViewClick[current].right(widthPointsTransform(202))
-//                listViewClick[current].bottom(heightPointsTranform(2550))
-//            case 22:
-//                listViewClick[current].right(widthPointsTransform(40))
-//                listViewClick[current].bottom(heightPointsTranform(2705))
-//            case 23:
-//                listViewClick[current].right(widthPointsTransform(40))
-//                listViewClick[current].bottom(heightPointsTranform(2834))
-//            case 24:
-//                listViewClick[current].right(widthPointsTransform(130))
-//                listViewClick[current].bottom(heightPointsTranform(2931.5))
-//            case 25:
-//                listViewClick[current].left(widthPointsTransform(68.5))
-//                listViewClick[current].bottom(heightPointsTranform(3024))
-//            case 26:
-//                listViewClick[current].left(widthPointsTransform(68.5))
-//                listViewClick[current].bottom(heightPointsTranform(3140))
-//            case 27:
-//                listViewClick[current].left(widthPointsTransform(68.5))
-//                listViewClick[current].bottom(heightPointsTranform(3262))
-//            case 28:
-//                listViewClick[current].right(widthPointsTransform(134))
-//                listViewClick[current].bottom(heightPointsTranform(3359))
-//            case 29:
-//                listViewClick[current].right(widthPointsTransform(40))
-//                listViewClick[current].bottom(heightPointsTranform(3467))
-//            case 30:
-//                listViewClick[current].right(widthPointsTransform(40))
-//                listViewClick[current].bottom(heightPointsTranform(3589))
+            case 4:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(439))
+                elephantPosition[current].right(widthPointsTransform(252))
+            case 5:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(460))
+                elephantPosition[current].right(widthPointsTransform(70))
+            case 6:
+                elephantPosition[current].bottom(heightPointsTranform(606))
+                elephantPosition[current].right(widthPointsTransform(52))
+            case 7:
+                elephantPosition[current].bottom(heightPointsTranform(645))
+                elephantPosition[current].right(widthPointsTransform(203))
+            case 8:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(772))
+                elephantPosition[current].right(widthPointsTransform(225))
+            case 9:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(870))
+                elephantPosition[current].right(widthPointsTransform(225))
+            case 10:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(1008))
+                elephantPosition[current].right(widthPointsTransform(219))
+            case 11:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(1048))
+                elephantPosition[current].right(widthPointsTransform(83))
+            case 12:
+                elephantPosition[current].bottom(heightPointsTranform(1350))
+                elephantPosition[current].right(widthPointsTransform(141))
+            case 13:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(1498))
+                elephantPosition[current].right(widthPointsTransform(244))
+            case 14:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(1660))
+                elephantPosition[current].right(widthPointsTransform(184))
+            case 15:
+                elephantPosition[current].bottom(heightPointsTranform(1820))
+                elephantPosition[current].right(widthPointsTransform(194))
+            case 16:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(1953))
+                elephantPosition[current].right(widthPointsTransform(285))
+            case 17:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(2113))
+                elephantPosition[current].right(widthPointsTransform(252))
+            case 18:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(2141))
+                elephantPosition[current].right(widthPointsTransform(103))
+            case 19:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(2253))
+                elephantPosition[current].right(widthPointsTransform(103))
+            case 20:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(2351))
+                elephantPosition[current].right(widthPointsTransform(103))
+            case 21:
+                elephantPosition[current].bottom(heightPointsTranform(2489))
+                elephantPosition[current].right(widthPointsTransform(155))
+            case 22:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(2653))
+                elephantPosition[current].right(widthPointsTransform(115))
+            case 23:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(2781))
+                elephantPosition[current].right(widthPointsTransform(65))
+            case 24:
+                elephantPosition[current].bottom(heightPointsTranform(2918))
+                elephantPosition[current].right(widthPointsTransform(53))
+            case 25:
+                elephantPosition[current].bottom(heightPointsTranform(2958))
+                elephantPosition[current].right(widthPointsTransform(205))
+            case 26:
+                elephantPosition[current].bottom(heightPointsTranform(3098))
+                elephantPosition[current].right(widthPointsTransform(234))
+            case 27:
+                elephantPosition[current].bottom(heightPointsTranform(3216))
+                elephantPosition[current].right(widthPointsTransform(234))
+            case 28:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(3216))
+                elephantPosition[current].right(widthPointsTransform(234))
+            case 29:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(3388))
+                elephantPosition[current].right(widthPointsTransform(68))
+            case 30:
+                elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1)
+                elephantPosition[current].bottom(heightPointsTranform(3541))
+                elephantPosition[current].right(widthPointsTransform(62))
             default:
                 break
             }
