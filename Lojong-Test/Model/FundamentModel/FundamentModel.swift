@@ -27,32 +27,14 @@ class FundamentModel {
         entity = NSEntityDescription.entity(forEntityName: "Fundaments", in: context)
         newUser = NSManagedObject(entity: entity!, insertInto: context)
     }
-    
-    public func savePositionAndClicked(){
-        newUser.setValue(lastPosition, forKey: "elephantposition")
-        var saveClickedInString = ""
-        for num in 0...30{
-            if num == 30{
-                saveClickedInString.append(String(clickedButtons![num]))
-            } else {
-                saveClickedInString.append(String(clickedButtons![num]) + ",")
-            }
-        }
-        newUser.setValue(saveClickedInString, forKey: "clickedButtons")
-        do {
-           try context.save()
-          } catch {
-           print("Failed saving")
-        }
-    }
-    
+        
     public func getPositionAndClicked(){
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Fundaments")
         request.returnsObjectsAsFaults = false
         do {
             let result = try context.fetch(request)
             for data in result as! [NSManagedObject] {
-                lastPosition = data.value(forKey: "elephantposition") as! Int
+                lastPosition = data.value(forKey: "position") as! Int
                 let clickedRecept = data.value(forKey: "clickedButtons") as? String ?? "false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false, false,false,false,false,false,false,false,false,false,false,false,false"
                 clickedButtons = clickedRecept.components(separatedBy: ",").map { (Bool($0) ?? false) }
             }
@@ -60,5 +42,34 @@ class FundamentModel {
             print("Failed")
         }
     }
+    
+    func savePositionAndClicked(){
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Fundaments")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject] {
+                var saveClickedInString = ""
+                for num in 0...30{
+                    if num == 30{
+                        saveClickedInString.append(String(clickedButtons![num]))
+                    } else {
+                        saveClickedInString.append(String(clickedButtons![num]) + ",")
+                    }
+                }
+                data.setValue(lastPosition, forKey: "position")
+                data.setValue(saveClickedInString, forKey: "clickedButtons")
+                do{
+                    try context.save()
+                } catch {
+                    print("Failed")
+                }
+            }
+            
+        } catch {
+            print("Failed")
+        }
+    }
+    
     
 }

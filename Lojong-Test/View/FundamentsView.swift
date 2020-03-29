@@ -113,7 +113,7 @@ extension FundamentsView: LojongCustomView{
             day.isUserInteractionEnabled = true
             day.tag = tags
             tags += 1
-            listCheckedDays.append(false)
+//            listCheckedDays.append(false)
             day.addTarget(self, action: #selector(changeBackground), for: .touchUpInside)
             listViewClick.append(day)
         }
@@ -137,9 +137,6 @@ extension FundamentsView: LojongCustomView{
     
     func autolayout() {
         self.top(0).right(0).bottom(0).left(0)
-        
-        
-        
         // topview
         sv(topView)
         topView.top(0).right(0).left(0).height(70)
@@ -285,9 +282,6 @@ extension FundamentsView: LojongCustomView{
             default:
                 break
             }
-        
-            
-        
         }
         
         // elephantPosition
@@ -419,7 +413,6 @@ extension FundamentsView: LojongCustomView{
                 elephantPosition[current].bottom(heightPointsTranform(3388))
                 elephantPosition[current].right(widthPointsTransform(78))
             case 30:
-//                elephantPosition[current].transform = CGAffineTransform(rotationAngle: 45)
                 elephantPosition[current].transform = CGAffineTransform(scaleX: -1, y: 1).rotated(by: 80 * .pi/180)
                 elephantPosition[current].bottom(heightPointsTranform(3541))
                 elephantPosition[current].right(widthPointsTransform(62))
@@ -450,9 +443,9 @@ extension FundamentsView: LojongCustomView{
     // MARK: - Data
     private func refreshPositionAndClicked(){
         model.getPositionAndClicked()
-        
+        elephantLastPosition = model.lastPosition
         for num in 0...31{
-            if elephantPosition[num].tag == model.lastPosition{
+            if elephantPosition[num].tag == elephantLastPosition{
                 elephantPosition[num].isHidden = false
             } else{
                 elephantPosition[num].isHidden = true
@@ -462,7 +455,6 @@ extension FundamentsView: LojongCustomView{
         for num in 0...30{
             if listCheckedDays[num] == true{
                 changeBackground(listViewClick[num])
-                saveInModel()
             }
         }
     }
@@ -472,28 +464,18 @@ extension FundamentsView: LojongCustomView{
         switch sender.tag {
         case 0,1,3,5,7,8,9,11:
             sender.setImage(UIImage(named: "vertical-ground-unlocked"), for: .normal)
-            listCheckedDays[sender.tag]  = true
-            refreshElephantPosition()
+            
         case 2,4,6,10:
             sender.setImage(UIImage(named: "horizontal-ground-unlocked"), for: .normal)
-            listCheckedDays[sender.tag]  = true
-            refreshElephantPosition()
         case 12,13,14,15,16,18,19,20,21,22,23,25,26,27,29,30:
             sender.setImage(UIImage(named: "vertical-water-unlocked"), for: .normal)
-            listCheckedDays[sender.tag]  = true
-            if sender.tag == 30{
-                elephantPosition[30].isHidden = true
-            } else{
-                refreshElephantPosition()
-            }
         case 17,24,28:
             sender.setImage(UIImage(named: "horizontal-water-unlocked"), for: .normal)
-            listCheckedDays[sender.tag]  = true
         default:
-            refreshElephantPosition()
             break
         }
-        saveInModel()
+        listCheckedDays[sender.tag]  = true
+        refreshElephantPosition()
     }
     
     private func refreshElephantPosition(){
@@ -513,6 +495,7 @@ extension FundamentsView: LojongCustomView{
                 elephantPosition[index].isHidden = true
             }
         }
+        
         saveInModel()
     }
     

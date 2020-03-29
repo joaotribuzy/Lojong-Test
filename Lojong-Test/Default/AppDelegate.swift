@@ -76,12 +76,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func applicationWillTerminate(_ application: UIApplication) {
-        let model: FundamentModel = {
-            return FundamentModel.shared
-        }()
-        
-//        model.savePositionAndClicked()
-    }
+    
 }
 

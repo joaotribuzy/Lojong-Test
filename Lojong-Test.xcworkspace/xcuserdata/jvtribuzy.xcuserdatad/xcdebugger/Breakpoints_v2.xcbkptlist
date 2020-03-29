@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E5142693-46A6-4D54-8523-1249EF61E812"
+            uuid = "6DF567B2-BC8C-4BAE-842C-8FAABD1C01ED"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Lojong-Test/Default/AppDelegate.swift"
+            filePath = "Lojong-Test/Model/FundamentModel/FundamentModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "applicationWillTerminate(_:)"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "savePositionAndClicked()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
