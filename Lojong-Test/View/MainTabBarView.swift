@@ -8,13 +8,17 @@
 
 import Foundation
 import UIKit
+import Stevia
 
 extension MainTabBarViewController: LojongCustomView {
     //MARK: - Style
     func style() {
         self.tabBar.tintColor = UIColor(red: 194, green: 123, blue: 136)
-        self.tabBar.backgroundColor = UIColor(red: 255, green: 255, blue: 255)
+        self.tabBar.barTintColor = UIColor(red: 255, green: 255, blue: 255)
+        self.tabBar.standardAppearance.shadowImage = UIImage()
+        
     }
     
-    func autolayout() {}
+    func autolayout() {
+    }
 }

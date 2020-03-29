@@ -24,7 +24,6 @@
 		384E54A524198A5C00C3EE88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384E54A324198A5C00C3EE88 /* LaunchScreen.storyboard */; };
 		384E54B024198A5D00C3EE88 /* Lojong_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E54AF24198A5D00C3EE88 /* Lojong_TestTests.swift */; };
 		384E54BB24198A5D00C3EE88 /* Lojong_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E54BA24198A5D00C3EE88 /* Lojong_TestUITests.swift */; };
-		38529DE724256C88006FDBC0 /* CustomAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38529DE624256C88006FDBC0 /* CustomAVPlayer.swift */; };
 		38529DF82425ACFF006FDBC0 /* InsightArticleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38529DF72425ACFF006FDBC0 /* InsightArticleTableViewController.swift */; };
 		3859093624252940003D1DDF /* InsightCustomTableViewCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859093524252940003D1DDF /* InsightCustomTableViewCellStyle.swift */; };
 		38600F3F242BEC50005FB0F5 /* FundamentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38600F3E242BEC50005FB0F5 /* FundamentsView.swift */; };
@@ -102,7 +101,6 @@
 		384E54B624198A5D00C3EE88 /* Lojong-TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lojong-TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		384E54BA24198A5D00C3EE88 /* Lojong_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lojong_TestUITests.swift; sourceTree = "<group>"; };
 		384E54BC24198A5D00C3EE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38529DE624256C88006FDBC0 /* CustomAVPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAVPlayer.swift; sourceTree = "<group>"; };
 		38529DF72425ACFF006FDBC0 /* InsightArticleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightArticleTableViewController.swift; sourceTree = "<group>"; };
 		3859093524252940003D1DDF /* InsightCustomTableViewCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCustomTableViewCellStyle.swift; sourceTree = "<group>"; };
 		38600F3E242BEC50005FB0F5 /* FundamentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundamentsView.swift; sourceTree = "<group>"; };
@@ -469,7 +467,6 @@
 		386D3F6A241C476D00F70F8F /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
-				38529DE624256C88006FDBC0 /* CustomAVPlayer.swift */,
 				386D3F68241C471E00F70F8F /* LojongCustomView.swift */,
 			);
 			name = Architecture;
@@ -815,7 +812,6 @@
 				380E2FFF241EF9ED00C41681 /* InsightMainViewController.swift in Sources */,
 				380E300B241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift in Sources */,
 				388F8CE62426888D00712073 /* InsightArticleTableView.swift in Sources */,
-				38529DE724256C88006FDBC0 /* CustomAVPlayer.swift in Sources */,
 				380E2FFB241EF15E00C41681 /* InsightMainView.swift in Sources */,
 				38650109242947A100AB4567 /* LojongArticleModelController.swift in Sources */,
 				38602D5B242127D600E6EDB3 /* InsightVideoTableView.swift in Sources */,

@@ -32,6 +32,7 @@ class InsightMainViewController: UIViewController {
     
     func setupNotification(){
         NotificationCenter.default.addObserver(self, selector: #selector(alteringVideoURLNotificationReceived(_:)), name: .LojongPlayVideoOnController, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(finishVideo), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
     }
 
 }
@@ -58,6 +59,9 @@ extension InsightMainViewController{
     
     @objc private func alteringVideoURLNotificationReceived(_ notification: Notification){
         self.playVideo()
-        
+    }
+    
+    @objc func finishVideo(){
+        dismiss(animated: true, completion: nil)
     }
 }
