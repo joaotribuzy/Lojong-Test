@@ -27,7 +27,7 @@ class FundamentsView: UIView{
         
         verifyingIfIsBringFromBackground()
         
-        scrollToEnd()
+        scrollToRightPosition()
         
         backButtom.addTarget(self, action: #selector(dismissFundamentViewController), for: .touchUpInside)
     }
@@ -442,8 +442,8 @@ extension FundamentsView: LojongCustomView{
         NotificationCenter.default.post(name: .LojongDismissFundamentViewController, object: nil)
     }
     
-    func scrollToEnd(){
-        let bottomOffset = CGPoint(x: 0, y: scrollView.contentSize.height + listViewClick[elephantLastPosition].bottomConstraint!.constant - 100)
+    func scrollToRightPosition(){
+        let bottomOffset = CGPoint(x: 0, y: scrollView.contentSize.height + listViewClick[elephantLastPosition].bottomConstraint!.constant - 300)
         scrollView.setContentOffset(bottomOffset, animated: true)
     }
     
