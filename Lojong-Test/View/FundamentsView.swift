@@ -25,6 +25,8 @@ class FundamentsView: UIView{
         
         refreshPositionAndClicked()
         
+        verifyingIfIsBringFromBackground()
+        
         scrollToEnd()
         
         backButtom.addTarget(self, action: #selector(dismissFundamentViewController), for: .touchUpInside)
@@ -130,57 +132,6 @@ extension FundamentsView: LojongCustomView{
             }
             
             elephantPosition.append(elephantImage)
-        }
-    }
-    
-    @objc func changeBackground(_ sender: UIButton){
-        switch sender.tag {
-        case 0,1,3,5,7,8,9,11:
-            sender.setImage(UIImage(named: "vertical-ground-unlocked"), for: .normal)
-            listCheckedDays[sender.tag]  = true
-            model.clickedButtons.append(sender.tag)
-            model.savePositionAndClicked()
-            refreshElephantPosition()
-        case 2,4,6,10:
-            sender.setImage(UIImage(named: "horizontal-ground-unlocked"), for: .normal)
-            listCheckedDays[sender.tag]  = true
-            refreshElephantPosition()
-        case 12,13,14,15,16,18,19,20,21,22,23,25,26,27,29,30:
-            sender.setImage(UIImage(named: "vertical-water-unlocked"), for: .normal)
-            listCheckedDays[sender.tag]  = true
-            if sender.tag == 30{
-                elephantPosition[30].isHidden = true
-            } else{
-                refreshElephantPosition()
-            }
-        case 17,24,28:
-            sender.setImage(UIImage(named: "horizontal-water-unlocked"), for: .normal)
-            listCheckedDays[sender.tag]  = true
-        default:
-            refreshElephantPosition()
-            break
-        }
-        print(listCheckedDays)
-        print(elephantLastPosition)
-    }
-    
-    private func refreshElephantPosition(){
-        for (index,position) in listCheckedDays.enumerated(){
-            if position == true{
-                continue
-            } else{
-                elephantLastPosition = index
-                model.lastPosition = elephantLastPosition
-                model.savePositionAndClicked()
-                break
-            }
-        }
-        for (index,_) in listViewClick.enumerated(){
-            if elephantLastPosition == index{
-                elephantPosition[index].isHidden = false
-            } else{
-                elephantPosition[index].isHidden = true
-            }
         }
     }
     
@@ -344,7 +295,6 @@ extension FundamentsView: LojongCustomView{
             imageBackGround.sv(elephantPosition[current])
             elephantPosition[current].tag = current
             elephantPosition[current].contentMode = .scaleAspectFit
-            elephantPosition[current].isHidden = true
             switch current {
             case 0...11:
                 elephantPosition[current].width(widthPointsTransform(48))
@@ -360,7 +310,6 @@ extension FundamentsView: LojongCustomView{
             case 0:
                 elephantPosition[current].bottom(heightPointsTranform(13))
                 elephantPosition[current].right(widthPointsTransform(87))
-                elephantPosition[current].isHidden = false
             case 1:
                 elephantPosition[current].bottom(heightPointsTranform(128))
                 elephantPosition[current].right(widthPointsTransform(87))
@@ -494,11 +443,11 @@ extension FundamentsView: LojongCustomView{
     }
     
     func scrollToEnd(){
-        let bottomOffset = CGPoint(x: 0, y: scrollView.contentSize.height - scrollView.bounds.size.height)
+        let bottomOffset = CGPoint(x: 0, y: scrollView.contentSize.height + listViewClick[elephantLastPosition].bottomConstraint!.constant - 100)
         scrollView.setContentOffset(bottomOffset, animated: true)
     }
     
-    // MARK: Data
+    // MARK: - Data
     private func refreshPositionAndClicked(){
         model.getPositionAndClicked()
         
@@ -509,5 +458,79 @@ extension FundamentsView: LojongCustomView{
                 elephantPosition[num].isHidden = true
             }
         }
+        listCheckedDays = model.clickedButtons!
+        for num in 0...30{
+            if listCheckedDays[num] == true{
+                changeBackground(listViewClick[num])
+                saveInModel()
+            }
+        }
     }
+    
+    
+    @objc func changeBackground(_ sender: UIButton){
+        switch sender.tag {
+        case 0,1,3,5,7,8,9,11:
+            sender.setImage(UIImage(named: "vertical-ground-unlocked"), for: .normal)
+            listCheckedDays[sender.tag]  = true
+            refreshElephantPosition()
+        case 2,4,6,10:
+            sender.setImage(UIImage(named: "horizontal-ground-unlocked"), for: .normal)
+            listCheckedDays[sender.tag]  = true
+            refreshElephantPosition()
+        case 12,13,14,15,16,18,19,20,21,22,23,25,26,27,29,30:
+            sender.setImage(UIImage(named: "vertical-water-unlocked"), for: .normal)
+            listCheckedDays[sender.tag]  = true
+            if sender.tag == 30{
+                elephantPosition[30].isHidden = true
+            } else{
+                refreshElephantPosition()
+            }
+        case 17,24,28:
+            sender.setImage(UIImage(named: "horizontal-water-unlocked"), for: .normal)
+            listCheckedDays[sender.tag]  = true
+        default:
+            refreshElephantPosition()
+            break
+        }
+        saveInModel()
+    }
+    
+    private func refreshElephantPosition(){
+        for (index,position) in listCheckedDays.enumerated(){
+            if position == true{
+                continue
+            } else{
+                elephantLastPosition = index
+                model.lastPosition = elephantLastPosition
+                break
+            }
+        }
+        for (index,_) in listViewClick.enumerated(){
+            if elephantLastPosition == index{
+                elephantPosition[index].isHidden = false
+            } else{
+                elephantPosition[index].isHidden = true
+            }
+        }
+        saveInModel()
+    }
+    
+    private func verifyingIfIsBringFromBackground(){
+        switch UIApplication.shared.applicationState {
+            case .background, .inactive:
+                refreshPositionAndClicked()
+            case .active:
+                refreshPositionAndClicked()
+            default:
+                break
+        }
+    }
+    
+    private func saveInModel(){
+        model.clickedButtons = listCheckedDays
+        model.lastPosition = elephantLastPosition
+        model.savePositionAndClicked()
+    }
+    
 }

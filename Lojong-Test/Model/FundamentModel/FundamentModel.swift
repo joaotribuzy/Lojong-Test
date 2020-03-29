@@ -14,7 +14,7 @@ class FundamentModel {
     public static let shared = FundamentModel()
 
     public var lastPosition: Int = 0
-    public var clickedButtons: [Int] = []
+    public var clickedButtons: [Bool]? = []
     
     let appDelegate: AppDelegate
     let context: NSManagedObjectContext
@@ -30,7 +30,15 @@ class FundamentModel {
     
     public func savePositionAndClicked(){
         newUser.setValue(lastPosition, forKey: "elephantposition")
-        
+        var saveClickedInString = ""
+        for num in 0...30{
+            if num == 30{
+                saveClickedInString.append(String(clickedButtons![num]))
+            } else {
+                saveClickedInString.append(String(clickedButtons![num]) + ",")
+            }
+        }
+        newUser.setValue(saveClickedInString, forKey: "clickedButtons")
         do {
            try context.save()
           } catch {
@@ -40,12 +48,13 @@ class FundamentModel {
     
     public func getPositionAndClicked(){
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Fundaments")
-        //request.predicate = NSPredicate(format: "age = %@", "12")
         request.returnsObjectsAsFaults = false
         do {
             let result = try context.fetch(request)
             for data in result as! [NSManagedObject] {
                 lastPosition = data.value(forKey: "elephantposition") as! Int
+                let clickedRecept = data.value(forKey: "clickedButtons") as? String ?? "false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false, false,false,false,false,false,false,false,false,false,false,false,false"
+                clickedButtons = clickedRecept.components(separatedBy: ",").map { (Bool($0) ?? false) }
             }
         } catch {
             print("Failed")
