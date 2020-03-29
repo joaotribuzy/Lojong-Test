@@ -1,39 +1,35 @@
 //
-//  InsightVideoModel.swift
+//  LojongArticle.swift
 //  Lojong-Test
 //
-//  Created by João Tribuzy on 19/03/20.
+//  Created by João Tribuzy on 22/03/20.
 //  Copyright © 2020 João Tribuzy. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class InsightVideo {
+class InsightArticle {
     var id: Int
-    var name: String
-    var description: String
-    var file: String
-    var url: String
-    var url2: String
-    var aws_url: String
-    var image: String
-    var image_url: String
+    var text: String
+    var title: String
+    var image_url: URL
+    var author_name: String
+    var url: URL
     var premium: Int
     var order: Int
+    var image: URL
     
-    init(id: Int, name: String, description: String, file: String, url: String, url2: String, aws_url: String, image: String, image_url: String, premium: Int, order: Int) {
+    init(id: Int, text: String, title: String, image_url: URL, author_name: String, url: URL, premium: Int, order: Int, image: URL) {
         self.id = id
-        self.name = name
-        self.description = description
-        self.file = file
-        self.url = url
-        self.url2 = url2
-        self.aws_url = aws_url
-        self.image = image
+        self.text = text
+        self.title = title
         self.image_url = image_url
+        self.author_name = author_name
+        self.url = url
         self.premium = premium
         self.order = order
+        self.image = image
     }
     
     static let placeholderImage: UIImage? = {
@@ -43,9 +39,10 @@ class InsightVideo {
     private static let imageDownloadSession = URLSession(configuration: URLSessionConfiguration.default)
     
     private var cachedImage: UIImage? = nil
-    var videoImage: UIImage {
+    
+    var articleImage: UIImage {
         if cachedImage == nil {
-            cachedImage = InsightVideo.placeholderImage
+            cachedImage = InsightArticle.placeholderImage
             fetchImage()
         }
 
@@ -56,13 +53,12 @@ class InsightVideo {
     private func fetchImage() {
         var image = UIImage()
         DispatchQueue.global(qos: .userInitiated).async{
-            let data = try? Data(contentsOf: URL(string: "\(self.image_url)")!)
+            let data = try? Data(contentsOf: self.image_url)
             image = UIImage(data: data!) ?? UIImage()
             
             self.cachedImage = image
             
-            NotificationCenter.default.post(name: .LojongVideoPreviewImageDownloaded, object: nil)
+            NotificationCenter.default.post(name: .LojongInsightArticleImageDownloaded, object: nil)
         }
     }
-    
 }

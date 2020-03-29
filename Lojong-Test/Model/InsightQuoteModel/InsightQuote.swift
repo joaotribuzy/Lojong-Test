@@ -1,5 +1,5 @@
 //
-//  InsightQuoteModel.swift
+//  InsightQuote.swift
 //  Lojong-Test
 //
 //  Created by João Tribuzy on 23/03/20.

@@ -35,23 +35,21 @@ class InsightVideoModelController {
                 
             
                 do{
-                    let video = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [NSDictionary]
-                    
-                    
+                    let video = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! Array<[String:Any]>
                     
                     for cachedVideo in video{
                         
-                        let insightContentVideo: InsightVideo = InsightVideo.init(id: cachedVideo.value(forKey: "id") as! Int,
-                                                                           name: cachedVideo.value(forKey: "name") as? String ?? "",
-                                                                           description: cachedVideo.value(forKey: "description") as? String ?? "",
-                                                                           file: cachedVideo.value(forKey: "file") as? String ?? "",
-                                                                           url: cachedVideo.value(forKey: "url") as? String ?? "",
-                                                                           url2: cachedVideo.value(forKey: "url2") as? String ?? "",
-                                                                           aws_url: cachedVideo.value(forKey: "aws_url") as? String ?? "Bla",
-                                                                           image: cachedVideo.value(forKey: "image") as? String ?? "",
-                                                                           image_url: cachedVideo.value(forKey: "image_url") as? String ?? "Bla",
-                                                                           premium: cachedVideo.value(forKey: "premium") as! Int,
-                                                                           order: cachedVideo.value(forKey: "order") as! Int)
+                        let insightContentVideo: InsightVideo = InsightVideo.init(id: cachedVideo["id"] as! Int,
+                                                                           name: cachedVideo["name"] as? String ?? "",
+                                                                           description: cachedVideo["description"] as? String ?? "",
+                                                                           file: cachedVideo["file"] as? String ?? "",
+                                                                           url: cachedVideo["url"] as? String ?? "",
+                                                                           url2: cachedVideo["url2"] as? String ?? "",
+                                                                           aws_url: cachedVideo["aws_url"] as? String ?? "Bla",
+                                                                           image: cachedVideo["image"] as? String ?? "",
+                                                                           image_url: cachedVideo["image_url"] as? String ?? "Bla",
+                                                                           premium: cachedVideo["premium"] as! Int,
+                                                                           order: cachedVideo["order"] as! Int)
                         
                         
                         
