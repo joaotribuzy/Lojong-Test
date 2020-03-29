@@ -20,6 +20,10 @@ class InsightMainViewController: UIViewController {
         self.setupNotification()
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     var model: InsightVideoModelController = {
         return InsightVideoModelController.shared
     }()

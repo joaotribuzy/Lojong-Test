@@ -29,6 +29,10 @@ class InsightCustomVideoTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     // MARK: - Components
     var model: InsightVideoModelController = {
         return InsightVideoModelController.shared

@@ -19,6 +19,10 @@ class InsightContentViewController: UIViewController {
         self.view = InsightContentView()
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     func setupNotification(){
         NotificationCenter.default.addObserver(self, selector: #selector(shareImageNotificationReceived(_:)), name: .LojongShareQuoteImage, object: nil)
     }

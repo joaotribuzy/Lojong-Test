@@ -22,6 +22,10 @@ class PracticeTableViewController: UITableViewController{
         
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
 }
 
 extension PracticeTableViewController{

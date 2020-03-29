@@ -33,7 +33,9 @@ class InsightQuoteTableViewController: UITableViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    deinit {}
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 }
 
 extension InsightQuoteTableViewController{

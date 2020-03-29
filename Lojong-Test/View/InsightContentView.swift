@@ -29,6 +29,10 @@ class InsightContentView: UIView, LojongCustomView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     // MARK: - Visual
     var videoTableViewController: UITableViewController = InsightVideoTableViewController(style: .plain)
     var articleTableViewController: UITableViewController = InsightArticleTableViewController(style: .plain)
