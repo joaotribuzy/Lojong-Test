@@ -55,6 +55,7 @@
 		38D714EF2423D2890023426C /* InsightVideoModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714EE2423D2890023426C /* InsightVideoModelController.swift */; };
 		38E03757242C0FDC00473CB4 /* PracticeTableViewCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E03756242C0FDC00473CB4 /* PracticeTableViewCellStyle.swift */; };
 		38E4FC9E243037CD0020476B /* Lojong-Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38E4FC9C243037CD0020476B /* Lojong-Test.xcdatamodeld */; };
+		38E4FCA324304A070020476B /* FundamentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4FCA224304A070020476B /* FundamentModel.swift */; };
 		55274B0DC7CBF3C07F02D0B6 /* Pods_Lojong_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C9DFB2F569377C3786E8E6 /* Pods_Lojong_TestTests.framework */; };
 		816DE5ECB6D5AEF77ED4C7D5 /* Pods_Lojong_Test_Lojong_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CF51D861F1A700986FAD6A /* Pods_Lojong_Test_Lojong_TestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -132,6 +133,7 @@
 		38D714EE2423D2890023426C /* InsightVideoModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InsightVideoModelController.swift; path = "Lojong-Test/Model/InsightVideoModel/InsightVideoModelController.swift"; sourceTree = SOURCE_ROOT; };
 		38E03756242C0FDC00473CB4 /* PracticeTableViewCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTableViewCellStyle.swift; sourceTree = "<group>"; };
 		38E4FC9D243037CD0020476B /* Lojong-Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Lojong-Test.xcdatamodel"; sourceTree = "<group>"; };
+		38E4FCA224304A070020476B /* FundamentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FundamentModel.swift; sourceTree = "<group>"; };
 		504BC626E24237D5521D8E68 /* Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-Lojong-Test-Lojong-TestUITests/Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		53C9DFB2F569377C3786E8E6 /* Pods_Lojong_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lojong_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		588D6D3EAA069C349E0FC8BA /* Pods-Lojong-TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-TestTests.debug.xcconfig"; path = "Target Support Files/Pods-Lojong-TestTests/Pods-Lojong-TestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -535,6 +537,7 @@
 		38E4FC9F2430390A0020476B /* FundamentModel */ = {
 			isa = PBXGroup;
 			children = (
+				38E4FCA224304A070020476B /* FundamentModel.swift */,
 			);
 			path = FundamentModel;
 			sourceTree = "<group>";
@@ -825,6 +828,7 @@
 				380E3009241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift in Sources */,
 				38600F4C242C0528005FB0F5 /* FundamentsTableViewCell.swift in Sources */,
 				38600F46242BF11B005FB0F5 /* PracticeTableViewController.swift in Sources */,
+				38E4FCA324304A070020476B /* FundamentModel.swift in Sources */,
 				380E3003241F0E5500C41681 /* InsightContentView.swift in Sources */,
 				384E549B24198A5B00C3EE88 /* SceneDelegate.swift in Sources */,
 				386D3F67241C443B00F70F8F /* Extension+UIColor.swift in Sources */,

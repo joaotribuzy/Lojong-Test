@@ -12,6 +12,10 @@ import Stevia
 
 class FundamentsView: UIView{
     
+    var model: FundamentModel = {
+        return FundamentModel.shared
+    }()
+    
     // MARK: - View Lifecycle
     init() {
         super.init(frame: .zero)
@@ -19,6 +23,7 @@ class FundamentsView: UIView{
         self.style()
         self.autolayout()
         
+        refreshPositionAndClicked()
         
         scrollToEnd()
         
@@ -133,6 +138,8 @@ extension FundamentsView: LojongCustomView{
         case 0,1,3,5,7,8,9,11:
             sender.setImage(UIImage(named: "vertical-ground-unlocked"), for: .normal)
             listCheckedDays[sender.tag]  = true
+            model.clickedButtons.append(sender.tag)
+            model.savePositionAndClicked()
             refreshElephantPosition()
         case 2,4,6,10:
             sender.setImage(UIImage(named: "horizontal-ground-unlocked"), for: .normal)
@@ -163,6 +170,8 @@ extension FundamentsView: LojongCustomView{
                 continue
             } else{
                 elephantLastPosition = index
+                model.lastPosition = elephantLastPosition
+                model.savePositionAndClicked()
                 break
             }
         }
@@ -487,5 +496,18 @@ extension FundamentsView: LojongCustomView{
     func scrollToEnd(){
         let bottomOffset = CGPoint(x: 0, y: scrollView.contentSize.height - scrollView.bounds.size.height)
         scrollView.setContentOffset(bottomOffset, animated: true)
+    }
+    
+    // MARK: Data
+    private func refreshPositionAndClicked(){
+        model.getPositionAndClicked()
+        
+        for num in 0...31{
+            if elephantPosition[num].tag == model.lastPosition{
+                elephantPosition[num].isHidden = false
+            } else{
+                elephantPosition[num].isHidden = true
+            }
+        }
     }
 }
