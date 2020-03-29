@@ -4,6 +4,16 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSFileProviderDomainUsageDescription</key>
+	<string>Para salvar a imagem em seu dispositivo.</string>
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>Para salvar a imagem em seu dispositivo.</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Para salvar a imagem em seu dispositivo.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Para salvar a imagem em suas fotos.</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
