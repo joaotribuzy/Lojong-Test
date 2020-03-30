@@ -20,7 +20,10 @@ extension FundamentsTableViewCell: LojongCustomView{
         self.selectedBackgroundView = selectedView
         
         // iconImage
-        iconImage.backgroundColor = .systemPink
+        iconImage.image = UIImage(named: "fundament-icon")
+        iconImage.contentMode = .scaleAspectFit
+        iconImage.clipsToBounds = true
+        iconImage.layer.cornerRadius = 5
         
         // progressView
         progressView.backgroundColor = .blue
