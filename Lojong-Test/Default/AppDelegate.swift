@@ -8,12 +8,19 @@
 
 import UIKit
 import CoreData
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        MSAppCenter.start("b9940f5c-bf2f-4571-9174-5479143dd944", withServices:[
+          MSAnalytics.self,
+          MSCrashes.self
+        ])
         return true
     }
 

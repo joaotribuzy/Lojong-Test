@@ -1,16 +1,27 @@
 PODS:
+  - AppCenter (3.1.0):
+    - AppCenter/Analytics (= 3.1.0)
+    - AppCenter/Crashes (= 3.1.0)
+  - AppCenter/Analytics (3.1.0):
+    - AppCenter/Core
+  - AppCenter/Core (3.1.0)
+  - AppCenter/Crashes (3.1.0):
+    - AppCenter/Core
   - SteviaLayout (4.7.3)
 
 DEPENDENCIES:
+  - AppCenter
   - SteviaLayout
 
 SPEC REPOS:
   trunk:
+    - AppCenter
     - SteviaLayout
 
 SPEC CHECKSUMS:
+  AppCenter: a1c30c47b7882a04a615ffa5ab26c007326436d8
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
 
-PODFILE CHECKSUM: 692713c2ec6ea55d646366394f8de6df6cd37d68
+PODFILE CHECKSUM: ee0c03a2732c377517cb161df7fe124114fbf428
 
 COCOAPODS: 1.8.3

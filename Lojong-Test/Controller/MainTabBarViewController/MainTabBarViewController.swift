@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AppCenter
+import AppCenterCrashes
 
 class MainTabBarViewController: UITabBarController{
     
@@ -15,6 +17,10 @@ class MainTabBarViewController: UITabBarController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        MSAppCenter.start("b9940f5c-bf2f-4571-9174-5479143dd944", withServices:[
+          MSCrashes.self
+        ])
         
         self.settingTabs()
         
