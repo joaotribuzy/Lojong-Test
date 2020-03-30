@@ -19,7 +19,11 @@ extension MainTabBarViewController: LojongCustomView {
         self.tabBar.layer.shadowRadius = 4.0
         self.tabBar.layer.shadowColor = UIColor.gray.cgColor
         self.tabBar.layer.shadowOpacity = 0.6
-        self.tabBar.standardAppearance.shadowImage = UIImage()
+        if #available(iOS 13.0, *) {
+            self.tabBar.standardAppearance.shadowImage = UIImage()
+        } else {
+            // Fallback on earlier versions
+        }
         
     }
     

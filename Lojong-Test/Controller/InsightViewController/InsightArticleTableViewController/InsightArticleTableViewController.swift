@@ -41,7 +41,11 @@ class InsightArticleTableViewController: UITableViewController {
     
     func activityIndicator() {
         indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        indicator.style = .large
+        if #available(iOS 13.0, *) {
+            indicator.style = .large
+        } else {
+            // Fallback on earlier versions
+        }
         self.tableView.sv(indicator)
         indicator.centerInContainer()
         

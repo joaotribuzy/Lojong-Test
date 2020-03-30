@@ -59,11 +59,11 @@ class FundamentModel {
                 }
                 data.setValue(lastPosition, forKey: "position")
                 data.setValue(saveClickedInString, forKey: "clickedButtons")
-                do{
-                    try context.save()
-                } catch {
-                    print("Failed")
-                }
+            }
+            do{
+                try context.save()
+            } catch {
+                print("Failed")
             }
         } catch {
             print("Failed")
