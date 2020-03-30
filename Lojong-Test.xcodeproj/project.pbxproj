@@ -3,18 +3,60 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FCC1C4D630A6FA6D5C177C5 /* Pods_Lojong_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11697A45972DA282EB210F69 /* Pods_Lojong_Test.framework */; };
+		380E2FFB241EF15E00C41681 /* InsightMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E2FFA241EF15E00C41681 /* InsightMainView.swift */; };
+		380E2FFF241EF9ED00C41681 /* InsightMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E2FFE241EF9ED00C41681 /* InsightMainViewController.swift */; };
+		380E3003241F0E5500C41681 /* InsightContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E3002241F0E5500C41681 /* InsightContentView.swift */; };
+		380E3007241FC11B00C41681 /* InsightContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E3006241FC11B00C41681 /* InsightContentViewController.swift */; };
+		380E3009241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E3008241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift */; };
+		380E300B241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E300A241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift */; };
+		3842B514242DAA8B00C55DD3 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842B513242DAA8B00C55DD3 /* Extension+UIView.swift */; };
+		3842B516242E7E0000C55DD3 /* Asap-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3842B515242E7E0000C55DD3 /* Asap-Medium.otf */; };
 		384E549924198A5B00C3EE88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E549824198A5B00C3EE88 /* AppDelegate.swift */; };
 		384E549B24198A5B00C3EE88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E549A24198A5B00C3EE88 /* SceneDelegate.swift */; };
-		384E549D24198A5B00C3EE88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E549C24198A5B00C3EE88 /* ViewController.swift */; };
+		384E549D24198A5B00C3EE88 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E549C24198A5B00C3EE88 /* MainTabBarViewController.swift */; };
 		384E54A024198A5B00C3EE88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384E549E24198A5B00C3EE88 /* Main.storyboard */; };
 		384E54A224198A5C00C3EE88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384E54A124198A5C00C3EE88 /* Assets.xcassets */; };
 		384E54A524198A5C00C3EE88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384E54A324198A5C00C3EE88 /* LaunchScreen.storyboard */; };
 		384E54B024198A5D00C3EE88 /* Lojong_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E54AF24198A5D00C3EE88 /* Lojong_TestTests.swift */; };
 		384E54BB24198A5D00C3EE88 /* Lojong_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384E54BA24198A5D00C3EE88 /* Lojong_TestUITests.swift */; };
+		38529DF82425ACFF006FDBC0 /* InsightArticleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38529DF72425ACFF006FDBC0 /* InsightArticleTableViewController.swift */; };
+		3859093624252940003D1DDF /* InsightCustomTableViewCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3859093524252940003D1DDF /* InsightCustomTableViewCellStyle.swift */; };
+		38600F3F242BEC50005FB0F5 /* FundamentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38600F3E242BEC50005FB0F5 /* FundamentsView.swift */; };
+		38600F42242BEECC005FB0F5 /* FundamentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38600F41242BEECC005FB0F5 /* FundamentsViewController.swift */; };
+		38600F46242BF11B005FB0F5 /* PracticeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38600F45242BF11B005FB0F5 /* PracticeTableViewController.swift */; };
+		38600F4C242C0528005FB0F5 /* FundamentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38600F4B242C0528005FB0F5 /* FundamentsTableViewCell.swift */; };
+		38602D572420448C00E6EDB3 /* Asap-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38602D562420448C00E6EDB3 /* Asap-Bold.ttf */; };
+		38602D5924205C1A00E6EDB3 /* Extension+NSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38602D5824205C1A00E6EDB3 /* Extension+NSNotification.swift */; };
+		38602D5B242127D600E6EDB3 /* InsightVideoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38602D5A242127D600E6EDB3 /* InsightVideoTableView.swift */; };
+		38602D5D242127F100E6EDB3 /* InsightVideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38602D5C242127F100E6EDB3 /* InsightVideoTableViewController.swift */; };
+		38602D5F242136AB00E6EDB3 /* InsightCustomVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38602D5E242136AB00E6EDB3 /* InsightCustomVideoTableViewCell.swift */; };
+		38650108242947A100AB4567 /* LojongArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38650106242947A100AB4567 /* LojongArticle.swift */; };
+		38650109242947A100AB4567 /* LojongArticleModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38650107242947A100AB4567 /* LojongArticleModelController.swift */; };
+		3865010B24294E7000AB4567 /* InsightQuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865010A24294E7000AB4567 /* InsightQuoteTableViewCell.swift */; };
+		3865010E24295F0600AB4567 /* InsightQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865010D24295F0600AB4567 /* InsightQuote.swift */; };
+		3865011024295FFA00AB4567 /* InsightQuoteModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3865010F24295FFA00AB4567 /* InsightQuoteModelController.swift */; };
+		386D3F67241C443B00F70F8F /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386D3F66241C443B00F70F8F /* Extension+UIColor.swift */; };
+		386D3F69241C471E00F70F8F /* LojongCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386D3F68241C471E00F70F8F /* LojongCustomView.swift */; };
+		388F8CE62426888D00712073 /* InsightArticleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CE52426888D00712073 /* InsightArticleTableView.swift */; };
+		388F8CE9242689EC00712073 /* InsightArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CE8242689EC00712073 /* InsightArticleTableViewCell.swift */; };
+		388F8CEC24268B1400712073 /* InsightArticleTableViewCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CEB24268B1400712073 /* InsightArticleTableViewCellStyle.swift */; };
+		388F8CF52427E8D700712073 /* InsightQuoteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CF42427E8D700712073 /* InsightQuoteTableView.swift */; };
+		388F8CF72427E8F100712073 /* InsightQuoteTableViewCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CF62427E8F100712073 /* InsightQuoteTableViewCellStyle.swift */; };
+		388F8CFA2427EA3E00712073 /* InsightQuoteTabeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F8CF92427EA3E00712073 /* InsightQuoteTabeViewController.swift */; };
+		38D527C6241EEB23007D1FB3 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */; };
+		38D714DD24226EF00023426C /* Asap-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38D714DC24226EF00023426C /* Asap-Regular.ttf */; };
+		38D714EB2423CAEA0023426C /* InsightVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714EA2423CAEA0023426C /* InsightVideo.swift */; };
+		38D714EF2423D2890023426C /* InsightVideoModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D714EE2423D2890023426C /* InsightVideoModelController.swift */; };
+		38E03757242C0FDC00473CB4 /* PracticeTableViewCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E03756242C0FDC00473CB4 /* PracticeTableViewCellStyle.swift */; };
+		38E4FC9E243037CD0020476B /* Lojong-Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38E4FC9C243037CD0020476B /* Lojong-Test.xcdatamodeld */; };
+		38E4FCA324304A070020476B /* FundamentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E4FCA224304A070020476B /* FundamentModel.swift */; };
+		55274B0DC7CBF3C07F02D0B6 /* Pods_Lojong_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C9DFB2F569377C3786E8E6 /* Pods_Lojong_TestTests.framework */; };
+		816DE5ECB6D5AEF77ED4C7D5 /* Pods_Lojong_Test_Lojong_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80CF51D861F1A700986FAD6A /* Pods_Lojong_Test_Lojong_TestUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +77,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11697A45972DA282EB210F69 /* Pods_Lojong_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lojong_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34447C3728BBB4083A6CBA04 /* Pods-Lojong-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-Test.release.xcconfig"; path = "Target Support Files/Pods-Lojong-Test/Pods-Lojong-Test.release.xcconfig"; sourceTree = "<group>"; };
+		380E2FFA241EF15E00C41681 /* InsightMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightMainView.swift; sourceTree = "<group>"; };
+		380E2FFE241EF9ED00C41681 /* InsightMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightMainViewController.swift; sourceTree = "<group>"; };
+		380E3002241F0E5500C41681 /* InsightContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightContentView.swift; sourceTree = "<group>"; };
+		380E3006241FC11B00C41681 /* InsightContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightContentViewController.swift; sourceTree = "<group>"; };
+		380E3008241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCustomSegmentedControlView.swift; sourceTree = "<group>"; };
+		380E300A241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCustomSegmentedControlViewController.swift; sourceTree = "<group>"; };
+		3842B513242DAA8B00C55DD3 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		3842B515242E7E0000C55DD3 /* Asap-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Medium.otf"; sourceTree = "<group>"; };
 		384E549524198A5B00C3EE88 /* Lojong-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lojong-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		384E549824198A5B00C3EE88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		384E549A24198A5B00C3EE88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		384E549C24198A5B00C3EE88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		384E549C24198A5B00C3EE88 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		384E549F24198A5B00C3EE88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		384E54A124198A5C00C3EE88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		384E54A424198A5C00C3EE88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +101,44 @@
 		384E54B624198A5D00C3EE88 /* Lojong-TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lojong-TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		384E54BA24198A5D00C3EE88 /* Lojong_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lojong_TestUITests.swift; sourceTree = "<group>"; };
 		384E54BC24198A5D00C3EE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38529DF72425ACFF006FDBC0 /* InsightArticleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightArticleTableViewController.swift; sourceTree = "<group>"; };
+		3859093524252940003D1DDF /* InsightCustomTableViewCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCustomTableViewCellStyle.swift; sourceTree = "<group>"; };
+		38600F3E242BEC50005FB0F5 /* FundamentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundamentsView.swift; sourceTree = "<group>"; };
+		38600F41242BEECC005FB0F5 /* FundamentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundamentsViewController.swift; sourceTree = "<group>"; };
+		38600F45242BF11B005FB0F5 /* PracticeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTableViewController.swift; sourceTree = "<group>"; };
+		38600F4B242C0528005FB0F5 /* FundamentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundamentsTableViewCell.swift; sourceTree = "<group>"; };
+		38602D562420448C00E6EDB3 /* Asap-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Bold.ttf"; sourceTree = "<group>"; };
+		38602D5824205C1A00E6EDB3 /* Extension+NSNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSNotification.swift"; sourceTree = "<group>"; };
+		38602D5A242127D600E6EDB3 /* InsightVideoTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightVideoTableView.swift; sourceTree = "<group>"; };
+		38602D5C242127F100E6EDB3 /* InsightVideoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightVideoTableViewController.swift; sourceTree = "<group>"; };
+		38602D5E242136AB00E6EDB3 /* InsightCustomVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCustomVideoTableViewCell.swift; sourceTree = "<group>"; };
+		38650106242947A100AB4567 /* LojongArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LojongArticle.swift; sourceTree = "<group>"; };
+		38650107242947A100AB4567 /* LojongArticleModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LojongArticleModelController.swift; sourceTree = "<group>"; };
+		3865010A24294E7000AB4567 /* InsightQuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightQuoteTableViewCell.swift; sourceTree = "<group>"; };
+		3865010D24295F0600AB4567 /* InsightQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightQuote.swift; sourceTree = "<group>"; };
+		3865010F24295FFA00AB4567 /* InsightQuoteModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightQuoteModelController.swift; sourceTree = "<group>"; };
+		386D3F66241C443B00F70F8F /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		386D3F68241C471E00F70F8F /* LojongCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LojongCustomView.swift; sourceTree = "<group>"; };
+		388F8CE52426888D00712073 /* InsightArticleTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightArticleTableView.swift; sourceTree = "<group>"; };
+		388F8CE8242689EC00712073 /* InsightArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightArticleTableViewCell.swift; sourceTree = "<group>"; };
+		388F8CEB24268B1400712073 /* InsightArticleTableViewCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightArticleTableViewCellStyle.swift; sourceTree = "<group>"; };
+		388F8CF42427E8D700712073 /* InsightQuoteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightQuoteTableView.swift; sourceTree = "<group>"; };
+		388F8CF62427E8F100712073 /* InsightQuoteTableViewCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightQuoteTableViewCellStyle.swift; sourceTree = "<group>"; };
+		388F8CF92427EA3E00712073 /* InsightQuoteTabeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightQuoteTabeViewController.swift; sourceTree = "<group>"; };
+		38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		38D714DC24226EF00023426C /* Asap-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Regular.ttf"; sourceTree = "<group>"; };
+		38D714EA2423CAEA0023426C /* InsightVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsightVideo.swift; path = "Lojong-Test/Model/InsightVideoModel/InsightVideo.swift"; sourceTree = SOURCE_ROOT; };
+		38D714EE2423D2890023426C /* InsightVideoModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InsightVideoModelController.swift; path = "Lojong-Test/Model/InsightVideoModel/InsightVideoModelController.swift"; sourceTree = SOURCE_ROOT; };
+		38E03756242C0FDC00473CB4 /* PracticeTableViewCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTableViewCellStyle.swift; sourceTree = "<group>"; };
+		38E4FC9D243037CD0020476B /* Lojong-Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Lojong-Test.xcdatamodel"; sourceTree = "<group>"; };
+		38E4FCA224304A070020476B /* FundamentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FundamentModel.swift; sourceTree = "<group>"; };
+		504BC626E24237D5521D8E68 /* Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-Lojong-Test-Lojong-TestUITests/Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		53C9DFB2F569377C3786E8E6 /* Pods_Lojong_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lojong_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		588D6D3EAA069C349E0FC8BA /* Pods-Lojong-TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-TestTests.debug.xcconfig"; path = "Target Support Files/Pods-Lojong-TestTests/Pods-Lojong-TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DB1CB5AA16EFC0EA95DCC2C /* Pods-Lojong-TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-TestTests.release.xcconfig"; path = "Target Support Files/Pods-Lojong-TestTests/Pods-Lojong-TestTests.release.xcconfig"; sourceTree = "<group>"; };
+		80CF51D861F1A700986FAD6A /* Pods_Lojong_Test_Lojong_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lojong_Test_Lojong_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26D8FDED87CD670C6D15267 /* Pods-Lojong-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-Test.debug.xcconfig"; path = "Target Support Files/Pods-Lojong-Test/Pods-Lojong-Test.debug.xcconfig"; sourceTree = "<group>"; };
+		F634F313E3D99D0DA18BCFBE /* Pods-Lojong-Test-Lojong-TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lojong-Test-Lojong-TestUITests.release.xcconfig"; path = "Target Support Files/Pods-Lojong-Test-Lojong-TestUITests/Pods-Lojong-Test-Lojong-TestUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FCC1C4D630A6FA6D5C177C5 /* Pods_Lojong_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55274B0DC7CBF3C07F02D0B6 /* Pods_Lojong_TestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +162,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				816DE5ECB6D5AEF77ED4C7D5 /* Pods_Lojong_Test_Lojong_TestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0822897A08CB04B67566690E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E26D8FDED87CD670C6D15267 /* Pods-Lojong-Test.debug.xcconfig */,
+				34447C3728BBB4083A6CBA04 /* Pods-Lojong-Test.release.xcconfig */,
+				504BC626E24237D5521D8E68 /* Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig */,
+				F634F313E3D99D0DA18BCFBE /* Pods-Lojong-Test-Lojong-TestUITests.release.xcconfig */,
+				588D6D3EAA069C349E0FC8BA /* Pods-Lojong-TestTests.debug.xcconfig */,
+				5DB1CB5AA16EFC0EA95DCC2C /* Pods-Lojong-TestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		380E2FF8241EF12F00C41681 /* InsightViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3859093D24252B09003D1DDF /* InsightMainViewController */,
+				3859093E24252B1E003D1DDF /* InsightContentViewController */,
+				3859093F24252B68003D1DDF /* InsightSegmentedControlViewController */,
+				3859094024252BA2003D1DDF /* InsightVideoTableViewController */,
+				38529DF62425AC7C006FDBC0 /* InsightArticleTableViewController */,
+				388F8CF82427EA0200712073 /* InsightQuoteTableViewController */,
+			);
+			path = InsightViewController;
+			sourceTree = "<group>";
+		};
+		380E2FF9241EF14500C41681 /* InsightView */ = {
+			isa = PBXGroup;
+			children = (
+				38590937242529A3003D1DDF /* InsightMainView */,
+				38590938242529AF003D1DDF /* InsightContentView */,
+				38590939242529CE003D1DDF /* InsightSegmentedControl */,
+				3859093A242529EC003D1DDF /* InsighVideoTableView */,
+				388F8CE42426885A00712073 /* InsightArticleTableView */,
+				388F8CF32427E88B00712073 /* InsightQuoteTableView */,
+			);
+			name = InsightView;
+			sourceTree = "<group>";
+		};
 		384E548C24198A5B00C3EE88 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +215,8 @@
 				384E54AE24198A5D00C3EE88 /* Lojong-TestTests */,
 				384E54B924198A5D00C3EE88 /* Lojong-TestUITests */,
 				384E549624198A5B00C3EE88 /* Products */,
+				0822897A08CB04B67566690E /* Pods */,
+				5FD6C6D847DA09894D77754E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +233,12 @@
 		384E549724198A5B00C3EE88 /* Lojong-Test */ = {
 			isa = PBXGroup;
 			children = (
-				384E549824198A5B00C3EE88 /* AppDelegate.swift */,
-				384E549A24198A5B00C3EE88 /* SceneDelegate.swift */,
-				384E549C24198A5B00C3EE88 /* ViewController.swift */,
-				384E549E24198A5B00C3EE88 /* Main.storyboard */,
-				384E54A124198A5C00C3EE88 /* Assets.xcassets */,
-				384E54A324198A5C00C3EE88 /* LaunchScreen.storyboard */,
 				384E54A624198A5C00C3EE88 /* Info.plist */,
+				384E9A75241997570080FF4F /* Default */,
+				386D3F65241C43DB00F70F8F /* Extensions */,
+				384E9A74241997500080FF4F /* Model */,
+				384E9A73241997470080FF4F /* View */,
+				384E9A722419973C0080FF4F /* Controller */,
 			);
 			path = "Lojong-Test";
 			sourceTree = "<group>";
@@ -128,6 +261,302 @@
 			path = "Lojong-TestUITests";
 			sourceTree = "<group>";
 		};
+		384E9A722419973C0080FF4F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38D527C4241EE85C007D1FB3 /* MainTabBarViewController */,
+				380E2FF8241EF12F00C41681 /* InsightViewController */,
+				38600F40242BEE90005FB0F5 /* FundamentsViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		384E9A73241997470080FF4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				386D3F6A241C476D00F70F8F /* Architecture */,
+				38D527C3241EE83F007D1FB3 /* MainTabBarView */,
+				380E2FF9241EF14500C41681 /* InsightView */,
+				38600F3D242BEC21005FB0F5 /* FundamentsView */,
+				384E54A124198A5C00C3EE88 /* Assets.xcassets */,
+				384E549E24198A5B00C3EE88 /* Main.storyboard */,
+				384E54A324198A5C00C3EE88 /* LaunchScreen.storyboard */,
+				38602D542420403A00E6EDB3 /* Fonts */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		384E9A74241997500080FF4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38E4FC9C243037CD0020476B /* Lojong-Test.xcdatamodeld */,
+				38E4FC9F2430390A0020476B /* FundamentModel */,
+				3859093C24252A5B003D1DDF /* InsightVideoModel */,
+				38650105242947A100AB4567 /* InsightArticleModel */,
+				3865010C24295EEB00AB4567 /* InsightQuoteModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		384E9A75241997570080FF4F /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				384E549824198A5B00C3EE88 /* AppDelegate.swift */,
+				384E549A24198A5B00C3EE88 /* SceneDelegate.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		38529DF62425AC7C006FDBC0 /* InsightArticleTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				38529DF72425ACFF006FDBC0 /* InsightArticleTableViewController.swift */,
+				388F8CE7242689C300712073 /* InsightArticleTableViewCotrollerCell */,
+			);
+			path = InsightArticleTableViewController;
+			sourceTree = "<group>";
+		};
+		38590937242529A3003D1DDF /* InsightMainView */ = {
+			isa = PBXGroup;
+			children = (
+				380E2FFA241EF15E00C41681 /* InsightMainView.swift */,
+			);
+			name = InsightMainView;
+			sourceTree = "<group>";
+		};
+		38590938242529AF003D1DDF /* InsightContentView */ = {
+			isa = PBXGroup;
+			children = (
+				380E3002241F0E5500C41681 /* InsightContentView.swift */,
+			);
+			name = InsightContentView;
+			sourceTree = "<group>";
+		};
+		38590939242529CE003D1DDF /* InsightSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				380E3008241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift */,
+			);
+			name = InsightSegmentedControl;
+			sourceTree = "<group>";
+		};
+		3859093A242529EC003D1DDF /* InsighVideoTableView */ = {
+			isa = PBXGroup;
+			children = (
+				38602D5A242127D600E6EDB3 /* InsightVideoTableView.swift */,
+				3859093B242529FC003D1DDF /* InsightVideoTableViewCell */,
+			);
+			name = InsighVideoTableView;
+			sourceTree = "<group>";
+		};
+		3859093B242529FC003D1DDF /* InsightVideoTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3859093524252940003D1DDF /* InsightCustomTableViewCellStyle.swift */,
+			);
+			name = InsightVideoTableViewCell;
+			sourceTree = "<group>";
+		};
+		3859093C24252A5B003D1DDF /* InsightVideoModel */ = {
+			isa = PBXGroup;
+			children = (
+				38D714EE2423D2890023426C /* InsightVideoModelController.swift */,
+				38D714EA2423CAEA0023426C /* InsightVideo.swift */,
+			);
+			path = InsightVideoModel;
+			sourceTree = "<group>";
+		};
+		3859093D24252B09003D1DDF /* InsightMainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				380E2FFE241EF9ED00C41681 /* InsightMainViewController.swift */,
+			);
+			path = InsightMainViewController;
+			sourceTree = "<group>";
+		};
+		3859093E24252B1E003D1DDF /* InsightContentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				380E3006241FC11B00C41681 /* InsightContentViewController.swift */,
+			);
+			path = InsightContentViewController;
+			sourceTree = "<group>";
+		};
+		3859093F24252B68003D1DDF /* InsightSegmentedControlViewController */ = {
+			isa = PBXGroup;
+			children = (
+				380E300A241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift */,
+			);
+			path = InsightSegmentedControlViewController;
+			sourceTree = "<group>";
+		};
+		3859094024252BA2003D1DDF /* InsightVideoTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				38602D5C242127F100E6EDB3 /* InsightVideoTableViewController.swift */,
+				3859094124252BF2003D1DDF /* InsightVideoTableViewCellController */,
+			);
+			path = InsightVideoTableViewController;
+			sourceTree = "<group>";
+		};
+		3859094124252BF2003D1DDF /* InsightVideoTableViewCellController */ = {
+			isa = PBXGroup;
+			children = (
+				38602D5E242136AB00E6EDB3 /* InsightCustomVideoTableViewCell.swift */,
+			);
+			path = InsightVideoTableViewCellController;
+			sourceTree = "<group>";
+		};
+		38600F3D242BEC21005FB0F5 /* FundamentsView */ = {
+			isa = PBXGroup;
+			children = (
+				38600F3E242BEC50005FB0F5 /* FundamentsView.swift */,
+				38E03756242C0FDC00473CB4 /* PracticeTableViewCellStyle.swift */,
+			);
+			name = FundamentsView;
+			sourceTree = "<group>";
+		};
+		38600F40242BEE90005FB0F5 /* FundamentsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				38600F41242BEECC005FB0F5 /* FundamentsViewController.swift */,
+				38600F45242BF11B005FB0F5 /* PracticeTableViewController.swift */,
+				38600F4B242C0528005FB0F5 /* FundamentsTableViewCell.swift */,
+			);
+			path = FundamentsViewController;
+			sourceTree = "<group>";
+		};
+		38602D542420403A00E6EDB3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				38602D562420448C00E6EDB3 /* Asap-Bold.ttf */,
+				38D714DC24226EF00023426C /* Asap-Regular.ttf */,
+				3842B515242E7E0000C55DD3 /* Asap-Medium.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		38650105242947A100AB4567 /* InsightArticleModel */ = {
+			isa = PBXGroup;
+			children = (
+				38650106242947A100AB4567 /* LojongArticle.swift */,
+				38650107242947A100AB4567 /* LojongArticleModelController.swift */,
+			);
+			path = InsightArticleModel;
+			sourceTree = "<group>";
+		};
+		3865010C24295EEB00AB4567 /* InsightQuoteModel */ = {
+			isa = PBXGroup;
+			children = (
+				3865010D24295F0600AB4567 /* InsightQuote.swift */,
+				3865010F24295FFA00AB4567 /* InsightQuoteModelController.swift */,
+			);
+			path = InsightQuoteModel;
+			sourceTree = "<group>";
+		};
+		386D3F65241C43DB00F70F8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				386D3F66241C443B00F70F8F /* Extension+UIColor.swift */,
+				38602D5824205C1A00E6EDB3 /* Extension+NSNotification.swift */,
+				3842B513242DAA8B00C55DD3 /* Extension+UIView.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		386D3F6A241C476D00F70F8F /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				386D3F68241C471E00F70F8F /* LojongCustomView.swift */,
+			);
+			name = Architecture;
+			sourceTree = "<group>";
+		};
+		388F8CE42426885A00712073 /* InsightArticleTableView */ = {
+			isa = PBXGroup;
+			children = (
+				388F8CE52426888D00712073 /* InsightArticleTableView.swift */,
+				388F8CEA24268AF500712073 /* InsightArticelTableViewCellStyle */,
+			);
+			name = InsightArticleTableView;
+			sourceTree = "<group>";
+		};
+		388F8CE7242689C300712073 /* InsightArticleTableViewCotrollerCell */ = {
+			isa = PBXGroup;
+			children = (
+				388F8CE8242689EC00712073 /* InsightArticleTableViewCell.swift */,
+			);
+			path = InsightArticleTableViewCotrollerCell;
+			sourceTree = "<group>";
+		};
+		388F8CEA24268AF500712073 /* InsightArticelTableViewCellStyle */ = {
+			isa = PBXGroup;
+			children = (
+				388F8CEB24268B1400712073 /* InsightArticleTableViewCellStyle.swift */,
+			);
+			name = InsightArticelTableViewCellStyle;
+			sourceTree = "<group>";
+		};
+		388F8CF32427E88B00712073 /* InsightQuoteTableView */ = {
+			isa = PBXGroup;
+			children = (
+				388F8CF42427E8D700712073 /* InsightQuoteTableView.swift */,
+				388F8CF62427E8F100712073 /* InsightQuoteTableViewCellStyle.swift */,
+			);
+			name = InsightQuoteTableView;
+			sourceTree = "<group>";
+		};
+		388F8CF82427EA0200712073 /* InsightQuoteTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				388F8CF92427EA3E00712073 /* InsightQuoteTabeViewController.swift */,
+				38E4FCAA2431C9540020476B /* InsightQuoteTableViewCellStyle */,
+			);
+			path = InsightQuoteTableViewController;
+			sourceTree = "<group>";
+		};
+		38D527C3241EE83F007D1FB3 /* MainTabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				38D527C5241EEB23007D1FB3 /* MainTabBarView.swift */,
+			);
+			name = MainTabBarView;
+			sourceTree = "<group>";
+		};
+		38D527C4241EE85C007D1FB3 /* MainTabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				384E549C24198A5B00C3EE88 /* MainTabBarViewController.swift */,
+			);
+			path = MainTabBarViewController;
+			sourceTree = "<group>";
+		};
+		38E4FC9F2430390A0020476B /* FundamentModel */ = {
+			isa = PBXGroup;
+			children = (
+				38E4FCA224304A070020476B /* FundamentModel.swift */,
+			);
+			path = FundamentModel;
+			sourceTree = "<group>";
+		};
+		38E4FCAA2431C9540020476B /* InsightQuoteTableViewCellStyle */ = {
+			isa = PBXGroup;
+			children = (
+				3865010A24294E7000AB4567 /* InsightQuoteTableViewCell.swift */,
+			);
+			path = InsightQuoteTableViewCellStyle;
+			sourceTree = "<group>";
+		};
+		5FD6C6D847DA09894D77754E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11697A45972DA282EB210F69 /* Pods_Lojong_Test.framework */,
+				80CF51D861F1A700986FAD6A /* Pods_Lojong_Test_Lojong_TestUITests.framework */,
+				53C9DFB2F569377C3786E8E6 /* Pods_Lojong_TestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +564,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 384E54BF24198A5D00C3EE88 /* Build configuration list for PBXNativeTarget "Lojong-Test" */;
 			buildPhases = (
+				4EAC028AC6758C1896E974B2 /* [CP] Check Pods Manifest.lock */,
 				384E549124198A5B00C3EE88 /* Sources */,
 				384E549224198A5B00C3EE88 /* Frameworks */,
 				384E549324198A5B00C3EE88 /* Resources */,
+				74C148CD5BDF53DC2343438B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +583,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 384E54C224198A5D00C3EE88 /* Build configuration list for PBXNativeTarget "Lojong-TestTests" */;
 			buildPhases = (
+				C9258A12EDF442698F1317DB /* [CP] Check Pods Manifest.lock */,
 				384E54A724198A5D00C3EE88 /* Sources */,
 				384E54A824198A5D00C3EE88 /* Frameworks */,
 				384E54A924198A5D00C3EE88 /* Resources */,
@@ -170,9 +602,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 384E54C524198A5D00C3EE88 /* Build configuration list for PBXNativeTarget "Lojong-TestUITests" */;
 			buildPhases = (
+				83C90601EF822FA06DBA01E5 /* [CP] Check Pods Manifest.lock */,
 				384E54B224198A5D00C3EE88 /* Sources */,
 				384E54B324198A5D00C3EE88 /* Frameworks */,
 				384E54B424198A5D00C3EE88 /* Resources */,
+				507AC9E4F4B9D15255A39B4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +666,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D714DD24226EF00023426C /* Asap-Regular.ttf in Resources */,
+				3842B516242E7E0000C55DD3 /* Asap-Medium.otf in Resources */,
+				38602D572420448C00E6EDB3 /* Asap-Bold.ttf in Resources */,
 				384E54A524198A5C00C3EE88 /* LaunchScreen.storyboard in Resources */,
 				384E54A224198A5C00C3EE88 /* Assets.xcassets in Resources */,
 				384E54A024198A5B00C3EE88 /* Main.storyboard in Resources */,
@@ -254,14 +691,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EAC028AC6758C1896E974B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lojong-Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		507AC9E4F4B9D15255A39B4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lojong-Test-Lojong-TestUITests/Pods-Lojong-Test-Lojong-TestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lojong-Test-Lojong-TestUITests/Pods-Lojong-Test-Lojong-TestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lojong-Test-Lojong-TestUITests/Pods-Lojong-Test-Lojong-TestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74C148CD5BDF53DC2343438B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lojong-Test/Pods-Lojong-Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lojong-Test/Pods-Lojong-Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lojong-Test/Pods-Lojong-Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83C90601EF822FA06DBA01E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lojong-Test-Lojong-TestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9258A12EDF442698F1317DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lojong-TestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		384E549124198A5B00C3EE88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				384E549D24198A5B00C3EE88 /* ViewController.swift in Sources */,
+				38600F3F242BEC50005FB0F5 /* FundamentsView.swift in Sources */,
+				38D714EB2423CAEA0023426C /* InsightVideo.swift in Sources */,
+				388F8CE9242689EC00712073 /* InsightArticleTableViewCell.swift in Sources */,
+				3859093624252940003D1DDF /* InsightCustomTableViewCellStyle.swift in Sources */,
+				388F8CF72427E8F100712073 /* InsightQuoteTableViewCellStyle.swift in Sources */,
+				380E3007241FC11B00C41681 /* InsightContentViewController.swift in Sources */,
+				384E549D24198A5B00C3EE88 /* MainTabBarViewController.swift in Sources */,
+				38D527C6241EEB23007D1FB3 /* MainTabBarView.swift in Sources */,
+				38602D5924205C1A00E6EDB3 /* Extension+NSNotification.swift in Sources */,
 				384E549924198A5B00C3EE88 /* AppDelegate.swift in Sources */,
+				38E03757242C0FDC00473CB4 /* PracticeTableViewCellStyle.swift in Sources */,
+				3865010B24294E7000AB4567 /* InsightQuoteTableViewCell.swift in Sources */,
+				38650108242947A100AB4567 /* LojongArticle.swift in Sources */,
+				38529DF82425ACFF006FDBC0 /* InsightArticleTableViewController.swift in Sources */,
+				38E4FC9E243037CD0020476B /* Lojong-Test.xcdatamodeld in Sources */,
+				3842B514242DAA8B00C55DD3 /* Extension+UIView.swift in Sources */,
+				388F8CF52427E8D700712073 /* InsightQuoteTableView.swift in Sources */,
+				38602D5D242127F100E6EDB3 /* InsightVideoTableViewController.swift in Sources */,
+				380E2FFF241EF9ED00C41681 /* InsightMainViewController.swift in Sources */,
+				380E300B241FCF5300C41681 /* InsightCustomSegmentedControlViewController.swift in Sources */,
+				388F8CE62426888D00712073 /* InsightArticleTableView.swift in Sources */,
+				380E2FFB241EF15E00C41681 /* InsightMainView.swift in Sources */,
+				38650109242947A100AB4567 /* LojongArticleModelController.swift in Sources */,
+				38602D5B242127D600E6EDB3 /* InsightVideoTableView.swift in Sources */,
+				388F8CFA2427EA3E00712073 /* InsightQuoteTabeViewController.swift in Sources */,
+				38600F42242BEECC005FB0F5 /* FundamentsViewController.swift in Sources */,
+				3865010E24295F0600AB4567 /* InsightQuote.swift in Sources */,
+				38D714EF2423D2890023426C /* InsightVideoModelController.swift in Sources */,
+				386D3F69241C471E00F70F8F /* LojongCustomView.swift in Sources */,
+				38602D5F242136AB00E6EDB3 /* InsightCustomVideoTableViewCell.swift in Sources */,
+				380E3009241FCE5E00C41681 /* InsightCustomSegmentedControlView.swift in Sources */,
+				38600F4C242C0528005FB0F5 /* FundamentsTableViewCell.swift in Sources */,
+				38600F46242BF11B005FB0F5 /* PracticeTableViewController.swift in Sources */,
+				38E4FCA324304A070020476B /* FundamentModel.swift in Sources */,
+				380E3003241F0E5500C41681 /* InsightContentView.swift in Sources */,
 				384E549B24198A5B00C3EE88 /* SceneDelegate.swift in Sources */,
+				386D3F67241C443B00F70F8F /* Extension+UIColor.swift in Sources */,
+				388F8CEC24268B1400712073 /* InsightArticleTableViewCellStyle.swift in Sources */,
+				3865011024295FFA00AB4567 /* InsightQuoteModelController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +1008,7 @@
 		};
 		384E54C024198A5D00C3EE88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E26D8FDED87CD670C6D15267 /* Pods-Lojong-Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,15 +1018,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Tribuzy.Lojong-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		384E54C124198A5D00C3EE88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34447C3728BBB4083A6CBA04 /* Pods-Lojong-Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -459,15 +1038,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Tribuzy.Lojong-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		384E54C324198A5D00C3EE88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 588D6D3EAA069C349E0FC8BA /* Pods-Lojong-TestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +1071,7 @@
 		};
 		384E54C424198A5D00C3EE88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DB1CB5AA16EFC0EA95DCC2C /* Pods-Lojong-TestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +1094,7 @@
 		};
 		384E54C624198A5D00C3EE88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504BC626E24237D5521D8E68 /* Pods-Lojong-Test-Lojong-TestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +1115,7 @@
 		};
 		384E54C724198A5D00C3EE88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F634F313E3D99D0DA18BCFBE /* Pods-Lojong-Test-Lojong-TestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,6 +1174,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		38E4FC9C243037CD0020476B /* Lojong-Test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				38E4FC9D243037CD0020476B /* Lojong-Test.xcdatamodel */,
+			);
+			currentVersion = 38E4FC9D243037CD0020476B /* Lojong-Test.xcdatamodel */;
+			path = "Lojong-Test.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 384E548D24198A5B00C3EE88 /* Project object */;
 }

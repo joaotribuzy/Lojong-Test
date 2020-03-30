@@ -1,0 +1,16 @@
+PODS:
+  - SteviaLayout (4.7.3)
+
+DEPENDENCIES:
+  - SteviaLayout
+
+SPEC REPOS:
+  trunk:
+    - SteviaLayout
+
+SPEC CHECKSUMS:
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
+
+PODFILE CHECKSUM: 692713c2ec6ea55d646366394f8de6df6cd37d68
+
+COCOAPODS: 1.8.3
