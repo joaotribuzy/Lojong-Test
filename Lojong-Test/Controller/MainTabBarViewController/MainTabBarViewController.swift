@@ -36,7 +36,7 @@ class MainTabBarViewController: UITabBarController{
         
         fundamentViewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Práticas", comment: ""), image: UIImage.init(named: "practice-item"), tag: 0)
         
-        insightViewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Insight", comment: ""), image: UIImage.init(named: "insight-item"), tag: 1)
+        insightViewController.tabBarItem = UITabBarItem(title: NSLocalizedString("Insight", comment: ""), image: UIImage.init(named: "Insight-Item"), tag: 1)
         
         let tabBarList = [fundamentViewController, insightViewController]
 
