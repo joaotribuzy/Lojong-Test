@@ -11,6 +11,10 @@ import UIKit
 
 class FundamentsTableViewCell: UITableViewCell{
     
+    var model: FundamentModel = {
+        return FundamentModel.shared
+    }()
+    
     // MARK: TableViewCell Lifecycle
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -26,7 +30,6 @@ class FundamentsTableViewCell: UITableViewCell{
     deinit {}
     
     let iconImage: UIImageView = UIImageView()
-    let progressView: UIView = UIView()
     
     let titleLabel: UILabel = UILabel()
     let timeLabel: UILabel = UILabel()

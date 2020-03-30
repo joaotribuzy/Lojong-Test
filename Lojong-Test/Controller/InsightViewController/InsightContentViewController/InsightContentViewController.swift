@@ -26,6 +26,7 @@ class InsightContentViewController: UIViewController {
     func setupNotification(){
         NotificationCenter.default.addObserver(self, selector: #selector(shareImageNotificationReceived(_:)), name: .LojongShareQuoteImage, object: nil)
     }
+    
   
     @objc private func shareImageNotificationReceived(_ notification: Notification){
         let image = imageToShare

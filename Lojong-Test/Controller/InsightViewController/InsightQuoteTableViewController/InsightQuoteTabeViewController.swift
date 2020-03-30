@@ -24,6 +24,8 @@ class InsightQuoteTableViewController: UITableViewController {
         
         self.tableView = InsightQuoteTableView(frame: .zero, style: .plain)
         
+        activityIndicator()
+        
         self.setupTableView()
         
         self.model.downloadQuote()
@@ -35,6 +37,19 @@ class InsightQuoteTableViewController: UITableViewController {
     
     deinit {
         NotificationCenter.default.removeObserver(self)
+    }
+    
+    public var indicator = UIActivityIndicatorView()
+    
+    func activityIndicator() {
+        indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        indicator.style = .large
+        self.tableView.sv(indicator)
+        indicator.centerInContainer()
+        
+        indicator.startAnimating()
+        indicator.backgroundColor = .black
+        indicator.layer.cornerRadius = 5
     }
 }
 
@@ -68,6 +83,8 @@ extension InsightQuoteTableViewController{
     @objc private func quotesChangedNotificationReceived(_ notification: Notification){
         DispatchQueue.main.async {
             self.tableView.reloadData()
+            self.indicator.stopAnimating()
+            self.indicator.hidesWhenStopped = true
         }
     }
 }

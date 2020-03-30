@@ -65,11 +65,9 @@ class FundamentModel {
                     print("Failed")
                 }
             }
-            
         } catch {
             print("Failed")
         }
     }
-    
     
 }

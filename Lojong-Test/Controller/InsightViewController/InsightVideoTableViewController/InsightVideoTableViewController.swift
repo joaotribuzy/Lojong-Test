@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import AVKit
+import Stevia
 
 
 class InsightVideoTableViewController: UITableViewController {
@@ -27,6 +28,8 @@ class InsightVideoTableViewController: UITableViewController {
         
         self.setupTableView()
         
+        activityIndicator()
+        
         self.model.downloadVideo()
         
         
@@ -38,6 +41,19 @@ class InsightVideoTableViewController: UITableViewController {
     
     deinit {
         NotificationCenter.default.removeObserver(self)
+    }
+    
+    public var indicator = UIActivityIndicatorView()
+    
+    func activityIndicator() {
+        indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        indicator.style = .large
+        self.tableView.sv(indicator)
+        indicator.centerInContainer()
+        
+        indicator.startAnimating()
+        indicator.backgroundColor = .black
+        indicator.layer.cornerRadius = 5
     }
 }
 
@@ -77,6 +93,8 @@ extension InsightVideoTableViewController{
     @objc private func videosChangedNotificationReceived(_ notification: Notification){
         DispatchQueue.main.async {
             self.tableView.reloadData()
+            self.indicator.stopAnimating()
+            self.indicator.hidesWhenStopped = true
         }
     }
 }

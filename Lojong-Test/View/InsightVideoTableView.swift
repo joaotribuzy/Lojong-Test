@@ -25,8 +25,7 @@ class InsightVideoTableView: UITableView{
         fatalError("init(coder:) has not been implemented")
     }
     
-    public var indicator = UIActivityIndicatorView()
-
+    
 }
 
 extension InsightVideoTableView: LojongCustomView {
@@ -46,5 +45,4 @@ extension InsightVideoTableView: LojongCustomView {
         
         self.top(0.0).left(0.0).right(0.0).bottom(0)
     }
-    
 }

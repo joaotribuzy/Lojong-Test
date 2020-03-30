@@ -38,6 +38,7 @@ extension PracticeTableViewController{
     func setupTableView(){
         tableView.register(FundamentsTableViewCell.self, forCellReuseIdentifier: "fundamentsCell")
         self.tableView.backgroundColor = .white
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

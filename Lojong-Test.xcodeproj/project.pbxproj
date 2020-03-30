@@ -510,7 +510,7 @@
 			isa = PBXGroup;
 			children = (
 				388F8CF92427EA3E00712073 /* InsightQuoteTabeViewController.swift */,
-				3865010A24294E7000AB4567 /* InsightQuoteTableViewCell.swift */,
+				38E4FCAA2431C9540020476B /* InsightQuoteTableViewCellStyle */,
 			);
 			path = InsightQuoteTableViewController;
 			sourceTree = "<group>";
@@ -537,6 +537,14 @@
 				38E4FCA224304A070020476B /* FundamentModel.swift */,
 			);
 			path = FundamentModel;
+			sourceTree = "<group>";
+		};
+		38E4FCAA2431C9540020476B /* InsightQuoteTableViewCellStyle */ = {
+			isa = PBXGroup;
+			children = (
+				3865010A24294E7000AB4567 /* InsightQuoteTableViewCell.swift */,
+			);
+			path = InsightQuoteTableViewCellStyle;
 			sourceTree = "<group>";
 		};
 		5FD6C6D847DA09894D77754E /* Frameworks */ = {
